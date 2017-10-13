@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ScreenHubMap
+  - ScreenWorldMap
+  - ScreenEncounter
+  - ScreenLocation
+  - ScreenPause
+  - ScreenOptions
+  - ScreenCredits
+  - ScreenMarket
+  - ScreenClinic
+  - ScreenHeshemNight
+  - ScreenHeshemDay
+  - ScreenWorldNight
+  - ScreenDebug
+  - AudioManager
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Refugee1
+  - 
+  - BackGround
+  - 
+  - Refugee2
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3196793727
+    locked: 0
+  - name: Houses
+    uniqueID: 791668761
+    locked: 0
+  - name: Refugee
+    uniqueID: 3214203579
+    locked: 0
