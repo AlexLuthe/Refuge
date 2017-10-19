@@ -140,7 +140,7 @@ namespace Fungus
 
             if (nameText != null && nameText.text == "")
             {
-                SetCharacterName("", Color.white);
+                SetCharacterName(""/*, Color.white*/);
             }
             if (currentCharacterImage == null)
             {                
@@ -342,7 +342,7 @@ namespace Fungus
                     characterName = character.GetObjectName();
                 }
                     
-                SetCharacterName(characterName, character.NameColor);
+                SetCharacterName(characterName/*, character.NameColor*/);
             }
         }
 
@@ -405,13 +405,13 @@ namespace Fungus
         /// Sets the character name to display on the Say Dialog.
         /// Supports variable substitution e.g. John {$surname}
         /// </summary>
-        public virtual void SetCharacterName(string name, Color color)
+        public virtual void SetCharacterName(string name/*, Color color*/)
         {
             if (nameText != null)
             {
                 var subbedName = stringSubstituter.SubstituteStrings(name);
                 nameText.text = subbedName;
-                nameText.color = color;
+                /*nameText.color = color;*/
             }
         }
 
