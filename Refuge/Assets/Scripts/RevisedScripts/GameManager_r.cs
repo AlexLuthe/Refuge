@@ -41,7 +41,8 @@ public class GameManager_r : MonoBehaviour {
     public AudioManager _AudioManager;
     bool musicStarted = false;
 
-    public bool inTutorial = true;
+    public GameObject endGameCanvas;
+    public GameObject gameCanvas;
 
     // Singleton
     public static GameManager_r _Instance;
@@ -197,10 +198,4 @@ public class GameManager_r : MonoBehaviour {
 
     public void AddMoney(int modifier) { partyMoney += modifier; if (moneyGUI) moneyGUI.GetComponent<Text>().text = "Money: " + partyMoney; }
     public int GetMoney() { return partyMoney; }
-
-    //So refugees wont lose hunger, thirst or get sick during the starting stages
-    public void DeactivateTutorial()
-    {
-        inTutorial = false;
-    }
 }

@@ -172,52 +172,44 @@ public class Map_r : MonoBehaviour
 
         if (GM)
         {
-            if (GM.inTutorial == false)
+            foreach (GameObject chara in GM.characters)
             {
-                foreach (GameObject chara in GM.characters)
-                {
-                    int rand = Random.Range(0, 100);
-                    //Debug.Log(rand);
+                int rand = Random.Range(0, 100);
+                //Debug.Log(rand);
 
-                    if (rand <= chanceOfNothing)
-                    {
-                        Debug.Log("You caught nothing");
-                    }
-                    else if (rand > chanceOfNothing && rand <= chanceOfInjury)
-                    {
-                        chara.GetComponent<Character_r>().injured = true;
-                        GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten injured! ");
-                        StartCoroutine(GM.HasGottenHealthCondition());
-                        chara.GetComponent<Character_r>().injurySprite.SetActive(true);
-                    }
-                    else if (rand > chanceOfInjury && rand <= chanceOfCholera)
-                    {
-                        chara.GetComponent<Character_r>().cholera = true;
-                        GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten cholera! ");
-                        StartCoroutine(GM.HasGottenHealthCondition());
-                        chara.GetComponent<Character_r>().choleraSprite.SetActive(true);
-                    }
-                    else if (rand > chanceOfCholera && rand <= chanceOfDysentary)
-                    {
-                        chara.GetComponent<Character_r>().dysentery = true;
-                        GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten dysentary! ");
-                        StartCoroutine(GM.HasGottenHealthCondition());
-                        chara.GetComponent<Character_r>().dysenterySprite.SetActive(true);
-                    }
-                    else if (rand > chanceOfDysentary && rand <= chanceOfTyphoid)
-                    {
-                        chara.GetComponent<Character_r>().typhoid = true;
-                        GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten typhoid! ");
-                        StartCoroutine(GM.HasGottenHealthCondition());
-                        chara.GetComponent<Character_r>().typhoidSprite.SetActive(true);
-                    }
+                if (rand <= chanceOfNothing)
+                {
+                    Debug.Log("You caught nothing");
+                }
+                else if (rand > chanceOfNothing && rand <= chanceOfInjury)
+                {
+                    chara.GetComponent<Character_r>().injured = true;
+                    GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten injured! ");
+                    StartCoroutine(GM.HasGottenHealthCondition());
+                    chara.GetComponent<Character_r>().injurySprite.SetActive(true);
+                }
+                else if (rand > chanceOfInjury && rand <= chanceOfCholera)
+                {
+                    chara.GetComponent<Character_r>().cholera = true;
+                    GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten cholera! ");
+                    StartCoroutine(GM.HasGottenHealthCondition());
+                    chara.GetComponent<Character_r>().choleraSprite.SetActive(true);
+                }
+                else if (rand > chanceOfCholera && rand <= chanceOfDysentary)
+                {
+                    chara.GetComponent<Character_r>().dysentery = true;
+                    GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten dysentary! ");
+                    StartCoroutine(GM.HasGottenHealthCondition());
+                    chara.GetComponent<Character_r>().dysenterySprite.SetActive(true);
+                }
+                else if (rand > chanceOfDysentary && rand <= chanceOfTyphoid)
+                {
+                    chara.GetComponent<Character_r>().typhoid = true;
+                    GM.conditionReportText.text += (chara.GetComponent<Character_r>().charName + " has gotten typhoid! ");
+                    StartCoroutine(GM.HasGottenHealthCondition());
+                    chara.GetComponent<Character_r>().typhoidSprite.SetActive(true);
                 }
             }
-            else
-            {
-                Debug.Log("In tutorial");
-            }
-                    
         }
         else
         {

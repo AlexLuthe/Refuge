@@ -80,6 +80,16 @@ public class Character_r : MonoBehaviour
         {
             trust = 100;
         }
+
+        if(hunger <= 0)
+        {
+            health -= 0.25f;
+        }
+
+        if(thirst <= 0)
+        {
+            health -= 0.25f;
+        }
     }
 
     public void UseItem () {
@@ -155,6 +165,12 @@ public class Character_r : MonoBehaviour
         StartCoroutine(GM.HasGottenHealthCondition());
         Debug.Log(charName + " has died");
         Destroy(gameObject);
+
+        if (charName == "Sayid")
+        {
+            GM.gameCanvas.SetActive(false);
+            GM.endGameCanvas.SetActive(true);
+        }
     }
 
     public void OnNoTrust()
