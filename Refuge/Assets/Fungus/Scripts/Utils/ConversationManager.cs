@@ -159,7 +159,7 @@ namespace Fungus
 
             // try to find the character param first, since we need to get its portrait
             int characterIndex = -1;
-            //if (characters == null)
+            if (characters == null)
             {
                 PopulateCharacterCache();
             }

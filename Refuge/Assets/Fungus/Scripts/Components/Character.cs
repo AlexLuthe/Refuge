@@ -15,7 +15,7 @@ namespace Fungus
     public class Character : MonoBehaviour, ILocalizable
     {
         [Tooltip("Character name as displayed in Say Dialog.")]
-        [SerializeField] protected string nameText = " "; // We need a separate name as the object name is used for character variations (e.g. "Smurf Happy", "Smurf Sad")
+        [SerializeField] protected string nameText; // We need a separate name as the object name is used for character variations (e.g. "Smurf Happy", "Smurf Sad")
 
         [Tooltip("Color to display the character name in Say Dialog.")]
         [SerializeField] protected Color nameColor = Color.white;
