@@ -40645,7 +40645,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003538}
+      objectReference: {fileID: 2110004004}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -44522,12 +44522,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
---- !u!114 &2110003538 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114541853073177962, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
 --- !u!114 &2110003728 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -44549,7 +44543,15 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'Myself:'
+    stringVal: "Myself: We approach a man wearing a shemagh. There are people everywhere,
+      all seemingly taking the same way out of here. \n\nMyself: The coast isn't far
+      away and the sound of crashing waves underscores the quiet mumbling of people
+      around us. \n\nMan: You here for the boat?\n\nMe: Yeah.\n\nMan: All of you?\n\nMe:
+      Yeah.\n\nMan: Sure. \n\nMyself: The man turns around and walks into one of the
+      buildings. \n\nFiras: What's happening?\n\nMe: I don't know...\n\nMyself: The
+      man returns.\n\nMan: Okay, there's room for all of you.\n\nFiras: Good. For
+      how much?\n\nMan: Per person, $500.\n\nFiras: What the hell!? We don't have
+      that much!\n\nMan: "
 --- !u!4 &2110004011 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4045095015970748, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -45024,7 +45026,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 28.900024}
+  m_AnchoredPosition: {x: 0, y: 28.899994}
   m_SizeDelta: {x: 225, y: 80}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2125753083
