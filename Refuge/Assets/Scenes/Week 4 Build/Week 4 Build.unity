@@ -40583,10 +40583,15 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1808799538}
     m_Modifications:
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.size
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -40644,7 +40649,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110004004}
+      objectReference: {fileID: 2110003512}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -40708,13 +40713,83 @@ Prefab:
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: scrollPos.x
-      value: 276.88632
+      value: -331.0084
       objectReference: {fileID: 0}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedBlocks.Array.data[1]
       value: 
-      objectReference: {fileID: 2110003500}
+      objectReference: {fileID: 2110003499}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[2]
+      value: 
+      objectReference: {fileID: 2110003513}
+    - target: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: commandList.Array.data[1]
+      value: 
+      objectReference: {fileID: 2110003519}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: scrollPos.y
+      value: -1151.781
+      objectReference: {fileID: 0}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.data[9]
+      value: 
+      objectReference: {fileID: 2110003494}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.data[10]
+      value: 
+      objectReference: {fileID: 2110003493}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.data[11]
+      value: 
+      objectReference: {fileID: 2110003492}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.data[12]
+      value: 
+      objectReference: {fileID: 2110003491}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.data[13]
+      value: 
+      objectReference: {fileID: 2110003490}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: blockViewHeight
+      value: 356
+      objectReference: {fileID: 0}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[3]
+      value: 
+      objectReference: {fileID: 2110003510}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[4]
+      value: 
+      objectReference: {fileID: 2110003507}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[5]
+      value: 
+      objectReference: {fileID: 2110003504}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[6]
+      value: 
+      objectReference: {fileID: 2110003496}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[7]
+      value: 
+      objectReference: {fileID: 2110003498}
     m_RemovedComponents:
     - {fileID: 114620932178397460, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
     - {fileID: 114732260562620168, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
@@ -44531,6 +44606,166 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+--- !u!114 &2110003490
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: ChoseMaya
+  value: 0
+--- !u!114 &2110003491
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: ChoseJoram
+  value: 0
+--- !u!114 &2110003492
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: ChoseSami
+  value: 0
+--- !u!114 &2110003493
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: ChoseFiras
+  value: 0
+--- !u!114 &2110003494
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: ChoseZada
+  value: 0
+--- !u!114 &2110003495
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 677
+  indentLevel: 0
+  text: Do you know me? I'm Sayid, a bus driver!
+  description: 
+  targetBlock: {fileID: 2110003496}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003496
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1063.1129
+    y: 1582.0446
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-1-7
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &2110003497
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 678
+  indentLevel: 0
+  text: 'I met your contact down in Mule, he wanted me to mention that to you. '
+  description: 
+  targetBlock: {fileID: 2110003498}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003498
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1063.376
+    y: 1626.7816
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-1-8
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
 --- !u!114 &2110003499
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -44544,14 +44779,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 905.21857
-    y: 1516.255
+    x: 1063.1134
+    y: 1366.2544
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 663
-  blockName: 6-0-3
+  blockName: 6-1-2
   description: 
   eventHandler: {fileID: 0}
   commandList: []
@@ -44568,14 +44803,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 901.00806
-    y: 1474.1495
+    x: 1062.8503
+    y: 1321.5173
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 664
-  blockName: 6-0-2
+  blockName: 6-1-1
   description: 
   eventHandler: {fileID: 0}
   commandList: []
@@ -44592,17 +44827,379 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 895.4818
-    y: 1432.0441
+    x: 852.0606
+    y: 1467.5706
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 665
-  blockName: 6-0-1
+  blockName: 6-1-0
+  description: 
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2110003518}
+  - {fileID: 2110003517}
+  - {fileID: 2110003516}
+  - {fileID: 2110003515}
+  - {fileID: 2110003514}
+  - {fileID: 2110003512}
+  - {fileID: 2110003511}
+  - {fileID: 2110003509}
+  - {fileID: 2110003508}
+  - {fileID: 2110003506}
+  - {fileID: 2110003505}
+  - {fileID: 2110003503}
+  - {fileID: 2110003502}
+  - {fileID: 2110003495}
+  - {fileID: 2110003497}
+--- !u!114 &2110003502
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 676
+  indentLevel: 0
+  commenterName: Pleads
+  commentText: 
+--- !u!114 &2110003503
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 681
+  indentLevel: 0
+  text: Maya, you can go. (Pay$500)
+  description: 
+  targetBlock: {fileID: 2110003504}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003504
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1061.5342
+    y: 1538.6233
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-1-6
   description: 
   eventHandler: {fileID: 0}
   commandList: []
+--- !u!114 &2110003505
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 674
+  indentLevel: 0
+  commenterName: Player Chooses Maya
+  commentText: 
+--- !u!114 &2110003506
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 680
+  indentLevel: 0
+  text: Joram, you can go. (Pay$500)
+  description: 
+  targetBlock: {fileID: 2110003507}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003507
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1063.9026
+    y: 1497.834
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-1-5
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &2110003508
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 673
+  indentLevel: 0
+  commenterName: Player Chooses Joram
+  commentText: 
+--- !u!114 &2110003509
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 679
+  indentLevel: 0
+  text: Firas, you can go. (Pay$500)
+  description: 
+  targetBlock: {fileID: 2110003510}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003510
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1062.3239
+    y: 1453.0968
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-1-4
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &2110003511
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 672
+  indentLevel: 0
+  commenterName: Player Chooses Firas
+  commentText: 
+--- !u!114 &2110003512
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 675
+  indentLevel: 0
+  text: Sami, you can go. (Pay$500)
+  description: 
+  targetBlock: {fileID: 2110003513}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003513
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1062.0599
+    y: 1410.9916
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-1-3
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &2110003514
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 671
+  indentLevel: 0
+  commenterName: Player Chooses Sami
+  commentText: 
+--- !u!114 &2110003515
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 667
+  indentLevel: 0
+  text: Zada, you can go. (Pay$500)
+  description: 
+  targetBlock: {fileID: 2110003499}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003516
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 670
+  indentLevel: 0
+  commenterName: Player Chooses Zada
+  commentText: 
+--- !u!114 &2110003517
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 668
+  indentLevel: 0
+  text: I'm going. (Pay$500)
+  description: 
+  targetBlock: {fileID: 2110003500}
+  hideIfVisited: 1
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003518
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea6e8f632db87477eb750446b28d73a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 669
+  indentLevel: 0
+  commenterName: Player Chooses Themself
+  commentText: 
+--- !u!114 &2110003519
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 666
+  indentLevel: 0
+  targetFlowchart: {fileID: 2110003489}
+  targetBlock: {fileID: 2110003501}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &2110004004
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -44626,7 +45223,23 @@ MonoBehaviour:
       buildings. \n\nFiras: What's happening?\n\nMe: I don't know...\n\nMyself: The
       man returns.\n\nMan: Okay, there's room for all of you.\n\nFiras: Good. For
       how much?\n\nMan: Per person, $500.\n\nFiras: What the hell!? We don't have
-      that much!\n\nMan: That's the price."
+      that much!\n\nMan: That's the price.\n\nZada: Seriously? No compassion for us?
+      We've travelled from Heshem!\n\nMan: See that man over there? The one sitting
+      on his own?\n\nMyself: He points to a man sitting alone in the fetal position
+      against a wall, face burried in his knees. \n\nMan: His entire family was arrested
+      out the front of his house while he was inside packing. He knew they were being
+      arrested but remained inside while they were taken. Do you think he's more or
+      less deserving of a new home than you?\n\nMan: Does the regret and mourning
+      make him more worthy? Do the sacrifices that others have made to get here give
+      them priority? After all, he has nothing to lose anymore. \n\nMan: Be honest,
+      how do you expect me to choose between two forms of grief? And how do you expect
+      me to stay here when I could get a front-row spot on that boat, because I know
+      its owner? \n\nMan: Simple. You pay me to stay here so you don't have to. We
+      pay soldiers to stay quiet and hope that we can outlive this war with enough
+      food to spare.\n\nMan: So don't tell me that I'm incompassionate and morally
+      objectionable because I'm doing what I can to survive. You would do the same,
+      no?\n\nMan: The price is the price. Who is going to stays here and who goes
+      on the boat?"
 --- !u!4 &2110004011 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4045095015970748, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -45101,7 +45714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 28.900024}
+  m_AnchoredPosition: {x: 0, y: 28.899963}
   m_SizeDelta: {x: 225, y: 80}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2125753083
