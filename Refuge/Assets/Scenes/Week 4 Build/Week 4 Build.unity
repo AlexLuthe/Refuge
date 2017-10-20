@@ -40635,7 +40635,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003728}
+      objectReference: {fileID: 2110003501}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -40699,13 +40699,23 @@ Prefab:
     - target: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 1472.8438
+      value: 1469.2122
       objectReference: {fileID: 0}
     - target: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
       objectReference: {fileID: 2110004004}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: scrollPos.x
+      value: 276.88632
+      objectReference: {fileID: 0}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: selectedBlocks.Array.data[1]
+      value: 
+      objectReference: {fileID: 2110003500}
     m_RemovedComponents:
     - {fileID: 114620932178397460, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
     - {fileID: 114732260562620168, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
@@ -42032,7 +42042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.41741437, g: 0.21604674, b: 0.5441177, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -44522,12 +44532,78 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
---- !u!114 &2110003728 stripped
+--- !u!114 &2110003499
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 905.21857
+    y: 1516.255
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 663
+  blockName: 6-0-3
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &2110003500
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 901.00806
+    y: 1474.1495
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 664
+  blockName: 6-0-2
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
+--- !u!114 &2110003501
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 895.4818
+    y: 1432.0441
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 665
+  blockName: 6-0-1
+  description: 
+  eventHandler: {fileID: 0}
+  commandList: []
 --- !u!114 &2110004004
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -44551,7 +44627,7 @@ MonoBehaviour:
       buildings. \n\nFiras: What's happening?\n\nMe: I don't know...\n\nMyself: The
       man returns.\n\nMan: Okay, there's room for all of you.\n\nFiras: Good. For
       how much?\n\nMan: Per person, $500.\n\nFiras: What the hell!? We don't have
-      that much!\n\nMan: "
+      that much!\n\nMan: That's the price."
 --- !u!4 &2110004011 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4045095015970748, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
