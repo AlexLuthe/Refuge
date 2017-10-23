@@ -29,6 +29,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
     float encounterChance;
     public string description;
     public Map_r map;
+    public Movable_Map mMap;
     bool worldMap = true;
     public bool generated = false;
     public List<GameObject> possibleLocations = new List<GameObject>();
@@ -38,11 +39,15 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
     public bool travelReady = false;
 
     public void Start() {
-        if (!map) {
+        if (!map && !mMap) {
         if (worldMap)
             map = GameObject.FindGameObjectWithTag("ScreenWorldMap").GetComponent<Map_r>();
-        else
+        else //if (transform.parent.GetComponent<Movable_Map>())
+            mMap = transform.parent.GetComponent<Movable_Map>();
+        if (!mMap && transform.parent.GetComponent<Map_r>())
             map = transform.parent.GetComponent<Map_r>();
+        else if (!mMap && !map)
+            Debug.Log("Map could not be found");
         }
         _AudioManager = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
@@ -50,8 +55,15 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData) {
         Debug.Log("The user clicked");
         _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
-    
-        map.Travel(gameObject);
+        if (map)
+            map.Travel(gameObject);
+        if (mMap) {
+            Debug.Log("Old Location: " + mMap.newLocation);
+            mMap.newLocation = transform.position;
+            mMap.location = this;
+            Debug.Log("New Location: " + mMap.newLocation);
+        }
+
     }
 
     public virtual void GenerateInventory() {
