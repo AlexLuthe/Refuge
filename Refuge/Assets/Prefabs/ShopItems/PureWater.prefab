@@ -80,7 +80,7 @@ MonoBehaviour:
   cureDiseases: 0
   price: 10
   spawnChance: 0.25
-  shopHoverTip: 
+  shopHoverTip: 'Price: $10'
   invHoverTip: 
 --- !u!114 &114099275010509008
 MonoBehaviour:
@@ -109,7 +109,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1972752203891548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 129, y: 347, z: -5}
   m_LocalScale: {x: 0.3861111, y: 0.3861111, z: 0.3861111}
   m_Children: []
   m_Father: {fileID: 0}
