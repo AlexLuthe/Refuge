@@ -45,7 +45,7 @@ public class GameManager_r : MonoBehaviour {
     public GameObject gameCanvas;
 
     // Singleton
-    public static GameManager_r _Instance;
+    private static GameManager_r _Instance;
     public static GameManager_r Instance {
         get {
             if (_Instance == null)
