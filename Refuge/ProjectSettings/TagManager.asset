@@ -18,6 +18,7 @@ TagManager:
   - ScreenWorldNight
   - ScreenDebug
   - AudioManager
+  - ScreenScavenge
   layers:
   - Default
   - TransparentFX

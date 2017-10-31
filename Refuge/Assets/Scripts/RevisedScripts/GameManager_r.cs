@@ -19,6 +19,7 @@ public class GameManager_r : MonoBehaviour {
         STEnMap2 = 10, // Heshem Day
         STEnMap3 = 11, // World Night
         STDebug = 12,
+        STScavenge = 13,
     };
 
     public GameObject charUI;
@@ -84,6 +85,7 @@ public class GameManager_r : MonoBehaviour {
         screens.Add(ScreenType.STEnMap2, GameObject.FindGameObjectWithTag("ScreenHeshemDay"));
         screens.Add(ScreenType.STEnMap3, GameObject.FindGameObjectWithTag("ScreenWorldNight"));
         screens.Add(ScreenType.STDebug, GameObject.FindGameObjectWithTag("ScreenDebug"));
+        screens.Add(ScreenType.STScavenge, GameObject.FindGameObjectWithTag("ScreenScavenge"));
         currentHub = hubs[0];
 
         if (!screens[ScreenType.STEnMap3])
