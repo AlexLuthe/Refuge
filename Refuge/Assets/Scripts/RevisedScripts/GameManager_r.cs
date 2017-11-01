@@ -20,6 +20,7 @@ public class GameManager_r : MonoBehaviour {
         STEnMap3 = 11, // World Night
         STDebug = 12,
         STScavenge = 13,
+        STTravel = 14,
     };
 
     public GameObject charUI;
@@ -86,6 +87,7 @@ public class GameManager_r : MonoBehaviour {
         screens.Add(ScreenType.STEnMap3, GameObject.FindGameObjectWithTag("ScreenWorldNight"));
         screens.Add(ScreenType.STDebug, GameObject.FindGameObjectWithTag("ScreenDebug"));
         screens.Add(ScreenType.STScavenge, GameObject.FindGameObjectWithTag("ScreenScavenge"));
+        screens.Add(ScreenType.STTravel, GameObject.FindGameObjectWithTag("ScreenTravel"));
         currentHub = hubs[0];
 
         if (!screens[ScreenType.STEnMap3])
