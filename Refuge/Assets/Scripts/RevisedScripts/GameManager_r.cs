@@ -47,6 +47,9 @@ public class GameManager_r : MonoBehaviour {
     public GameObject endGameCanvas;
     public GameObject gameCanvas;
 
+    //Player can only eat when this is true
+    public bool canEat = false;
+
     // Singleton
     private static GameManager_r _Instance;
     public static GameManager_r Instance {
@@ -67,8 +70,7 @@ public class GameManager_r : MonoBehaviour {
         conditionReportText.gameObject.SetActive(false);
         //inCoRoutine = false;
 
-        StopCoroutine(HasGottenHealthCondition());
-        
+        StopCoroutine(HasGottenHealthCondition());    
     }
 
     // Use this for initialization
@@ -108,24 +110,40 @@ public class GameManager_r : MonoBehaviour {
         _AudioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
     }
 
-    void Update() {
-        if (carryingItem) {
-                if (!carryingItem.GetComponent<Image>()) {
-                    carryingItem.AddComponent<Image>();
-                    carryingItem.GetComponent<Image>().sprite = carryingItem.GetComponent<Item_r>().itemSprite;
-                    carryingItem.transform.SetParent(GameObject.Find("Canvas").transform);
-                    carryingItem.gameObject.transform.SetSiblingIndex(carryingItem.gameObject.transform.GetSiblingIndex());
-                    carryingItem.GetComponent<Image>().raycastTarget = false;
-                }
+    void Update()
+    {
+        if (carryingItem)
+        {
+            if (!carryingItem.GetComponent<Image>())
+            {
+                carryingItem.AddComponent<Image>();
+                carryingItem.GetComponent<Image>().sprite = carryingItem.GetComponent<Item_r>().itemSprite;
+                carryingItem.transform.SetParent(GameObject.Find("Canvas").transform);
+                carryingItem.gameObject.transform.SetSiblingIndex(carryingItem.gameObject.transform.GetSiblingIndex());
+                carryingItem.GetComponent<Image>().raycastTarget = false;
+            }
+
             carryingItem.transform.position = new Vector3(Input.mousePosition.x, Input.mousePosition.y, -5f);
             carryingItem.SetActive(true);
             Vector3 newPos = carryingItem.transform.position;
             newPos.z = -5f;
             carryingItem.transform.position = newPos;
         }
-        if (!musicStarted) {
+
+        if (!musicStarted)
+        {
             _AudioManager.PlayClip(_AudioManager.BGM, _AudioManager.GetChannel("Music"), 1, true);
             musicStarted = true;
+        }
+
+        //Controls when the player can eat/drink
+        if(currentScreen == ScreenType.STCampfire)
+        {
+            canEat = true;
+        }
+        else
+        {
+            canEat = false;
         }
     }
 

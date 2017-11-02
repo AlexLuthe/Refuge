@@ -30,6 +30,7 @@ public class Travel : MonoBehaviour {
         if (backGround.transform.position.x > Screen.width + backGround.GetComponent<RectTransform>().rect.width / 4)
             backGround.transform.position = new Vector3(0 - backGround.GetComponent<RectTransform>().rect.width / 4, backGround.transform.position.y);
         }
+
         foreach (GameObject foreGround in foreGroundObjs) {
             foreGround.transform.Translate(new Vector3(1 * partySpeed, 0));
             if (foreGround.transform.position.x > Screen.width + foreGround.GetComponent<RectTransform>().rect.width / 4)
