@@ -10,7 +10,7 @@ public class Travel : MonoBehaviour {
     public GameObject[] foreGroundObjs;
     public GameObject[] characters;
     public float partySpeed = 1;
-    public float timer = 200;
+    public float timer = 5;
     public int screenToSwitch;
     public int hubToSwitch;
     GameManager_r GM;
@@ -40,7 +40,10 @@ public class Travel : MonoBehaviour {
         if (timer <= 0)
             if (camped) {
                 camped = false;
-                GM.SwitchToHub(hubToSwitch);
+                if (screenToSwitch == 1)
+                    GM.SwitchToHub(hubToSwitch);
+                else
+                    GM.ChangeScreen(screenToSwitch);
             }
             else {
                 camped = true;
@@ -57,6 +60,6 @@ public class Travel : MonoBehaviour {
                 characters[i].SetActive(false);
         }
         if (timer <= 0)
-            timer = 200;
+            timer = 5;
     }
 }

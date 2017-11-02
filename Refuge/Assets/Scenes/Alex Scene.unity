@@ -1806,7 +1806,7 @@ MonoBehaviour:
   - {fileID: 1006479519}
   - {fileID: 366779556}
   partySpeed: 1
-  timer: 200
+  timer: 5
   screenToSwitch: 0
   hubToSwitch: 0
 --- !u!222 &82189445

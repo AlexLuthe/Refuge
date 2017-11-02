@@ -59,6 +59,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
         Debug.Log("The user clicked");
         _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
         if (map) {
+            map.Travel(gameObject);
             if (changeScreen) {
                 screenTravel.GetComponent<Travel>().screenToSwitch = destinationScreen;
                 screenTravel.GetComponent<Travel>().hubToSwitch = hubArea;

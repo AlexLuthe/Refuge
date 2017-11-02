@@ -65,7 +65,7 @@ public class Map_r : MonoBehaviour
             {
                 if (Vector3.Distance(refugeeObj.transform.position, newLocation.transform.position) > 0.6f)
                 {
-                    refugeeObj.transform.position = Vector3.Lerp(refugeeObj.transform.position, newLocation.transform.position, Time.deltaTime * GM.partySpeed);
+                    //refugeeObj.transform.position = Vector3.Lerp(refugeeObj.transform.position, newLocation.transform.position, Time.deltaTime * GM.partySpeed);
 
                     //if (GM.inTutorial == false)
                     {
@@ -229,6 +229,7 @@ public class Map_r : MonoBehaviour
         confirmTravel = true;
         if (confirmTravelPanel)
             confirmTravelPanel.SetActive(false);
+        refugeeObj.transform.position = newLocation.transform.position;
     }
 
     public void NoTravel()
