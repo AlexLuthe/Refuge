@@ -10,7 +10,7 @@ public class Travel : MonoBehaviour {
     public GameObject[] foreGroundObjs;
     public GameObject[] characters;
     public float partySpeed = 1;
-    public float timer = 200;
+    public float timer = 5;
     public int screenToSwitch;
     public int hubToSwitch;
     GameManager_r GM;
@@ -19,7 +19,8 @@ public class Travel : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-
+        if (!GM)
+            Debug.Log("GM is gone");
 	}
 	
 	// Update is called once per frame
@@ -39,7 +40,10 @@ public class Travel : MonoBehaviour {
         if (timer <= 0)
             if (camped) {
                 camped = false;
-                GM.SwitchToHub(hubToSwitch);
+                if (screenToSwitch == 1)
+                    GM.SwitchToHub(hubToSwitch);
+                else
+                    GM.ChangeScreen(screenToSwitch);
             }
             else {
                 camped = true;
@@ -49,11 +53,13 @@ public class Travel : MonoBehaviour {
 	}
 
     private void OnEnable() {
+        if (!GM)
+            GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         for (int i = 0; i < GM.characters.Length; ++i) {
             if (GM.characters[i].GetComponent<Character_r>().isDead)
                 characters[i].SetActive(false);
         }
         if (timer <= 0)
-            timer = 200;
+            timer = 5;
     }
 }

@@ -35,10 +35,13 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
     public List<GameObject> possibleLocations = new List<GameObject>();
     public AudioManager _AudioManager;
     public int hubArea = 0;
+    public GameObject screenTravel;
 
     public bool travelReady = false;
 
     public void Start() {
+        if (!screenTravel)
+            screenTravel = GameObject.Find("ScreenTravel");
         if (!map && !mMap) {
         if (worldMap)
             map = GameObject.FindGameObjectWithTag("ScreenWorldMap").GetComponent<Map_r>();
@@ -56,12 +59,13 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
         Debug.Log("The user clicked");
         _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
         if (map) {
+            map.Travel(gameObject);
             if (changeScreen) {
-                GameObject.FindGameObjectWithTag("ScreenTravel").GetComponent<Travel>().screenToSwitch = destinationScreen;
-                GameObject.FindGameObjectWithTag("ScreenTravel").GetComponent<Travel>().hubToSwitch = hubArea;
+                screenTravel.GetComponent<Travel>().screenToSwitch = destinationScreen;
+                screenTravel.GetComponent<Travel>().hubToSwitch = hubArea;
             }
             else {
-                GameObject.FindGameObjectWithTag("ScreenTravel").GetComponent<Travel>().screenToSwitch = 0;
+                screenTravel.GetComponent<Travel>().screenToSwitch = 0;
             }
             GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(14);
         }
