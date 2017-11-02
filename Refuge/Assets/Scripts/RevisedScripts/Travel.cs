@@ -19,7 +19,8 @@ public class Travel : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-
+        if (!GM)
+            Debug.Log("GM is gone");
 	}
 	
 	// Update is called once per frame
@@ -49,6 +50,8 @@ public class Travel : MonoBehaviour {
 	}
 
     private void OnEnable() {
+        if (!GM)
+            GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         for (int i = 0; i < GM.characters.Length; ++i) {
             if (GM.characters[i].GetComponent<Character_r>().isDead)
                 characters[i].SetActive(false);

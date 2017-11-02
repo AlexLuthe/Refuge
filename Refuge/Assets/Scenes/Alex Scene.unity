@@ -5217,6 +5217,7 @@ MonoBehaviour:
   - {fileID: 1327113672}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &221305627
 MonoBehaviour:
@@ -6556,6 +6557,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &294066254
 MonoBehaviour:
@@ -11626,6 +11628,7 @@ MonoBehaviour:
   possibleLocations: []
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!222 &533439744
 CanvasRenderer:
@@ -12483,6 +12486,26 @@ Prefab:
       propertyPath: m_TagString
       value: ScreenCampfire
       objectReference: {fileID: 0}
+    - target: {fileID: 114608686751715258, guid: 1a09158d519fa3b47916698918bc5bcc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 856529016}
+    - target: {fileID: 114608686751715258, guid: 1a09158d519fa3b47916698918bc5bcc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608686751715258, guid: 1a09158d519fa3b47916698918bc5bcc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114608686751715258, guid: 1a09158d519fa3b47916698918bc5bcc,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a09158d519fa3b47916698918bc5bcc, type: 2}
   m_IsPrefabParent: 0
@@ -12731,6 +12754,7 @@ MonoBehaviour:
   possibleLocations: []
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 1
 --- !u!114 &563609812
 MonoBehaviour:
@@ -18116,6 +18140,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &820812983
 MonoBehaviour:
@@ -19354,6 +19379,7 @@ MonoBehaviour:
   _AudioManager: {fileID: 881573695}
   endGameCanvas: {fileID: 137179830}
   gameCanvas: {fileID: 1468065619}
+  canEat: 0
 --- !u!4 &856529017
 Transform:
   m_ObjectHideFlags: 0
@@ -23455,6 +23481,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1055492498
 MonoBehaviour:
@@ -23704,6 +23731,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1063412358
 MonoBehaviour:
@@ -25807,6 +25835,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1213594600
 MonoBehaviour:
@@ -26102,6 +26131,7 @@ MonoBehaviour:
   possibleLocations: []
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!222 &1218509220
 CanvasRenderer:
@@ -27075,6 +27105,7 @@ MonoBehaviour:
   - {fileID: 1366520309}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1274463962
 MonoBehaviour:
@@ -27928,6 +27959,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1295329565
 MonoBehaviour:
@@ -28496,6 +28528,7 @@ MonoBehaviour:
   - {fileID: 1887955320}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1309887235
 MonoBehaviour:
@@ -29286,6 +29319,7 @@ MonoBehaviour:
   - {fileID: 221305624}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1327113677
 MonoBehaviour:
@@ -29999,6 +30033,7 @@ MonoBehaviour:
   - {fileID: 1274463959}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1366520312
 MonoBehaviour:
@@ -30724,6 +30759,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1401203141
 MonoBehaviour:
@@ -31920,6 +31956,7 @@ MonoBehaviour:
   possibleLocations: []
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!222 &1450458477
 CanvasRenderer:
@@ -32230,6 +32267,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1456434355
 MonoBehaviour:
@@ -32586,6 +32624,7 @@ MonoBehaviour:
   - {fileID: 2136705761}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1468238483
 MonoBehaviour:
@@ -32761,6 +32800,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1482995736
 MonoBehaviour:
@@ -32957,6 +32997,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1485777072
 MonoBehaviour:
@@ -36369,6 +36410,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1637496858
 MonoBehaviour:
@@ -38240,6 +38282,7 @@ MonoBehaviour:
   - {fileID: 1955313183}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1712687851
 MonoBehaviour:
@@ -38561,6 +38604,7 @@ MonoBehaviour:
   - {fileID: 1309887232}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1728128918
 MonoBehaviour:
@@ -38946,6 +38990,7 @@ MonoBehaviour:
   - {fileID: 563609808}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 1
 --- !u!114 &1747741096
 MonoBehaviour:
@@ -39296,6 +39341,7 @@ MonoBehaviour:
   possibleLocations: []
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1767372279
 MonoBehaviour:
@@ -40713,6 +40759,7 @@ MonoBehaviour:
   - {fileID: 1712687848}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1887955323
 MonoBehaviour:
@@ -43507,6 +43554,7 @@ MonoBehaviour:
   possibleLocations: []
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &1955313186
 MonoBehaviour:
@@ -44639,6 +44687,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &2014372523
 MonoBehaviour:
@@ -48097,6 +48146,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &2122521870
 MonoBehaviour:
@@ -48709,6 +48759,7 @@ MonoBehaviour:
   - {fileID: 1468238480}
   _AudioManager: {fileID: 0}
   hubArea: 0
+  screenTravel: {fileID: 0}
   travelReady: 0
 --- !u!114 &2136705764
 MonoBehaviour:
