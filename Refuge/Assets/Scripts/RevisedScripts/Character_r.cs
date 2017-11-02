@@ -92,61 +92,68 @@ public class Character_r : MonoBehaviour
         }
     }
 
-    public void UseItem () {
+    public void UseItem()
+    {
+                                                                                                    //This sucks! Its going to do this every single time an item gets "used"
         GameManager_r GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-        Item_r item = GM.carryingItem.GetComponent<Item_r>();
-        AddHealth (item.healthMod);
-        AddThirst (item.thirstMod);
-        AddHunger (item.hungerMod);
-        Destroy(item.gameObject);
-        GameObject.Find("GameManager").GetComponent<GameManager_r>().carryingItem = null;
 
-        if (Random.Range(0f, 1f) < item.injuryChance)
+        //Consume item and maybe get sick
+        if (GM.canEat == true)
         {
-            injured = true;
-            GM.conditionReportText.text = charName + " has gotten injured! ";
-            StartCoroutine(GM.HasGottenHealthCondition());
-            injurySprite.SetActive(true);
-        }
+            Item_r item = GM.carryingItem.GetComponent<Item_r>();
+            AddHealth(item.healthMod);
+            AddThirst(item.thirstMod);
+            AddHunger(item.hungerMod);
+            Destroy(item.gameObject);
+            GameObject.Find("GameManager").GetComponent<GameManager_r>().carryingItem = null;
 
-        if (Random.Range(0f, 1f) < item.choleraChance)
-        {
-            cholera = true;
-            GM.conditionReportText.text = charName + " has gotten cholera! ";
-            StartCoroutine(GM.HasGottenHealthCondition());
-            choleraSprite.SetActive(true);
-        }
+            if (Random.Range(0f, 1f) < item.injuryChance)
+            {
+                injured = true;
+                GM.conditionReportText.text = charName + " has gotten injured! ";
+                StartCoroutine(GM.HasGottenHealthCondition());
+                injurySprite.SetActive(true);
+            }
 
-        if (Random.Range(0f, 1f) < item.dysenteryChance)
-        {
-            dysentery = true;
-            GM.conditionReportText.text = charName + " has gotten dysentery! ";
-            StartCoroutine(GM.HasGottenHealthCondition());
-            dysenterySprite.SetActive(true);
-        }
+            if (Random.Range(0f, 1f) < item.choleraChance)
+            {
+                cholera = true;
+                GM.conditionReportText.text = charName + " has gotten cholera! ";
+                StartCoroutine(GM.HasGottenHealthCondition());
+                choleraSprite.SetActive(true);
+            }
 
-        if (Random.Range(0f, 1f) < item.typhoidChance)
-        {
-            typhoid = true;
-            GM.conditionReportText.text = charName + " has gotten typhoid! ";
-            StartCoroutine(GM.HasGottenHealthCondition());
-            typhoidSprite.SetActive(true);
-        }
+            if (Random.Range(0f, 1f) < item.dysenteryChance)
+            {
+                dysentery = true;
+                GM.conditionReportText.text = charName + " has gotten dysentery! ";
+                StartCoroutine(GM.HasGottenHealthCondition());
+                dysenterySprite.SetActive(true);
+            }
+
+            if (Random.Range(0f, 1f) < item.typhoidChance)
+            {
+                typhoid = true;
+                GM.conditionReportText.text = charName + " has gotten typhoid! ";
+                StartCoroutine(GM.HasGottenHealthCondition());
+                typhoidSprite.SetActive(true);
+            }
 
             if (item.itemType == Item_r.ItemType.ITCureAll)
-        {
-            typhoid = false;
-            dysentery = false;
-            cholera = false;
-            injured = false;
-            injurySprite.SetActive(true);
-            choleraSprite.SetActive(true);
-            dysenterySprite.SetActive(true);
-            typhoidSprite.SetActive(true);
-        }
+            {
+                typhoid = false;
+                dysentery = false;
+                cholera = false;
+                injured = false;
+                injurySprite.SetActive(true);
+                choleraSprite.SetActive(true);
+                dysenterySprite.SetActive(true);
+                typhoidSprite.SetActive(true);
+            }
 
-        if (item.itemType == Item_r.ItemType.ITHeal)
-            AddHealth(1);
+            if (item.itemType == Item_r.ItemType.ITHeal)
+                AddHealth(1);
+        }
     }
 
     public void AddItem (GameObject item) {

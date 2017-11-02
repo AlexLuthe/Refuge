@@ -13,11 +13,10 @@ public class Travel : MonoBehaviour {
     public float timer = 200;
     public int hubToSwitch;
     GameManager_r GM;
-
+    
 	// Use this for initialization
 	void Start () {
         GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-
 	}
 	
 	// Update is called once per frame
