@@ -11,6 +11,7 @@ public class Travel : MonoBehaviour {
     public GameObject[] characters;
     public float partySpeed = 1;
     public float timer = 200;
+    public int screenToSwitch;
     public int hubToSwitch;
     GameManager_r GM;
     bool camped = false;
@@ -35,8 +36,10 @@ public class Travel : MonoBehaviour {
                 foreGround.transform.position = new Vector3(0 - foreGround.GetComponent<RectTransform>().rect.width / 4, foreGround.transform.position.y);
         }
         if (timer <= 0)
-            if (camped)
+            if (camped) {
+                camped = false;
                 GM.SwitchToHub(hubToSwitch);
+            }
             else {
                 camped = true;
                 GM.ChangeScreen(15);

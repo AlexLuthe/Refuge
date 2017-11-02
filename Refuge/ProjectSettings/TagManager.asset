@@ -20,6 +20,7 @@ TagManager:
   - AudioManager
   - ScreenScavenge
   - ScreenTravel
+  - ScreenCampfire
   layers:
   - Default
   - TransparentFX

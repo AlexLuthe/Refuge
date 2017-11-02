@@ -1807,6 +1807,7 @@ MonoBehaviour:
   - {fileID: 366779556}
   partySpeed: 1
   timer: 200
+  screenToSwitch: 0
   hubToSwitch: 0
 --- !u!222 &82189445
 CanvasRenderer:
@@ -11574,7 +11575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &533439742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12477,6 +12478,10 @@ Prefab:
     - target: {fileID: 1289413931717200, guid: 1a09158d519fa3b47916698918bc5bcc, type: 2}
       propertyPath: m_Name
       value: (15) Campfire UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289413931717200, guid: 1a09158d519fa3b47916698918bc5bcc, type: 2}
+      propertyPath: m_TagString
+      value: ScreenCampfire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a09158d519fa3b47916698918bc5bcc, type: 2}
@@ -16209,7 +16214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &731441878
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18305,7 +18310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &833452430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24371,7 +24376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1112848445
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25318,7 +25323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1171739352
 Transform:
   m_ObjectHideFlags: 0
@@ -25694,7 +25699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1204527779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26039,7 +26044,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1218509218
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27214,7 +27219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1283581999
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27230,7 +27235,7 @@ RectTransform:
   - {fileID: 1634811894}
   - {fileID: 833452430}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29670,7 +29675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1362070469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31864,7 +31869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1450458475
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32396,7 +32401,7 @@ RectTransform:
   - {fileID: 518497163}
   - {fileID: 1130838539}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -32497,8 +32502,8 @@ RectTransform:
   - {fileID: 731441878}
   - {fileID: 1450458475}
   - {fileID: 82189443}
-  - {fileID: 1700608245}
   - {fileID: 2120679295}
+  - {fileID: 1700608245}
   - {fileID: 1283581999}
   - {fileID: 1464743059}
   m_Father: {fileID: 0}
@@ -37614,7 +37619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1700608245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -37631,7 +37636,7 @@ RectTransform:
   - {fileID: 164332625}
   - {fileID: 1921232070}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

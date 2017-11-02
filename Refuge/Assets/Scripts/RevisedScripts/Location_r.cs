@@ -55,8 +55,16 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
     void IPointerClickHandler.OnPointerClick(PointerEventData eventData) {
         Debug.Log("The user clicked");
         _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
-        if (map)
-            map.Travel(gameObject);
+        if (map) {
+            if (changeScreen) {
+                GameObject.FindGameObjectWithTag("ScreenTravel").GetComponent<Travel>().screenToSwitch = destinationScreen;
+                GameObject.FindGameObjectWithTag("ScreenTravel").GetComponent<Travel>().hubToSwitch = hubArea;
+            }
+            else {
+                GameObject.FindGameObjectWithTag("ScreenTravel").GetComponent<Travel>().screenToSwitch = 0;
+            }
+            GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(14);
+        }
         if (mMap) {
             Debug.Log("Old Location: " + mMap.newLocation);
             mMap.newLocation = transform.position;
