@@ -21,6 +21,7 @@ public class GameManager_r : MonoBehaviour {
         STDebug = 12,
         STScavenge = 13,
         STTravel = 14,
+        STCampfire = 15
     };
 
     public GameObject charUI;
@@ -88,6 +89,7 @@ public class GameManager_r : MonoBehaviour {
         screens.Add(ScreenType.STDebug, GameObject.FindGameObjectWithTag("ScreenDebug"));
         screens.Add(ScreenType.STScavenge, GameObject.FindGameObjectWithTag("ScreenScavenge"));
         screens.Add(ScreenType.STTravel, GameObject.FindGameObjectWithTag("ScreenTravel"));
+        screens.Add(ScreenType.STCampfire, GameObject.FindGameObjectWithTag("ScreenCampfire"));
         currentHub = hubs[0];
 
         if (!screens[ScreenType.STEnMap3])
