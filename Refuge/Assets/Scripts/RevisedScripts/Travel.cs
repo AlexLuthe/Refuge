@@ -13,6 +13,7 @@ public class Travel : MonoBehaviour {
     public float timer = 200;
     public int hubToSwitch;
     GameManager_r GM;
+    bool camped = false;
 
 	// Use this for initialization
 	void Start () {
@@ -34,7 +35,12 @@ public class Travel : MonoBehaviour {
                 foreGround.transform.position = new Vector3(0 - foreGround.GetComponent<RectTransform>().rect.width / 4, foreGround.transform.position.y);
         }
         if (timer <= 0)
-            GM.SwitchToHub(hubToSwitch);
+            if (camped)
+                GM.SwitchToHub(hubToSwitch);
+            else {
+                camped = true;
+                GM.ChangeScreen(15);
+            }
         timer -= Time.deltaTime;
 	}
 
