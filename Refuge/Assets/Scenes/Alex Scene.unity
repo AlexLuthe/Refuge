@@ -29818,12 +29818,12 @@ MonoBehaviour:
   FungusBlockToExecute: 
   executeEncounterWithFungus: 0
   type: 0
-  inventoryUI: {fileID: 0}
+  inventoryUI: {fileID: 544447469}
   inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 481553272}
+  - {fileID: 397289519}
+  - {fileID: 538275316}
+  - {fileID: 1056997276}
   possibleItems:
   - {fileID: 1480268101118192, guid: c776065b612ffcb4196fa5c8c3fd5f59, type: 2}
   - {fileID: 1764215071121986, guid: ff02c66e47a27084a9182509cfc09346, type: 2}
@@ -32409,12 +32409,12 @@ MonoBehaviour:
   FungusBlockToExecute: 
   executeEncounterWithFungus: 0
   type: 0
-  inventoryUI: {fileID: 0}
+  inventoryUI: {fileID: 544447469}
   inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 481553272}
+  - {fileID: 397289519}
+  - {fileID: 538275316}
+  - {fileID: 1056997276}
   possibleItems:
   - {fileID: 1480268101118192, guid: c776065b612ffcb4196fa5c8c3fd5f59, type: 2}
   - {fileID: 1764215071121986, guid: ff02c66e47a27084a9182509cfc09346, type: 2}
@@ -42206,7 +42206,7 @@ Prefab:
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: variables.Array.size
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -42226,12 +42226,12 @@ Prefab:
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedBlocks.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedCommands.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4045095015970748, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
       propertyPath: m_LocalPosition.x
@@ -42269,7 +42269,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003540}
+      objectReference: {fileID: 2110003500}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -42279,7 +42279,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003544}
+      objectReference: {fileID: 2110003787}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -42659,6 +42659,11 @@ Prefab:
       propertyPath: zoom
       value: 0.865996
       objectReference: {fileID: 0}
+    - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: variables.Array.data[14]
+      value: 
+      objectReference: {fileID: 2110003549}
     m_RemovedComponents:
     - {fileID: 114620932178397460, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
     - {fileID: 114732260562620168, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
@@ -47024,6 +47029,7 @@ MonoBehaviour:
   description: Player chooses themself
   eventHandler: {fileID: 0}
   commandList:
+  - {fileID: 2110003787}
   - {fileID: 2110003524}
   - {fileID: 2110003521}
   - {fileID: 2110003539}
@@ -47468,7 +47474,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1250.7454
     y: 1289.9388
-    width: 188.56877
+    width: 159.75676
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -47479,7 +47485,7 @@ MonoBehaviour:
   commandList: []
 --- !u!114 &2110003523
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47566,7 +47572,7 @@ MonoBehaviour:
   - {fileID: 2110003535}
 --- !u!114 &2110003527
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47586,7 +47592,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003528
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47606,7 +47612,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003529
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47626,7 +47632,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003530
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47646,7 +47652,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003531
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47666,7 +47672,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003532
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47943,7 +47949,7 @@ MonoBehaviour:
   - {fileID: 2110003534}
 --- !u!114 &2110003544
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -47987,7 +47993,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003545
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -48023,12 +48029,53 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+--- !u!114 &2110003549
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb91b566ceda411bad1e9d3c3243ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 0
+  key: Money
+  value: 0
 --- !u!114 &2110003592 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114508696753403176, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+--- !u!114 &2110003787
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 719
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 856529015}
+  targetComponentAssemblyName: GameManager_r, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameManager_r
+  targetMethod: GetMoney
+  targetMethodText: 'GetMoney (): Int32'
+  methodParameters: []
+  saveReturnValue: 1
+  returnValueVariableKey: Money
+  returnValueType: System.Int32
+  showInherited: 0
+  callMode: 0
 --- !u!114 &2110004004
 MonoBehaviour:
   m_ObjectHideFlags: 2
