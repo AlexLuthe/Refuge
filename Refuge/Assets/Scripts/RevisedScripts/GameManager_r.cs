@@ -31,10 +31,12 @@ public class GameManager_r : MonoBehaviour {
     public GameObject moneyGUI;
     public Text conditionReportText;
     public float reportActiveTime = 1f;
+    public GameObject carryCharGUI, charCarried, charCarrier;
     public ScreenType currentScreen, prevScreen;
     Dictionary<ScreenType, GameObject> screens = new Dictionary<ScreenType, GameObject>();
     public List<GameObject> hubs = new List<GameObject>();
     GameObject currentHub;
+    public GameObject[] inventory;
 
     public int partyMoney;
     public float partySpeed = 1f;
@@ -222,4 +224,34 @@ public class GameManager_r : MonoBehaviour {
 
     public void AddMoney(int modifier) { partyMoney += modifier; if (moneyGUI) moneyGUI.GetComponent<Text>().text = "Money: " + partyMoney; }
     public int GetMoney() { return partyMoney; }
+
+    public void LeaveChar() {
+        charCarried.GetComponent<Character_r>().AddHealth(-1);
+    }
+
+    public void CarryChar() {
+        List<GameObject> availableSlots = new List<GameObject>();
+        for (int index = 0; index < inventory.Length; index += 2) {
+            for (int a = 0; a < 4; ++a) {
+                if (!inventory[index + a].GetComponent<InventorySlot_r>().item && inventory[index + a].activeSelf)
+                    availableSlots.Add(inventory[index + a]);
+            }
+            if (availableSlots.Count == 4)
+                break;
+            else
+                availableSlots.Clear();
+        }
+        foreach (GameObject slot in availableSlots)
+            slot.SetActive(false);
+
+
+        /* Loop through inventory
+                if (no block of available slots)
+                    sort item slots to left side of inventory
+                disable block of slots
+
+            Flag carrier and carried
+
+        */
+    }
 }

@@ -43,8 +43,13 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
         if (!screenTravel)
             screenTravel = GameObject.Find("ScreenTravel");
         if (!map && !mMap) {
-        if (worldMap)
+        if (worldMap) {
+            if (GameObject.FindGameObjectWithTag("ScreenWorldMap")) {
             map = GameObject.FindGameObjectWithTag("ScreenWorldMap").GetComponent<Map_r>();
+            if (!map)
+                 Debug.Log("World Map is not here...");
+            }
+        }
         else //if (transform.parent.GetComponent<Movable_Map>())
             mMap = transform.parent.GetComponent<Movable_Map>();
         if (!mMap && transform.parent.GetComponent<Map_r>())
@@ -115,8 +120,8 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
             }
             else
             {
-                GameObject.Find("GameManager").GetComponent<GameManager_r>().SwitchToHub(hubArea);
-                GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
+                //GameObject.Find("GameManager").GetComponent<GameManager_r>().SwitchToHub(hubArea);
+                //GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
                 GameObject.Find("GameManager").GetComponent<GameManager_r>().conditionReportText.text = "";
             }
         }

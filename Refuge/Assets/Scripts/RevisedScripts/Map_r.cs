@@ -209,6 +209,21 @@ public class Map_r : MonoBehaviour
                     StartCoroutine(GM.HasGottenHealthCondition());
                     chara.GetComponent<Character_r>().typhoidSprite.SetActive(true);
                 }
+                
+                // Carry Character
+                if (chara.GetComponent<Character_r>().GetHealth() < 0.5f) {
+                    List<GameObject> possibleCarriers = new List<GameObject>();
+                    foreach (GameObject c in GM.characters) {
+                        Character_r character = c.GetComponent<Character_r>();
+                        if (character.GetHealth() > 0.6f && !character.typhoid && !character.dysentery && !character.injured && !character.cholera && !character.parentOne && !character.parentTwo)
+                            possibleCarriers.Add(c);
+                    }
+                    GameObject carrier = possibleCarriers[Random.Range(0, possibleCarriers.Count)];
+                    GM.charCarried = chara;
+                    GM.charCarrier = carrier;
+                    GM.carryCharGUI.SetActive(true);
+                    GM.carryCharGUI.transform.GetComponentInChildren<Text>().text = string.Format("{0} has collapsed and likely won't survive another journey on foot. Fortunately, {1} has offered to carry them, however the party can only carry {2} items now. {0}'s health, hunger and thirst will deteriorate half as quickly, but {1}'s will double. Would you like to carry or abandon {0}", chara.GetComponent<Character_r>().name, carrier.GetComponent<Character_r>().name, "idk, like 10?");
+                }
             }
         }
         else
@@ -229,8 +244,8 @@ public class Map_r : MonoBehaviour
         confirmTravel = true;
         if (confirmTravelPanel)
             confirmTravelPanel.SetActive(false);
-        GM.ChangeScreen(14);
         refugeeObj.transform.position = newLocation.transform.position;
+        GM.ChangeScreen(14);
     }
 
     public void NoTravel()

@@ -11,6 +11,7 @@ public class Character_r : MonoBehaviour
     public bool injured, cholera, dysentery, typhoid;
     public bool isDead = false;
     public int trust = 50;
+    GameManager_r GM;
 
     public Sprite sprite;
     GameObject UISprite; // Button
@@ -62,7 +63,11 @@ public class Character_r : MonoBehaviour
     public GameObject parentTwo = null;
     public GameObject childOne = null;
     public GameObject childTwo = null;
-    
+
+    private void Start() {
+        GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
+    }
+
     void Update()
     {
         if(health <= 0)
@@ -94,9 +99,6 @@ public class Character_r : MonoBehaviour
 
     public void UseItem()
     {
-                                                                                                    //This sucks! Its going to do this every single time an item gets "used"
-        GameManager_r GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-
         //Consume item and maybe get sick
         if (GM.canEat == true)
         {
@@ -105,7 +107,7 @@ public class Character_r : MonoBehaviour
             AddThirst(item.thirstMod);
             AddHunger(item.hungerMod);
             Destroy(item.gameObject);
-            GameObject.Find("GameManager").GetComponent<GameManager_r>().carryingItem = null;
+            GM.carryingItem = null;
 
             if (Random.Range(0f, 1f) < item.injuryChance)
             {
@@ -167,7 +169,6 @@ public class Character_r : MonoBehaviour
 
     public void OnDeath()
     {
-        GameManager_r GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         GM.conditionReportText.text = charName + " Has Died!";
         StartCoroutine(GM.HasGottenHealthCondition());
         Debug.Log(charName + " has died");
@@ -182,7 +183,6 @@ public class Character_r : MonoBehaviour
 
     public void OnNoTrust()
     {
-        GameManager_r GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         GM.conditionReportText.text = charName + " Has Left!";
         StartCoroutine(GM.HasGottenHealthCondition());
         Debug.Log(charName + " has left");
