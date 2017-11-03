@@ -160,7 +160,7 @@ public class GameManager_r : MonoBehaviour {
 
         // UI Requirements
         if (charUI)
-        if (currentScreen == ScreenType.STHubMap || currentScreen == ScreenType.STWorldMap || currentScreen == ScreenType.STClinic || currentScreen == ScreenType.STMarket || currentScreen == ScreenType.STEnMap1 || currentScreen == ScreenType.STEnMap2 || currentScreen == ScreenType.STEnMap3)
+        if (currentScreen == ScreenType.STHubMap || currentScreen == ScreenType.STWorldMap || currentScreen == ScreenType.STClinic || currentScreen == ScreenType.STMarket || currentScreen == ScreenType.STEnMap1 || currentScreen == ScreenType.STEnMap2 || currentScreen == ScreenType.STEnMap3 || currentScreen == ScreenType.STCampfire)
             charUI.SetActive(true);
         else
             charUI.SetActive(false);
@@ -182,7 +182,7 @@ public class GameManager_r : MonoBehaviour {
 		mouseHoverTip.SetActive(false);
         // UI Requirements
         if (charUI)
-            if (currentScreen == ScreenType.STHubMap || currentScreen == ScreenType.STWorldMap || currentScreen == ScreenType.STClinic || currentScreen == ScreenType.STMarket || currentScreen == ScreenType.STEnMap1 || currentScreen == ScreenType.STEnMap2 || currentScreen == ScreenType.STEnMap3)
+            if (currentScreen == ScreenType.STHubMap || currentScreen == ScreenType.STWorldMap || currentScreen == ScreenType.STClinic || currentScreen == ScreenType.STMarket || currentScreen == ScreenType.STEnMap1 || currentScreen == ScreenType.STEnMap2 || currentScreen == ScreenType.STEnMap3 || currentScreen == ScreenType.STCampfire)
                 charUI.SetActive(true);
             else
                 charUI.SetActive(false);

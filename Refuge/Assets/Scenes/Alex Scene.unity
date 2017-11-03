@@ -11611,10 +11611,14 @@ MonoBehaviour:
   type: 2
   inventoryUI: {fileID: 2061244823}
   inventory:
+  - {fileID: 424169790}
+  - {fileID: 503317958}
+  - {fileID: 569726125}
+  - {fileID: 1435946028}
+  possibleItems:
   - {fileID: 1780604501738474, guid: e8371f509049a3f42aa55abbad0c6dc8, type: 2}
   - {fileID: 1465567080678274, guid: 7c2d26347288b154b891a1bacf877ee6, type: 2}
   - {fileID: 1972752203891548, guid: c2b3e522c1a67fd4a8629e91fb36a306, type: 2}
-  possibleItems: []
   locationNumber: 0
   distance: 0
   description: 
@@ -26116,8 +26120,12 @@ MonoBehaviour:
   type: 0
   inventoryUI: {fileID: 544447469}
   inventory:
+  - {fileID: 481553272}
+  - {fileID: 397289519}
+  - {fileID: 538275316}
+  - {fileID: 1056997276}
+  possibleItems:
   - {fileID: 1764215071121986, guid: ff02c66e47a27084a9182509cfc09346, type: 2}
-  possibleItems: []
   locationNumber: 0
   distance: 0
   description: 
@@ -47661,7 +47669,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 1250.7454
     y: 1289.9388
-    width: 144.18398
+    width: 188.56877
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
