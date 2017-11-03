@@ -67,7 +67,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
             else {
                 screenTravel.GetComponent<Travel>().screenToSwitch = 0;
             }
-            GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(14);
+            //GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(14);
         }
         if (mMap) {
             Debug.Log("Old Location: " + mMap.newLocation);

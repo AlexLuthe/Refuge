@@ -229,6 +229,7 @@ public class Map_r : MonoBehaviour
         confirmTravel = true;
         if (confirmTravelPanel)
             confirmTravelPanel.SetActive(false);
+        GM.ChangeScreen(14);
         refugeeObj.transform.position = newLocation.transform.position;
     }
 

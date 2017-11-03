@@ -10,7 +10,7 @@ public class Travel : MonoBehaviour {
     public GameObject[] foreGroundObjs;
     public GameObject[] characters;
     public float partySpeed = 1;
-    public float timer = 5;
+    public float timer = 3;
     public int screenToSwitch;
     public int hubToSwitch;
     GameManager_r GM;
@@ -60,6 +60,6 @@ public class Travel : MonoBehaviour {
                 characters[i].SetActive(false);
         }
         if (timer <= 0)
-            timer = 5;
+            timer = 3;
     }
 }
