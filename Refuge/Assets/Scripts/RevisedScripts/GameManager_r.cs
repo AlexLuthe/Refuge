@@ -254,4 +254,25 @@ public class GameManager_r : MonoBehaviour {
 
         */
     }
+
+    public string GetRandomCharName(bool excludeChildren = false, bool excludeInjured = false, bool excludeHealthy = false, bool excludeCarried = false, bool excludeDead = true) {
+        List<GameObject> charas = new List<GameObject>();
+        foreach (GameObject c in characters) {
+            bool available = true;
+            if (excludeChildren && (c.GetComponent<Character_r>().parentOne && c.GetComponent<Character_r>().parentTwo))
+                available = false;
+            if (excludeInjured && (c.GetComponent<Character_r>().injured || c.GetComponent<Character_r>().cholera || c.GetComponent<Character_r>().dysentery || c.GetComponent<Character_r>().typhoid))
+                available = false;
+            if (excludeHealthy && !c.GetComponent<Character_r>().injured && !c.GetComponent<Character_r>().cholera && !c.GetComponent<Character_r>().dysentery && !c.GetComponent<Character_r>().typhoid)
+                available = false;
+            if (excludeCarried && c.GetComponent<Character_r>().carried)
+                available = false;
+            if (excludeDead && c.GetComponent<Character_r>().isDead)
+                available = false;
+
+            if (available)
+                charas.Add(c);
+        }
+        return charas[Random.Range(0, charas.Count)].GetComponent<Character_r>().name;
+    }
 }

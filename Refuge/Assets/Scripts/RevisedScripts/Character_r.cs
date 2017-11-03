@@ -10,6 +10,7 @@ public class Character_r : MonoBehaviour
     public float health, hunger, thirst; // Normalized
     public bool injured, cholera, dysentery, typhoid;
     public bool isDead = false;
+    public bool carrying, carried;
     public int trust = 50;
     GameManager_r GM;
 
