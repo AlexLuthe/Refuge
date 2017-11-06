@@ -222,7 +222,11 @@ public class Map_r : MonoBehaviour
                     GM.charCarried = chara;
                     GM.charCarrier = carrier;
                     GM.carryCharGUI.SetActive(true);
-                    GM.carryCharGUI.transform.GetComponentInChildren<Text>().text = string.Format("{0} has collapsed and likely won't survive another journey on foot. Fortunately, {1} has offered to carry them, however the party can only carry {2} items now. {0}'s health, hunger and thirst will deteriorate half as quickly, but {1}'s will double. Would you like to carry or abandon {0}", chara.GetComponent<Character_r>().name, carrier.GetComponent<Character_r>().name, "idk, like 10?");
+                    int invSlots = -4;
+                    foreach (GameObject slot in GM.inventory)
+                        if (slot.activeSelf)
+                            ++invSlots;
+                    GM.carryCharGUI.transform.GetComponentInChildren<Text>().text = string.Format("{0} has collapsed and likely won't survive another journey on foot. Fortunately, {1} has offered to carry them, however the party can only carry {2} items now. {0}'s health, hunger and thirst will deteriorate half as quickly, but {1}'s will double. Would you like to carry or abandon {0}", chara.GetComponent<Character_r>().charName, carrier.GetComponent<Character_r>().charName, invSlots);
                 }
             }
         }

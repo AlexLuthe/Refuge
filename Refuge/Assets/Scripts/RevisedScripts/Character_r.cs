@@ -20,14 +20,44 @@ public class Character_r : MonoBehaviour
 
     public void AddHealth(float modifier) { health += modifier; health = Mathf.Clamp01(health); UIHealth.GetComponent<Slider>().value = health; }
     public float GetHealth() { return health; }
-    public void AddThirst(float modifier) { thirst += modifier; thirst = Mathf.Clamp01(thirst); UIThirst.GetComponent<Slider>().value = thirst; }
     public float GetThirst() { return thirst; }
     public void AddTrust(int modifier) { trust += modifier; UITrust.GetComponent<Slider>().value = trust; }
+
+    public void AddThirst(float modifier) {
+        thirst += modifier;
+        thirst = Mathf.Clamp01(thirst);
+        UIThirst.GetComponent<Slider>().value = thirst;
+
+        if (carried && modifier < 0) {
+            thirst += modifier;
+            thirst = Mathf.Clamp01(thirst);
+            UIThirst.GetComponent<Slider>().value = thirst;
+        }
+
+        if (carrying && modifier < 0) {
+            thirst -= modifier / 2;
+            thirst = Mathf.Clamp01(thirst);
+            UIThirst.GetComponent<Slider>().value = thirst;
+        }
+    }
+
 
 
     public void AddHunger(float modifier)
     {
         hunger += modifier; hunger = Mathf.Clamp01(hunger); UIHunger.GetComponent<Slider>().value = hunger;
+        if (carried && modifier < 0) {
+            hunger += modifier;
+            hunger = Mathf.Clamp01(hunger);
+            UIHunger.GetComponent<Slider>().value = hunger;
+        }
+        if (carrying && modifier < 0) {
+            hunger -= modifier / 2;
+            hunger = Mathf.Clamp01(hunger);
+            UIHunger.GetComponent<Slider>().value = hunger;
+        }
+
+
 
         if (childOne != null || childTwo != null)
         {

@@ -227,14 +227,15 @@ public class GameManager_r : MonoBehaviour {
 
     public void LeaveChar() {
         charCarried.GetComponent<Character_r>().AddHealth(-1);
+        carryCharGUI.SetActive(false);
     }
 
     public void CarryChar() {
         List<GameObject> availableSlots = new List<GameObject>();
-        for (int index = 0; index < inventory.Length; index += 2) {
+        for (int index = inventory.Length - 1; index >= 0; index -= 2) {
             for (int a = 0; a < 4; ++a) {
-                if (!inventory[index + a].GetComponent<InventorySlot_r>().item && inventory[index + a].activeSelf)
-                    availableSlots.Add(inventory[index + a]);
+                if (!inventory[index - a].GetComponent<InventorySlot_r>().item && inventory[index - a].activeSelf)
+                    availableSlots.Add(inventory[index - a]);
             }
             if (availableSlots.Count == 4)
                 break;
@@ -243,6 +244,11 @@ public class GameManager_r : MonoBehaviour {
         }
         foreach (GameObject slot in availableSlots)
             slot.SetActive(false);
+
+        carryCharGUI.SetActive(false);
+
+        charCarried.GetComponent<Character_r>().carried = true;
+        charCarrier.GetComponent<Character_r>().carrying = true;
 
 
         /* Loop through inventory
