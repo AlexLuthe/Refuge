@@ -107,6 +107,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
                 inventory[inventory.Length - 1].GetComponent<Image>().sprite = GameObject.Find("UIController").GetComponent<UIController_r>().emtpyInv;
             }
         }
+        GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
         }
 
         if(changeScreen)
