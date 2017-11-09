@@ -120,7 +120,7 @@ public class GameManager_r : MonoBehaviour {
             {
                 carryingItem.AddComponent<Image>();
                 carryingItem.GetComponent<Image>().sprite = carryingItem.GetComponent<Item_r>().itemSprite;
-                carryingItem.transform.SetParent(GameObject.Find("Canvas").transform);
+                carryingItem.transform.SetParent(GameObject.Find("GameCanvas").transform);
                 carryingItem.gameObject.transform.SetSiblingIndex(carryingItem.gameObject.transform.GetSiblingIndex());
                 carryingItem.GetComponent<Image>().raycastTarget = false;
             }
