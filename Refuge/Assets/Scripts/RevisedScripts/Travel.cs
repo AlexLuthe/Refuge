@@ -16,6 +16,11 @@ public class Travel : MonoBehaviour {
     GameManager_r GM;
     bool camped = false;
 
+    public Vector3 startingCoord;
+    public Vector3 endCoord;
+
+    public float completionPercent;
+    public float completionRate;
 	// Use this for initialization
 	void Start () {
         GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
@@ -25,12 +30,18 @@ public class Travel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        backGround.transform.Translate(new Vector3(0.15f * partySpeed, 0));
+        /*backGround.transform.Translate(new Vector3(0.15f * partySpeed, 0));
         foreach (GameObject backGround in backGroundObjs) {
         backGround.transform.Translate(new Vector3(0.5f * partySpeed, 0));
         if (backGround.transform.position.x > Screen.width + backGround.GetComponent<RectTransform>().rect.width / 4)
             backGround.transform.position = new Vector3(0 - backGround.GetComponent<RectTransform>().rect.width / 4, backGround.transform.position.y);
-        }
+        }*/
+
+        // Move the background according to the coordinates and speeds
+            // Setup %
+        completionPercent += completionRate / Time.deltaTime;
+        if(completionPercent < 1)
+            backGround.transform.position = new Vector3(Mathf.Lerp(startingCoord.x,endCoord.x, completionPercent), Mathf.Lerp(startingCoord.y,endCoord.y, completionPercent), 0);
 
         foreach (GameObject foreGround in foreGroundObjs) {
             foreGround.transform.Translate(new Vector3(1 * partySpeed, 0));
