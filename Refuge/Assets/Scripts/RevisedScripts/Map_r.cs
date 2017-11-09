@@ -174,6 +174,11 @@ public class Map_r : MonoBehaviour
         {
             foreach (GameObject chara in GM.characters)
             {
+
+                chara.GetComponent<Character_r>().AddHunger(-newLocation.GetComponent<Location_r>().distance * 0.25f);
+                chara.GetComponent<Character_r>().AddThirst(-newLocation.GetComponent<Location_r>().distance * 0.25f);
+                //Debug.Log("Location Distance: " + newLocation.GetComponent<Location_r>().distance);
+                //Debug.Log("Hunger: " + chara.GetComponent<Character_r>().GetHunger());
                 int rand = Random.Range(0, 100);
                 //Debug.Log(rand);
 
