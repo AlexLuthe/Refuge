@@ -65,8 +65,8 @@ MonoBehaviour:
   cureDiseases: 0
   price: 100
   spawnChance: 0.5
-  shopHoverTip: 
-  invHoverTip: 
+  shopHoverTip: Heal a portion of Health
+  invHoverTip: Heal a portion of Health
 --- !u!224 &224997294477368696
 RectTransform:
   m_ObjectHideFlags: 1
