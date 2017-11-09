@@ -11,7 +11,7 @@ public class Movable_Map : MonoBehaviour, IPointerClickHandler {
     public Location_r location;
     public AudioClip clip;
     public string channel;
-    bool arrived = false;
+    public bool arrived = false;
 
 	// Use this for initialization
 	void Start () {
@@ -28,6 +28,7 @@ public class Movable_Map : MonoBehaviour, IPointerClickHandler {
         Vector2 refTrans = refugeeObj.transform.position;
         refugeeObj.transform.position = Vector2.Lerp(refTrans, newLocation, Time.deltaTime * GM.partySpeed);
         Debug.DrawLine(refugeeObj.transform.position, newLocation, Color.red);
+        Debug.Log("New Location: " + newLocation + ", Old Location: " + refugeeObj.transform.position);
 		if (Vector2.Distance(refugeeObj.transform.position, newLocation) < 1 && location) {
             location.Scavenge();
                 arrived = true;
