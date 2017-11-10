@@ -147,7 +147,7 @@ public class Map_r : MonoBehaviour
                 //costOfTravelText.text += "Hunger - " + time * 0.0003f * (((newLocation.transform.position.x - refugeeObj.transform.position.x) + (newLocation.transform.position.y - refugeeObj.transform.position.y)) * Time.deltaTime * GM.partySpeed) * 1000 + "\n" +
                 //                         "Thirst - " + time * 0.0003f * (((newLocation.transform.position.x - refugeeObj.transform.position.x) + (newLocation.transform.position.y - refugeeObj.transform.position.y)) * Time.deltaTime * GM.partySpeed) * 1000 + "\n";
                                          /*"You will lose health if hunger or thirst are empty"*/
-                costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", location.GetComponent<Location_r>().distance, location.GetComponent<Location_r>().distance * 0.25f, location.GetComponent<Location_r>().distance * 0.25f);
+                costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", location.GetComponent<Location_r>().distance, location.GetComponent<Location_r>().distance * 25f, location.GetComponent<Location_r>().distance * 25f);
             }
             else
             {

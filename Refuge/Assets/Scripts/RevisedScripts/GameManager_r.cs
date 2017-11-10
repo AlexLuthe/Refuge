@@ -36,6 +36,7 @@ public class GameManager_r : MonoBehaviour {
     Dictionary<ScreenType, GameObject> screens = new Dictionary<ScreenType, GameObject>();
     public List<GameObject> hubs = new List<GameObject>();
     GameObject currentHub;
+    public int iCurrentHub = 0;
     public GameObject[] inventory;
 
     public int partyMoney;
@@ -202,6 +203,7 @@ public class GameManager_r : MonoBehaviour {
             hub.SetActive(false);
         }
         currentHub = hubs[HubIndex];
+        iCurrentHub = HubIndex;
         currentHub.SetActive(true);
     }
 

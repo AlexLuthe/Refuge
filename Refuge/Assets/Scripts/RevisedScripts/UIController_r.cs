@@ -55,8 +55,9 @@ public class UIController_r : MonoBehaviour {
     public void BackToMap() {
         if (_GameManager.currentScreen == GameManager_r.ScreenType.STHubMap)
             _GameManager.ChangeScreen(GameManager_r.ScreenType.STWorldMap);
-        else
-            _GameManager.ChangeScreen(_GameManager.prevScreen);
+        else {
+            _GameManager.SwitchToHub(_GameManager.iCurrentHub);
+        }
     }
 
     public void ChangeSFXVolume(float vol) {
