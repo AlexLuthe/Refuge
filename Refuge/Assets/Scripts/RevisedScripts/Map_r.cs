@@ -172,11 +172,27 @@ public class Map_r : MonoBehaviour
 
         if (GM)
         {
+
+            // Regenerate Market
+            GM.GetScreen(GameManager_r.ScreenType.STMarket).GetComponent<Location_r>().generated = false;
+            if (GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>())
+                GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>().generated = false;
+            else
+                Debug.Log("Clinic is goneskis");
+            foreach (Location_r market in FindObjectsOfType<Location_r>())
+                market.generated = false;
+            foreach (Clinic_r clinic in FindObjectsOfType<Clinic_r>())
+                clinic.generated = false;
+            
+
             foreach (GameObject chara in GM.characters)
             {
 
                 chara.GetComponent<Character_r>().AddHunger(-newLocation.GetComponent<Location_r>().distance * 0.25f);
                 chara.GetComponent<Character_r>().AddThirst(-newLocation.GetComponent<Location_r>().distance * 0.25f);
+                if (chara.GetComponent<Character_r>().GetHunger() <= 0 || chara.GetComponent<Character_r>().GetThirst() <= 0) {
+                    chara.GetComponent<Character_r>().AddHealth(-newLocation.GetComponent<Location_r>().distance * 0.2f);
+                }
                 //Debug.Log("Location Distance: " + newLocation.GetComponent<Location_r>().distance);
                 //Debug.Log("Hunger: " + chara.GetComponent<Character_r>().GetHunger());
                 int rand = Random.Range(0, 100);

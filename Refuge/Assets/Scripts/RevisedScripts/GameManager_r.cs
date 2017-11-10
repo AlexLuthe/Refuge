@@ -193,6 +193,14 @@ public class GameManager_r : MonoBehaviour {
             screens[ScreenType.STEncounter].SetActive(true);
     }
 
+    public GameObject GetScreen(int iScreen) {
+        return screens[(ScreenType)iScreen];
+    }
+
+    public GameObject GetScreen(ScreenType screen) {
+        return screens[screen];
+    }
+
     public void ChangeToPrevScreen() {
         ChangeScreen(prevScreen);
     }

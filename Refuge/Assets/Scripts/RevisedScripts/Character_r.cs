@@ -117,15 +117,15 @@ public class Character_r : MonoBehaviour
             trust = 100;
         }
 
-        if(hunger <= 0)
-        {
-            health -= 0.25f;
-        }
+        //if(hunger <= 0)
+        //{
+        //    health -= 0.25f;
+        //}
 
-        if(thirst <= 0)
-        {
-            health -= 0.25f;
-        }
+        //if(thirst <= 0)
+        //{
+        //    health -= 0.25f;
+        //}
     }
 
     public void UseItem()

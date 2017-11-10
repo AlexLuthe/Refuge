@@ -45011,7 +45011,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 1931879589}
+      objectReference: {fileID: 2110003648}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -45021,7 +45021,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 1931879590}
+      objectReference: {fileID: 2110004038}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -45947,18 +45947,6 @@ Prefab:
     - {fileID: 114581491477369720, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1931879589 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114462503081063134, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &1931879590 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114523455423538742, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
 --- !u!1 &1933307871
 GameObject:
   m_ObjectHideFlags: 0
@@ -52659,6 +52647,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+--- !u!114 &2110003648 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114706828047507078, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931879588}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &2110003789
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52902,8 +52896,8 @@ MonoBehaviour:
   targetMethodText: 'PlayClip (AudioClip, String, Single, Boolean): Void'
   methodParameters:
   - objValue:
-      typeAssemblyname: UnityEngine.AudioClip, UnityEngine.AudioModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
+      typeAssemblyname: UnityEngine.AudioClip, UnityEngine, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
       typeFullname: UnityEngine.AudioClip
       intValue: 0
       boolValue: 0
@@ -52993,21 +52987,21 @@ MonoBehaviour:
     PublicKeyToken=null
   targetComponentFullname: UnityEngine.Component[]
   targetComponentText: AudioManager
-  targetMethod: StopClip
-  targetMethodText: 'StopClip (AudioClip): Void'
+  targetMethod: StopChannel
+  targetMethodText: 'StopChannel (String): Void'
   methodParameters:
   - objValue:
-      typeAssemblyname: UnityEngine.AudioClip, UnityEngine, Version=0.0.0.0, Culture=neutral,
-        PublicKeyToken=null
-      typeFullname: UnityEngine.AudioClip
+      typeAssemblyname: System.String, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.String
       intValue: 0
       boolValue: 0
       floatValue: 0
-      stringValue: 
+      stringValue: Music
       colorValue: {r: 0, g: 0, b: 0, a: 0}
       gameObjectValue: {fileID: 0}
       materialValue: {fileID: 0}
-      objectValue: {fileID: 8300000, guid: 0e983fcd4db3cc94fb451217e3dedc68, type: 3}
+      objectValue: {fileID: 0}
       spriteValue: {fileID: 0}
       textureValue: {fileID: 0}
       vector2Value: {x: 0, y: 0}
