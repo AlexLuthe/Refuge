@@ -95,6 +95,8 @@ public class GameManager_r : MonoBehaviour {
         screens.Add(ScreenType.STScavenge, GameObject.FindGameObjectWithTag("ScreenScavenge"));
         screens.Add(ScreenType.STTravel, GameObject.FindGameObjectWithTag("ScreenTravel"));
         screens.Add(ScreenType.STCampfire, GameObject.FindGameObjectWithTag("ScreenCampfire"));
+        foreach (GameObject hub in hubs)
+            hub.SetActive(false);
         currentHub = hubs[0];
 
         if (!screens[ScreenType.STEnMap3])
@@ -103,6 +105,7 @@ public class GameManager_r : MonoBehaviour {
         for (int index = 0; index < screens.Count; ++index) 
             if (screens[(ScreenType)index])
                 screens[(ScreenType)index].SetActive(false);
+        SwitchToHub(0);
         ChangeScreen(ScreenType.STPause);
         foreach (GameObject chara in characters) {
             chara.GetComponent<Character_r>().AddHealth(1);

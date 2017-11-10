@@ -120,7 +120,7 @@ public class Map_r : MonoBehaviour
                     }
                     logged = false;
                     refugeeObj.transform.position = Vector3.MoveTowards(refugeeObj.transform.position, new Vector3(newLocation.transform.position.x + movementXOffset, newLocation.transform.position.y + movementYOffset, -5), 1.0f);
-                    newLocation.GetComponent<Location_r>().Scavenge();
+                    // newLocation.GetComponent<Location_r>().Scavenge();
                     confirmTravel = false;
                     costOfTravelText.text = "";
                 }
@@ -177,14 +177,11 @@ public class Map_r : MonoBehaviour
             GM.GetScreen(GameManager_r.ScreenType.STMarket).GetComponent<Location_r>().generated = false;
             if (GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>())
                 GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>().generated = false;
-            else
-                Debug.Log("Clinic is goneskis");
             foreach (Location_r market in FindObjectsOfType<Location_r>())
                 market.generated = false;
             foreach (Clinic_r clinic in FindObjectsOfType<Clinic_r>())
                 clinic.generated = false;
             
-
             foreach (GameObject chara in GM.characters)
             {
 

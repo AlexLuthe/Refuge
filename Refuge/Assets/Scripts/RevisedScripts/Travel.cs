@@ -48,11 +48,14 @@ public class Travel : MonoBehaviour {
             if (foreGround.transform.position.x > Screen.width + foreGround.GetComponent<RectTransform>().rect.width / 4)
                 foreGround.transform.position = new Vector3(0 - foreGround.GetComponent<RectTransform>().rect.width / 4, foreGround.transform.position.y);
         }
-        if (timer <= 0)
+        if (timer <= 0) {
+            //Debug.Log(screenToSwitch); // 0
             if (camped) {
                 camped = false;
-                if (screenToSwitch == 1)
-                    GM.SwitchToHub(hubToSwitch);
+                if (screenToSwitch == 1) {
+                    //Debug.Log("Switching to hub because screenToSwitch == " + screenToSwitch);
+                    GM.SwitchToHub(hubToSwitch); // This line is exectuted...
+                }
                 else
                     GM.ChangeScreen(screenToSwitch);
             }
@@ -60,6 +63,7 @@ public class Travel : MonoBehaviour {
                 camped = true;
                 GM.ChangeScreen(15);
             }
+        }
         timer -= Time.deltaTime;
 	}
 

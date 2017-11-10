@@ -70,6 +70,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
                 screenTravel.GetComponent<Travel>().hubToSwitch = hubArea;
             }
             else {
+                //Debug.Log("Not switching the bloody screen");
                 screenTravel.GetComponent<Travel>().screenToSwitch = 0;
             }
             //GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(14);
@@ -78,6 +79,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
             Debug.Log("Old Location: " + mMap.newLocation);
             mMap.newLocation = transform.position;
             mMap.location = this;
+            mMap.arrived = false;
             Debug.Log("New Location: " + mMap.newLocation);
         }
 
