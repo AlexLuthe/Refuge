@@ -57,13 +57,11 @@ public class Character_r : MonoBehaviour
             UIHunger.GetComponent<Slider>().value = hunger;
         }
 
-
-
         if (childOne != null || childTwo != null)
         {
             if (hunger >= 0.75)
             {
-                AddTrust(-5);
+                AddTrust(5);
             }
         }
 
@@ -116,16 +114,6 @@ public class Character_r : MonoBehaviour
         {
             trust = 100;
         }
-
-        //if(hunger <= 0)
-        //{
-        //    health -= 0.25f;
-        //}
-
-        //if(thirst <= 0)
-        //{
-        //    health -= 0.25f;
-        //}
     }
 
     public void UseItem()

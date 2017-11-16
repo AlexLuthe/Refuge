@@ -38,7 +38,7 @@ public class Map_r : MonoBehaviour
     List<float> thirst = new List<float>();
 
     /// <summary>
-    /// Confirm what? What is this for? - Jordon
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Confirm what? What is this for? - Jordon
     /// </summary>
     public bool confirm;
 
@@ -147,7 +147,7 @@ public class Map_r : MonoBehaviour
                 //costOfTravelText.text += "Hunger - " + time * 0.0003f * (((newLocation.transform.position.x - refugeeObj.transform.position.x) + (newLocation.transform.position.y - refugeeObj.transform.position.y)) * Time.deltaTime * GM.partySpeed) * 1000 + "\n" +
                 //                         "Thirst - " + time * 0.0003f * (((newLocation.transform.position.x - refugeeObj.transform.position.x) + (newLocation.transform.position.y - refugeeObj.transform.position.y)) * Time.deltaTime * GM.partySpeed) * 1000 + "\n";
                                          /*"You will lose health if hunger or thirst are empty"*/
-                costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", location.GetComponent<Location_r>().distance, location.GetComponent<Location_r>().distance * 25f, location.GetComponent<Location_r>().distance * 25f);
+                costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", location.GetComponent<Location_r>().distance, location.GetComponent<Location_r>().distance * 10f, location.GetComponent<Location_r>().distance * 10f);
             }
             else
             {
@@ -184,9 +184,8 @@ public class Map_r : MonoBehaviour
             
             foreach (GameObject chara in GM.characters)
             {
-
-                chara.GetComponent<Character_r>().AddHunger(-newLocation.GetComponent<Location_r>().distance * 0.25f);
-                chara.GetComponent<Character_r>().AddThirst(-newLocation.GetComponent<Location_r>().distance * 0.25f);
+                chara.GetComponent<Character_r>().AddHunger(-newLocation.GetComponent<Location_r>().distance * 0.1f);
+                chara.GetComponent<Character_r>().AddThirst(-newLocation.GetComponent<Location_r>().distance * 0.1f);
                 if (chara.GetComponent<Character_r>().GetHunger() <= 0 || chara.GetComponent<Character_r>().GetThirst() <= 0) {
                     chara.GetComponent<Character_r>().AddHealth(-newLocation.GetComponent<Location_r>().distance * 0.2f);
                 }
