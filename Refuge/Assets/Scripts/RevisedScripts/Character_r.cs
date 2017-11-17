@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class Character_r : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class Character_r : MonoBehaviour
 
     public void AddTrust(float modifier) {
         trust += modifier; UITrust.GetComponent<Slider>().value = trust;
-        if (modifier > 0.3f)
+        if (modifier > 0.3f && GM)
             foreach (GameObject chara in GM.characters)
                 chara.GetComponent<Character_r>().AddTrust(modifier * 0.25f);
             
@@ -82,7 +83,7 @@ public class Character_r : MonoBehaviour
             }
         }
 
-        AddTrust(10);
+        AddTrust(0.1f);
     }
 
     public float GetHunger() { return hunger; }
@@ -205,6 +206,7 @@ public class Character_r : MonoBehaviour
             GM.gameCanvas.SetActive(false);
             GM.endGameCanvas.SetActive(true);
         }
+        GameObject.Find("LevelScripting").GetComponent<Flowchart>().SetStringVariable("DeadName", charName);
     }
 
     public void OnNoTrust()
