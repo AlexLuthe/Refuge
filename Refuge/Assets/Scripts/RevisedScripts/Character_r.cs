@@ -9,9 +9,9 @@ public class Character_r : MonoBehaviour
     public GameObject[] inventory;
     public float health, hunger, thirst; // Normalized
     public bool injured, cholera, dysentery, typhoid;
+    public float trust = 0.5f;
     public bool isDead = false;
     public bool carrying, carried;
-    public int trust = 50;
     GameManager_r GM;
 
     public Sprite sprite;
@@ -21,7 +21,7 @@ public class Character_r : MonoBehaviour
     public void AddHealth(float modifier) { health += modifier; health = Mathf.Clamp01(health); UIHealth.GetComponent<Slider>().value = health; }
     public float GetHealth() { return health; }
     public float GetThirst() { return thirst; }
-    public void AddTrust(int modifier) { trust += modifier; UITrust.GetComponent<Slider>().value = trust; }
+    public void AddTrust(float modifier) { trust += modifier; UITrust.GetComponent<Slider>().value = trust; }
 
     public void AddThirst(float modifier) {
         thirst += modifier;
@@ -110,9 +110,9 @@ public class Character_r : MonoBehaviour
             OnNoTrust();
         }
 
-        if(trust >= 100)
+        if(trust >= 1)
         {
-            trust = 100;
+            trust = 1;
         }
     }
 
