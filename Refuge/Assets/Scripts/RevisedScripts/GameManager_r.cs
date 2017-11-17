@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager_r : MonoBehaviour {
     
@@ -150,6 +151,11 @@ public class GameManager_r : MonoBehaviour {
         else
         {
             canEat = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.BackQuote))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
