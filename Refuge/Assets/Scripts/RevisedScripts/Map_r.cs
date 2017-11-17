@@ -37,10 +37,6 @@ public class Map_r : MonoBehaviour
     List<float> hunger = new List<float>();
     List<float> thirst = new List<float>();
 
-    /// <summary>
-    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// Confirm what? What is this for? - Jordon
-    /// </summary>
-    public bool confirm;
 
     // Use this for initialization
     void Start() {

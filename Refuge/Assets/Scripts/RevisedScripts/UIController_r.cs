@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class UIController_r : MonoBehaviour {
 
@@ -25,6 +26,10 @@ public class UIController_r : MonoBehaviour {
             _GameManager.carryingItem = Instantiate(_GameManager.carryingItem);
             _GameManager.carryingItem.transform.SetParent(GameObject.Find("GameCanvas").transform, false);
             _GameManager.carryingItem.transform.SetAsLastSibling();
+            if (_GameManager.carryingItem.GetComponent<Item_r>().encounterOnTake) {
+                _GameManager.ChangeScreen(GameManager_r.ScreenType.STEncounter);
+                GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(_GameManager.carryingItem.GetComponent<Item_r>().encounterToExecute);
+            }
         }
         else if (!slot.GetComponent<InventorySlot_r>().item && _GameManager.carryingItem) {
             if (_GameManager.carryingItem.GetComponent<Image>()) {
@@ -33,6 +38,9 @@ public class UIController_r : MonoBehaviour {
                 //Destroy(_GameManager.carryingItem.gameObject);
             }
             slot.GetComponent<InventorySlot_r>().item = _GameManager.carryingItem;
+            slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().character = slot.transform.parent.gameObject;
+            slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().slot = slot;
+            slot.transform.parent.GetComponent<Character_r>().AddTrust(slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().trustGiveMod);
             bool anotherSlot = true;
             List<GameObject> maps = new List<GameObject>();
             maps.AddRange(GameObject.FindGameObjectsWithTag("ScreenWorldMap"));
@@ -49,6 +57,10 @@ public class UIController_r : MonoBehaviour {
 
             slot.GetComponent<Image>().sprite = slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().itemSprite;
             _GameManager.carryingItem = null;
+            if (slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().encounterOnGive) {
+                _GameManager.ChangeScreen(GameManager_r.ScreenType.STEncounter);
+                GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().encounterToExecute);
+            }
         }
     }
 

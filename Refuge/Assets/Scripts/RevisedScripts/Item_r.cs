@@ -27,10 +27,16 @@ public class Item_r : MonoBehaviour {
     public ItemType itemType;
     public Sprite itemSprite;
     public float healthMod, hungerMod, thirstMod;
+    public float trustGiveMod, trustDropMod;
     public float injuryChance, choleraChance, dysenteryChance, typhoidChance;
     public bool cureDiseases;
+    public bool encounterOnGive, encounterOnTake, encounterOnDrop;
+    public string encounterToExecute;
     public int price;
     public float spawnChance;
     public string shopHoverTip;
     public string invHoverTip;
+
+    public GameObject character;
+    public GameObject slot;
 }

@@ -107,10 +107,10 @@ public class AudioManager : MonoBehaviour {
         CreateChannel("SFX");
         CreateChannel("SFX2");
         CreateChannel("SFX3");
-        CreateChannel("Music1");
+        CreateChannel("Music");
         CreateChannel("Music2");
         CreateChannel("Music3");
-        CreateChannel("Ambient1");
+        CreateChannel("Ambient");
         CreateChannel("Ambient2");
         CreateChannel("Ambient3");
     }
