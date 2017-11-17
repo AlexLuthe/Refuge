@@ -105,7 +105,13 @@ public class AudioManager : MonoBehaviour {
 	void Start () {
         DontDestroyOnLoad(gameObject);
         CreateChannel("SFX");
-        CreateChannel("Music");
-        CreateChannel("Ambient");
-	}
+        CreateChannel("SFX2");
+        CreateChannel("SFX3");
+        CreateChannel("Music1");
+        CreateChannel("Music2");
+        CreateChannel("Music3");
+        CreateChannel("Ambient1");
+        CreateChannel("Ambient2");
+        CreateChannel("Ambient3");
+    }
 }
