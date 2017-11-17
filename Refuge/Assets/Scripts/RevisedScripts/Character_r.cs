@@ -21,7 +21,14 @@ public class Character_r : MonoBehaviour
     public void AddHealth(float modifier) { health += modifier; health = Mathf.Clamp01(health); UIHealth.GetComponent<Slider>().value = health; }
     public float GetHealth() { return health; }
     public float GetThirst() { return thirst; }
-    public void AddTrust(float modifier) { trust += modifier; UITrust.GetComponent<Slider>().value = trust; }
+
+    public void AddTrust(float modifier) {
+        trust += modifier; UITrust.GetComponent<Slider>().value = trust;
+        if (modifier > 0.3f)
+            foreach (GameObject chara in GM.characters)
+                chara.GetComponent<Character_r>().AddTrust(modifier * 0.25f);
+            
+    }
 
     public void AddThirst(float modifier) {
         thirst += modifier;
@@ -61,17 +68,17 @@ public class Character_r : MonoBehaviour
         {
             if (hunger >= 0.75)
             {
-                AddTrust(5);
+                AddTrust(0.05f);
             }
         }
 
         if (parentOne != null)
         {
-            parentOne.GetComponent<Character_r>().AddTrust(15);
+            parentOne.GetComponent<Character_r>().AddTrust(0.15f);
 
             if (parentTwo != null)
             {
-                parentTwo.GetComponent<Character_r>().AddTrust(15);
+                parentTwo.GetComponent<Character_r>().AddTrust(0.15f);
             }
         }
 
