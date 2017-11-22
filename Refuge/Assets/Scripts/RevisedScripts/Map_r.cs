@@ -128,12 +128,13 @@ public class Map_r : MonoBehaviour
     {
         //if (newLocation != location && location.GetComponent<Location_r>().locationNumber == currentLocationNumber + 1)
 
-        if (newLocation != location && newLocation.GetComponent<Location_r>().possibleLocations.Contains(location))
+        if ((newLocation != location && newLocation.GetComponent<Location_r>().possibleLocations.Contains(location)) || location == newLocation.GetComponent<Location_r>().previousLocation)
         {
             //if (location.GetComponent<Location_r>().locationNumber == currentLocationNumber - 1 || location.GetComponent<Location_r>().locationNumber == currentLocationNumber + 1)
             //{
             time = (int)Vector3.Distance(refugeeObj.transform.position, location.transform.position) / 5;
 
+            previousLocation = newLocation;
             newLocation = location;
 
             if (confirmTravelPanel)
@@ -144,7 +145,11 @@ public class Map_r : MonoBehaviour
                 //costOfTravelText.text += "Hunger - " + time * 0.0003f * (((newLocation.transform.position.x - refugeeObj.transform.position.x) + (newLocation.transform.position.y - refugeeObj.transform.position.y)) * Time.deltaTime * GM.partySpeed) * 1000 + "\n" +
                 //                         "Thirst - " + time * 0.0003f * (((newLocation.transform.position.x - refugeeObj.transform.position.x) + (newLocation.transform.position.y - refugeeObj.transform.position.y)) * Time.deltaTime * GM.partySpeed) * 1000 + "\n";
                                          /*"You will lose health if hunger or thirst are empty"*/
-                costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", location.GetComponent<Location_r>().distance, location.GetComponent<Location_r>().distance * 10f, location.GetComponent<Location_r>().distance * 10f);
+                if (location == previousLocation.GetComponent<Location_r>().previousLocation)
+                    costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", /*previousLocation.GetComponent<Location_r>().*/previousLocation.GetComponent<Location_r>().distance, /*previousLocation.GetComponent<Location_r>().*/previousLocation.GetComponent<Location_r>().distance * 10f, /*previousLocation.GetComponent<Location_r>().*/previousLocation.GetComponent<Location_r>().distance * 10f);
+                else
+                    costOfTravelText.text = string.Format("This journey will take {0} days to travel\nThis will deplete {1}% of your total hunger, and {2}% of your total thirst", location.GetComponent<Location_r>().distance, location.GetComponent<Location_r>().distance * 10f, location.GetComponent<Location_r>().distance * 10f);
+
             }
             else
             {

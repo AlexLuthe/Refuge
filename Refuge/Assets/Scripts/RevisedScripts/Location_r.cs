@@ -33,6 +33,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
     bool worldMap = true;
     public bool generated = false;
     public List<GameObject> possibleLocations = new List<GameObject>();
+    public GameObject previousLocation;
     public AudioManager _AudioManager;
     public int hubArea = 0;
     public GameObject screenTravel;
