@@ -45648,7 +45648,7 @@ Prefab:
     - target: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114836584698763968, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -45668,7 +45668,7 @@ Prefab:
     - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.size
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -45716,7 +45716,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003624}
+      objectReference: {fileID: 2110003626}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -45726,7 +45726,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003625}
+      objectReference: {fileID: 0}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -45910,7 +45910,7 @@ Prefab:
     - target: {fileID: 114836584698763968, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
-      value: 1008.9023
+      value: 1010.057
       objectReference: {fileID: 0}
     - target: {fileID: 114992763476364184, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -46005,7 +46005,7 @@ Prefab:
     - target: {fileID: 114706828047507078, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 768.1202
+      value: 764.656
       objectReference: {fileID: 0}
     - target: {fileID: 1674815164364518, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
       propertyPath: m_IsActive
@@ -46253,7 +46253,7 @@ Prefab:
     - target: {fileID: 114706828047507078, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
-      value: 153.08426
+      value: 150.77478
       objectReference: {fileID: 0}
     - target: {fileID: 114706828047507078, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -46269,7 +46269,7 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003615}
+      objectReference: {fileID: 2110003631}
     - target: {fileID: 114345446056057896, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.data[1]
@@ -46284,12 +46284,12 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003533}
+      objectReference: {fileID: 2110003630}
     - target: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 2110003616}
+      objectReference: {fileID: 2110003618}
     - target: {fileID: 114836584698763968, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.data[1]
@@ -46345,29 +46345,35 @@ Prefab:
         I make eye contact with another man, his face pale and ghostly.\n\nMan: This
         place... We can't live here anymore.\n\nWoman: Just like everywhere else...
         The army is everywhere.\n\nMyself: We hear some distant yelling, and a car
-        starting. They\u2019re coming. \n\nMyself: The man hugging his daughter and
-        wife looks at me\n\nMan: What do we do?\n\nWoman: We have to get out of here.\n\nMan:
-        But where?\n \nWoman: We need to go back to mule."
+        starting. They\u2019re coming. \n\nMan: Quick, let's hide!\n\nMyself: We run
+        to a nearby Alley to stay out of sight, leaving the bodies behind.\n\nMyself:
+        The man hugging his daughter and wife looks at me\n\nMan: What do we do?\n\nWoman:
+        We have to get out of here.\n\nMan: But where?\n \nWoman: We need to go back
+        to mule. It's quieter and there. Sayid, what do you think? We can take the
+        bus.\n\nMe: \"I know the way, but we can't take the bus. They already know
+        what it looks like, they'll see us from a mile away!\"\n\nMe: \"We have to
+        go on foot\"\n\nMyself: They look down to think.\n\nWoman: Okay, anything
+        is safer than here.\n\nMan: We're with you.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114499932211986340, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 791.96484
+      value: 793.11957
       objectReference: {fileID: 0}
     - target: {fileID: 114345446056057896, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
-      value: 633.7419
+      value: 700.71686
       objectReference: {fileID: 0}
     - target: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 809.04095
+      value: 723.59015
       objectReference: {fileID: 0}
     - target: {fileID: 114945652793570380, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: text
-      value: 
+      value: We've been out of the city for a few days, we didn't know about a curfew!
       objectReference: {fileID: 0}
     - target: {fileID: 114567221894885746, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -46393,7 +46399,7 @@ Prefab:
     - target: {fileID: 114345446056057896, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 744.728
+      value: 772.4419
       objectReference: {fileID: 0}
     - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -46409,16 +46415,111 @@ Prefab:
         type: 2}
       propertyPath: commandList.Array.data[1]
       value: 
-      objectReference: {fileID: 2110003626}
+      objectReference: {fileID: 2110003632}
     - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.data[3]
       value: 
-      objectReference: {fileID: 2110003625}
+      objectReference: {fileID: 2110003624}
     - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
       value: 844.26776
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345446056057896, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: blockName
+      value: 9-1-0-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 618.16077
+      objectReference: {fileID: 0}
+    - target: {fileID: 114584649893843052, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: conversationText.stringVal
+      value: 'Myself: The boy continues to raise his gun. He slowly turns to face
+        the soldier
+
+
+        Myself: The soldier sees; he scuffles for his pistol.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: blockName
+      value: 9-1-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114450580399596584, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: targetBlock
+      value: 
+      objectReference: {fileID: 2110003849}
+    - target: {fileID: 114383570164981612, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 475.61365
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383570164981612, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 770.9121
+      objectReference: {fileID: 0}
+    - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: commandList.Array.data[4]
+      value: 
+      objectReference: {fileID: 2110003616}
+    - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: commandList.Array.data[5]
+      value: 
+      objectReference: {fileID: 2110003615}
+    - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: commandList.Array.data[6]
+      value: 
+      objectReference: {fileID: 2110003533}
+    - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: commandList.Array.data[7]
+      value: 
+      objectReference: {fileID: 2110003625}
+    - target: {fileID: 114836584698763968, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 777.7839
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298628929664306, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: storyText
+      value: I've heard that excuse before. We don't make exceptions for people that
+        "don't know"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114514948046484556, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: storyText
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114499932211986340, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 311.88608
+      objectReference: {fileID: 0}
+    - target: {fileID: 114804759088428718, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.x
+      value: 311.30087
+      objectReference: {fileID: 0}
+    - target: {fileID: 114804759088428718, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: nodeRect.y
+      value: 748.0331
+      objectReference: {fileID: 0}
+    - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: commandList.Array.data[8]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114620932178397460, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
@@ -46750,6 +46851,8 @@ Prefab:
     - {fileID: 114983489774653008, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
     - {fileID: 114612893524359406, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
     - {fileID: 114581491477369720, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
+    - {fileID: 114626667819627796, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
+    - {fileID: 114584649893843052, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1933307871
@@ -51348,17 +51451,33 @@ MonoBehaviour:
   setMenuDialog: {fileID: 0}
 --- !u!114 &2110003504
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 793
+  itemId: 813
   indentLevel: 0
+  targetObjects:
+  - {fileID: 1350280549}
+  tweenType: 2
+  waitUntilFinished:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  fadeMode: 0
+  targetColor:
+    colorRef: {fileID: 0}
+    colorVal: {r: 1, g: 1, b: 1, a: 1}
+  targetAlpha:
+    floatRef: {fileID: 0}
+    floatVal: 0
 --- !u!114 &2110003505
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -51939,14 +52058,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 2110003488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 791
+  itemId: 811
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: b33c39aa2f93d4b36afc35717f080cc9, type: 3}
-  volume: 1
-  waitUntilFinished: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: "Me: \"So, we head to Mule, get some supplies, and find out where to
+      go from there?\n\nWoman: That's the plan.\n\nWoman: By the way, I'm Zada.\n\nMan:
+      I'm Firas, this is my wife Rasha and my daughter Maya.\n\nMyself: We exchange
+      a forced smile.\n\nMyself: The other man looks up to me\n\nMan: I'm Sami. \n\nMyself:
+      we hear footsteps and murmerings from where the bodies lay\n\nMe: \"Time to
+      go!\"\n\nMyself: We run down the alley and out of the city. I take one last
+      look at the bodies. \n\nMyself: I hope that no other lives have to be lost just
+      to live in peace."
 --- !u!114 &2110003534
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -52374,7 +52500,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scope: 0
-  key: NoddedHeadAtBoy
+  key: NoddedToBoy
   value: 0
 --- !u!114 &2110003556 stripped
 MonoBehaviour:
@@ -53584,18 +53710,44 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &2110003615 stripped
+--- !u!114 &2110003615
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114626667819627796, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
---- !u!114 &2110003616 stripped
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 810
+  indentLevel: 0
+--- !u!114 &2110003616
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114584649893843052, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 809
+  indentLevel: 1
+  storyText: But that doesn't mean we trust you.
+  description: 
+  character: {fileID: 404128267}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  setSayDialog: {fileID: 0}
 --- !u!114 &2110003617 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114737126927107174, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -53845,35 +53997,45 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
---- !u!114 &2110003624 stripped
+--- !u!114 &2110003624
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 808
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 2110003555}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &2110003625 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114326820597321002, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
---- !u!114 &2110003626
+--- !u!114 &2110003626 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2110003488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 805
-  indentLevel: 0
-  _duration:
-    floatRef: {fileID: 0}
-    floatVal: 1
-  durationOLD: 0
+  m_PrefabParentObject: {fileID: 114836584698763968, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931879588}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &2110003627 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114754345356280046, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -53882,7 +54044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
 --- !u!114 &2110003628
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -53996,6 +54158,70 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   setMenuDialog: {fileID: 0}
+--- !u!114 &2110003630
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 807
+  indentLevel: 0
+  variable: {fileID: 2110003555}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003631
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 806
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Myself: The boy continues to raise his gun. He slowly turns to face
+      the soldier
+
+
+      Myself: The soldier sees; he scuffles for his pistol.'
+--- !u!114 &2110003632
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3315ad2ebb85443909a1203d56d9344e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 805
+  indentLevel: 0
+  _duration:
+    floatRef: {fileID: 0}
+    floatVal: 1
+  durationOLD: 0
 --- !u!114 &2110003645 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -54106,6 +54332,12 @@ MonoBehaviour:
     booleanRef: {fileID: 0}
     booleanVal: 1
   targetGameObjectOLD: {fileID: 0}
+--- !u!114 &2110003849 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114345446056057896, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931879588}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &2110004004
 MonoBehaviour:
   m_ObjectHideFlags: 2
