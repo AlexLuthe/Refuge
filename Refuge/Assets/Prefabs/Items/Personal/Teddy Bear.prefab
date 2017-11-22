@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 222051347798697364}
   - component: {fileID: 114777490944249230}
   m_Layer: 5
-  m_Name: Special Item
+  m_Name: Teddy Bear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,15 +45,23 @@ MonoBehaviour:
   healthMod: 0
   hungerMod: 0
   thirstMod: 0
+  trustGiveMod: 0
+  trustDropMod: 0
   injuryChance: 0
   choleraChance: 0
   dysenteryChance: 0
   typhoidChance: 0
   cureDiseases: 0
+  encounterOnGive: 0
+  encounterOnTake: 0
+  encounterOnDrop: 0
+  encounterToExecute: 
   price: 0
   spawnChance: 0
   shopHoverTip: 0
-  invHoverTip: Replenish a small portion of hunger
+  invHoverTip: Maya's teddy bear
+  character: {fileID: 0}
+  slot: {fileID: 0}
 --- !u!114 &114777490944249230
 MonoBehaviour:
   m_ObjectHideFlags: 1
