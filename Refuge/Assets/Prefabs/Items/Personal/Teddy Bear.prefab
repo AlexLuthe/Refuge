@@ -41,7 +41,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 6
-  itemSprite: {fileID: 21300000, guid: e638844b4da824cc1accf92f5579d3f9, type: 3}
+  itemSprite: {fileID: 21300000, guid: 2be88ea7e4a7ac5498920826900f1b49, type: 3}
   healthMod: 0
   hungerMod: 0
   thirstMod: 0
@@ -81,8 +81,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9bdedfa4650174106a3115624f193b99, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2be88ea7e4a7ac5498920826900f1b49, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
