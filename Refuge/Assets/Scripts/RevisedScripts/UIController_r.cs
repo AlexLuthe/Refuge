@@ -26,6 +26,8 @@ public class UIController_r : MonoBehaviour {
             _GameManager.carryingItem = Instantiate(_GameManager.carryingItem);
             _GameManager.carryingItem.transform.SetParent(GameObject.Find("GameCanvas").transform, false);
             _GameManager.carryingItem.transform.SetAsLastSibling();
+            _GameManager.carryingItem.GetComponent<Item_r>().slot = slot;
+            _GameManager.carryingItem.GetComponent<Item_r>().character = slot.transform.parent.gameObject;
             if (_GameManager.carryingItem.GetComponent<Item_r>().encounterOnTake) {
                 _GameManager.ChangeScreen(GameManager_r.ScreenType.STEncounter);
                 GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(_GameManager.carryingItem.GetComponent<Item_r>().encounterToExecute);
