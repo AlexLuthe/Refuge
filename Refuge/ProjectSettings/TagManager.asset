@@ -21,6 +21,7 @@ TagManager:
   - ScreenScavenge
   - ScreenTravel
   - ScreenCampfire
+  - Map
   layers:
   - Default
   - TransparentFX
