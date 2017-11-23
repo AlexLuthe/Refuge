@@ -165,6 +165,7 @@ public class GameManager_r : MonoBehaviour {
         if(transitioningScreen == true) // jacob wrote this
         {
             //set up a wait timer for the transition to occur...
+            // if the current time is less than the current Waiting time for the transition
             if(Time.timeSinceLevelLoad <= currentWaitTime)
             {
                 currentWaitTime = Time.timeSinceLevelLoad + TransitionEffect.instance.currentTransitonTime;
@@ -175,6 +176,7 @@ public class GameManager_r : MonoBehaviour {
             {
                 ChangeScreen(newScreenInt);
                 transitioningScreen = false;
+                Debug.Log("Finished transition, returning values to normal");
             }
         }
     }
@@ -206,12 +208,20 @@ public class GameManager_r : MonoBehaviour {
     {
         if (transitioningScreen == false)
         {
+            // preserve the destination Screen's int value
             newScreenInt = iNewScreen;
+            Debug.Log("New screen is " + iNewScreen);
+
+            // start the bool for the function to work in Update()
             transitioningScreen = true;
+
+            // end the function here
+            Debug.Log("got the screen int, starting to transition screen @: " + Time.timeSinceLevelLoad);
             return;
         }
         else if(transitioningScreen == true)
         {
+            Debug.Log("Final Screen change after Transition @: " + Time.timeSinceLevelLoad);
 
             if (_AudioManager && _AudioManager.GetChannel("SFX") != null && _AudioManager.clickSound)
                 _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
