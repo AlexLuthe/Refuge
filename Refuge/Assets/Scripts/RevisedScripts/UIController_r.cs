@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -48,11 +49,20 @@ public class UIController_r : MonoBehaviour {
             List<GameObject> maps = new List<GameObject>();
             maps.AddRange(GameObject.FindGameObjectsWithTag("ScreenWorldMap"));
             maps.AddRange(GameObject.FindGameObjectsWithTag("ScreenHubMap"));
+            maps.AddRange(GameObject.FindGameObjectsWithTag("Map"));
             foreach (GameObject obj in maps)
-                foreach (GameObject loc in obj.GetComponent<Map_r>().locations)
-                    foreach (GameObject invSlot in loc.GetComponent<Location_r>().inventory)
-                        if (invSlot == slot)
-                            anotherSlot = false;
+                if (obj.GetComponent<Map_r>()) {
+                    foreach (GameObject loc in obj.GetComponent<Map_r>().locations)
+                        foreach (GameObject invSlot in loc.GetComponent<Location_r>().inventory)
+                            if (invSlot == slot)
+                                anotherSlot = false;
+                }
+                else if (obj.GetComponent<Movable_Map>())
+                     foreach (GameObject loc in obj.GetComponent<Movable_Map>().locations)
+                        foreach (GameObject invSlot in loc.GetComponent<Location_r>().inventory)
+                            if (invSlot == slot)
+                                anotherSlot = false;
+
             if (anotherSlot) {
                 _GameManager.AddMoney(-slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().price);
                 slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().price = 0;
