@@ -50670,7 +50670,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003698}
+      objectReference: {fileID: 1931879589}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -50680,7 +50680,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003743}
+      objectReference: {fileID: 1931879590}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -51263,12 +51263,11 @@ Prefab:
         type: 2}
       propertyPath: conversationText.stringVal
       value: "Soldier: I'll be impounding your vehicle, and all of you will come with
-        me, \n\nMyself: One-by-one, he takes our belongings. \r\n\r\nMyself: At his
-        car, he lists our descriptions on a walkie-talkie.\r\n\nMyself: We kneel in
-        silence. \n\nMyself: The young man next to me slowly lowers one of his hands
-        from his neck. The soldier hasn't noticed\r\n\nMyself: He reaches under his
-        shirt, and from his waist he pulls out a gun. \r\n\nMyself: The boy looks
-        at me."
+        me.\n\nMyself: One-by-one, he takes our belongings. \r\n\nMyself: At his car,
+        he lists our descriptions on a walkie-talkie.\r\n\nMyself: We kneel in silence.
+        \n\nMyself: The young man next to me slowly lowers one of his hands from his
+        neck. The soldier hasn't noticed\r.\n\nMyself: He reaches under his shirt,
+        and from his waist he pulls out a gun. \r\n\nMyself: The boy looks at me."
       objectReference: {fileID: 0}
     - target: {fileID: 114565225789815266, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -51293,22 +51292,23 @@ Prefab:
     - target: {fileID: 114754345356280046, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: conversationText.stringVal
-      value: "Myself: They shoot. \n\nMyself: My ears ring. That gunshot must have
-        been heard for kilometers.\n\nMyself: I look around.  \n\nMyself: The soldier
-        is dead. \n\nMyself: So is the boy. \n\nMyself: Things fall silent.\n\nMyself:
-        I look around, A man holds his daugher tightly, covering her eyes.\n\nMyself:
-        I make eye contact with another man, his face pale and ghostly.\n\nMan: This
-        place... We can't live here anymore.\n\nWoman: Just like everywhere else...
-        The army is everywhere.\n\nMyself: We hear some distant yelling, and a car
-        starting. They\u2019re coming. \n\nMan: Quick, let's hide!\n\nMyself: We run
-        to a nearby Alley to stay out of sight, leaving the bodies behind.\n\nMyself:
-        The man hugging his daughter and wife looks at me\n\nMan: What do we do?\n\nWoman:
-        We have to get out of here.\n\nMan: But where?\n \nWoman: We need to go back
-        to mule. It's quieter and there. Sayid, what do you think? We can take the
-        bus.\n\nMe: \"I know the way, but we can't take the bus. They already know
-        what it looks like, they'll see us from a mile away!\"\n\nMe: \"We have to
-        go on foot\"\n\nMyself: They look down to think.\n\nWoman: Okay, anything
-        is safer than here.\n\nMan: We're with you.\n"
+      value: "Myself: They shoot. \r\n\n\nMyself: My ears ring. That gunshot must
+        have been heard for kilometers.\n\n\r\nMyself: I look around.  \n\n\r\nMyself:
+        The soldier is dead. \r\n\n\nMyself: So is the boy. \n\nMyself: Things fall
+        silent.\r\n\n\nMyself: I look around, A man holds his daugher tightly, covering
+        her eyes.\n\n\r\nMyself: I make eye contact with another man, his face pale
+        and ghostly.\r\n\n\nMan: This place... We can't live here anymore.\n\n\r\nWoman:
+        Just like everywhere else... The army is all over.\n\n\r\nMyself: We hear
+        some distant yelling, and a car starting. They\u2019re coming. \r\n\n\nMan:
+        Quick, let's hide!\r\n\n\nMyself: We run to a nearby Alley to stay out of
+        sight, leaving the bodies behind.\r\n\n\nMyself: The man hugging his daughter
+        and wife looks at me\n\n\r\nMan: What do we do?\r\n\n\nWoman: We have to get
+        out of here.\n\nMan: But where?\n \r\n\nWoman: We need to go back to mule.
+        It's quieter there. Sayid, what do you think? We can take the bus.\n\n\r\nMe:
+        \"I know the way, but we can't take the bus. They already know what it looks
+        like, they'll see us from a mile away!\"\n\n\r\nMe: \"We have to go on foot\"\r\n\n\nMyself:
+        They look down to think.\n\n\r\nWoman: Okay, anything is safer than here.\r\n\n\nMan:
+        We're with you.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114499932211986340, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -52145,6 +52145,18 @@ Prefab:
     - {fileID: 114584649893843052, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1931879589 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931879588}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &1931879590 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114621216409388564, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931879588}
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
 --- !u!1 &1933307871
 GameObject:
   m_ObjectHideFlags: 0
@@ -61957,12 +61969,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &2110003698 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114383570164981612, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &2110003704 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114784431170603916, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -61987,12 +61993,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &2110003743 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114667753282906272, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
 --- !u!114 &2110003789
 MonoBehaviour:
   m_ObjectHideFlags: 2
