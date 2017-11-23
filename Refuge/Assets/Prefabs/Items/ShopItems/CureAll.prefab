@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 114212373050433266}
   - component: {fileID: 114901615250374844}
   m_Layer: 5
-  m_Name: CureAll
+  m_Name: CureAllUnused
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,8 +42,8 @@ MonoBehaviour:
   itemType: 14
   itemSprite: {fileID: 21300000, guid: c7eb02363752e4bfa82979007d9fba37, type: 3}
   healthMod: 1
-  hungerMod: 0
-  thirstMod: 0
+  hungerMod: 1
+  thirstMod: 0.5
   trustGiveMod: 0
   trustDropMod: 0
   injuryChance: 0
@@ -55,10 +55,10 @@ MonoBehaviour:
   encounterOnTake: 0
   encounterOnDrop: 0
   encounterToExecute: 
-  price: 200
-  spawnChance: 0.5
-  shopHoverTip: $200 First Aid
-  invHoverTip: First Aid
+  price: 100
+  spawnChance: 0
+  shopHoverTip: 'Price: $100,  Adds health'
+  invHoverTip: Adds health
   character: {fileID: 0}
   slot: {fileID: 0}
 --- !u!114 &114901615250374844
@@ -72,9 +72,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4df50e8ac7888b48a105fc99de7e6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverTip: 'Price: $200'
-  xOffset: 150
-  yOffset: -100
+  hoverTip: 'Cost: $100, Adds health'
+  xOffset: 10
+  yOffset: -10
 --- !u!224 &224043708891096474
 RectTransform:
   m_ObjectHideFlags: 1

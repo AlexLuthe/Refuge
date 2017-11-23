@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverTip: 'Cost: $100, Adds health'
-  xOffset: 150
-  yOffset: -100
+  xOffset: 10
+  yOffset: -10
 --- !u!114 &114618053266762584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -53,20 +53,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53feca23baeb864f95437816c0c095b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 15
+  itemType: 14
   itemSprite: {fileID: 21300000, guid: c7eb02363752e4bfa82979007d9fba37, type: 3}
   healthMod: 1
   hungerMod: 1
   thirstMod: 0.5
+  trustGiveMod: 0
+  trustDropMod: 0
   injuryChance: 0
   choleraChance: 0
   dysenteryChance: 0
   typhoidChance: 0
-  cureDiseases: 0
+  cureDiseases: 1
+  encounterOnGive: 0
+  encounterOnTake: 0
+  encounterOnDrop: 0
+  encounterToExecute: 
   price: 100
-  spawnChance: 0.5
-  shopHoverTip: Heal a portion of Health
-  invHoverTip: Heal a portion of Health
+  spawnChance: 1
+  shopHoverTip: 'Price: $100,  Adds health'
+  invHoverTip: Adds health
+  character: {fileID: 0}
+  slot: {fileID: 0}
 --- !u!224 &224997294477368696
 RectTransform:
   m_ObjectHideFlags: 1
