@@ -168,17 +168,18 @@ public class Character_r : MonoBehaviour
                 typhoidSprite.SetActive(true);
             }
 
-            if (item.itemType == Item_r.ItemType.ITCureAll)
-            {
-                typhoid = false;
-                dysentery = false;
-                cholera = false;
-                injured = false;
-                injurySprite.SetActive(true);
-                choleraSprite.SetActive(true);
-                dysenterySprite.SetActive(true);
-                typhoidSprite.SetActive(true);
-            }
+                                                                        ///Deactivated cause diseases arent a thing
+            //if (item.itemType == Item_r.ItemType.ITCureAll)
+            //{
+            //    typhoid = false;
+            //    dysentery = false;
+            //    cholera = false;
+            //    injured = false;
+            //    injurySprite.SetActive(true);
+            //    choleraSprite.SetActive(true);
+            //    dysenterySprite.SetActive(true);
+            //    typhoidSprite.SetActive(true);
+            //}
 
             if (item.itemType == Item_r.ItemType.ITHeal)
                 AddHealth(1);

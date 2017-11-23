@@ -44,15 +44,23 @@ MonoBehaviour:
   healthMod: 1
   hungerMod: 0
   thirstMod: 0
+  trustGiveMod: 0
+  trustDropMod: 0
   injuryChance: 0
   choleraChance: 0
   dysenteryChance: 0
   typhoidChance: 0
   cureDiseases: 1
+  encounterOnGive: 0
+  encounterOnTake: 0
+  encounterOnDrop: 0
+  encounterToExecute: 
   price: 200
   spawnChance: 0.5
-  shopHoverTip: 
-  invHoverTip: 
+  shopHoverTip: $200 First Aid
+  invHoverTip: First Aid
+  character: {fileID: 0}
+  slot: {fileID: 0}
 --- !u!114 &114901615250374844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -64,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4df50e8ac7888b48a105fc99de7e6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverTip: 
+  hoverTip: 'Price: $200'
   xOffset: 150
   yOffset: -100
 --- !u!224 &224043708891096474
