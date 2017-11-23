@@ -83,7 +83,6 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
             mMap.arrived = false;
             Debug.Log("New Location: " + mMap.newLocation);
         }
-
     }
 
     public virtual void GenerateInventory() {

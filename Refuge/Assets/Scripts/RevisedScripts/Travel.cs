@@ -15,6 +15,8 @@ public class Travel : MonoBehaviour {
     public int hubToSwitch;
     GameManager_r GM;
     bool camped = false;
+    public GameObject market;
+    public GameObject clinic;
 
     public Vector3 startingCoord;
     public Vector3 endCoord;
@@ -52,6 +54,8 @@ public class Travel : MonoBehaviour {
             //Debug.Log(screenToSwitch); // 0
             if (camped) {
                 camped = false;
+                backGround.transform.position = startingCoord;
+                completionPercent = 0;
                 if (screenToSwitch == 1) {
                     //Debug.Log("Switching to hub because screenToSwitch == " + screenToSwitch);
                     GM.SwitchToHub(hubToSwitch); // This line is exectuted...

@@ -32,13 +32,14 @@ public class HoverTip_r : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         //else
             GM.mouseHoverTip.GetComponentInChildren<Text>().color = Color.white;
 
-        if (GetComponent<InventorySlot_r>() && GetComponent<InventorySlot_r>().item)
+        if (GetComponent<InventorySlot_r>() && GetComponent<InventorySlot_r>().item) {
             if (GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().price == 0)
                 hoverTip = GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().invHoverTip;
             else
                 hoverTip = GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().shopHoverTip;
         GM.mouseHoverTip.SetActive(true);
         GM.mouseHoverTip.GetComponentInChildren<Text>().text = hoverTip;
+        }
     }
 
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData) {
