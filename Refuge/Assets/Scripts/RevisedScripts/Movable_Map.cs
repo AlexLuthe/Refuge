@@ -12,6 +12,7 @@ public class Movable_Map : MonoBehaviour, IPointerClickHandler {
     public AudioClip clip;
     public string channel;
     public bool arrived = false;
+    public GameObject[] locations;
 
 	// Use this for initialization
 	void Start () {
