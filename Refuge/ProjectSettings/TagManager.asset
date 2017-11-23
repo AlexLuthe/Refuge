@@ -22,6 +22,7 @@ TagManager:
   - ScreenTravel
   - ScreenCampfire
   - Map
+  - ItemConfirmationObjects
   layers:
   - Default
   - TransparentFX
