@@ -54,6 +54,10 @@ public class GameManager_r : MonoBehaviour {
     //Player can only eat when this is true
     public bool canEat = false;
 
+    public bool transitioningScreen = false;
+    public float currentWaitTime = int.MaxValue;
+    public int newScreenInt;
+
     // Singleton
     private static GameManager_r _Instance;
     public static GameManager_r Instance {
@@ -157,9 +161,26 @@ public class GameManager_r : MonoBehaviour {
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
+
+        if(transitioningScreen == true) // jacob wrote this
+        {
+            //set up a wait timer for the transition to occur...
+            if(Time.timeSinceLevelLoad <= currentWaitTime)
+            {
+                currentWaitTime = Time.timeSinceLevelLoad + TransitionEffect.instance.currentTransitonTime;
+                Debug.Log(currentWaitTime);
+                TransitionEffect.instance.StartTransition();
+            }
+            if(Time.timeSinceLevelLoad >= currentWaitTime)
+            {
+                ChangeScreen(newScreenInt);
+                transitioningScreen = false;
+            }
+        }
     }
 
     public void ChangeScreen(ScreenType newScreen) {
+
         //if (_AudioManager)
            // _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
         Destroy(carryingItem);
@@ -181,25 +202,36 @@ public class GameManager_r : MonoBehaviour {
 
     }
 
-    public void ChangeScreen(int iNewScreen) {
-        if (_AudioManager && _AudioManager.GetChannel("SFX") != null && _AudioManager.clickSound)
-            _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
-        Destroy(carryingItem);
+    public void ChangeScreen(int iNewScreen)
+    {
+        if (transitioningScreen == false)
+        {
+            newScreenInt = iNewScreen;
+            transitioningScreen = true;
+            return;
+        }
+        else if(transitioningScreen == true)
+        {
 
-        ScreenType newScreen = (ScreenType)iNewScreen;
-        prevScreen = currentScreen;
-        screens[currentScreen].SetActive(false);
-        screens[newScreen].SetActive(true);
-        currentScreen = newScreen;
-		mouseHoverTip.SetActive(false);
-        // UI Requirements
-        if (charUI)
-            if (currentScreen == ScreenType.STHubMap || currentScreen == ScreenType.STWorldMap || currentScreen == ScreenType.STClinic || currentScreen == ScreenType.STMarket || currentScreen == ScreenType.STEnMap1 || currentScreen == ScreenType.STEnMap2 || currentScreen == ScreenType.STEnMap3 || currentScreen == ScreenType.STCampfire)
-                charUI.SetActive(true);
-            else
-                charUI.SetActive(false);
-        if (iNewScreen == 9 || iNewScreen == 10 || iNewScreen == 11)
-            screens[ScreenType.STEncounter].SetActive(true);
+            if (_AudioManager && _AudioManager.GetChannel("SFX") != null && _AudioManager.clickSound)
+                _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
+            Destroy(carryingItem);
+
+            ScreenType newScreen = (ScreenType)iNewScreen;
+            prevScreen = currentScreen;
+            screens[currentScreen].SetActive(false);
+            screens[newScreen].SetActive(true);
+            currentScreen = newScreen;
+            mouseHoverTip.SetActive(false);
+            // UI Requirements
+            if (charUI)
+                if (currentScreen == ScreenType.STHubMap || currentScreen == ScreenType.STWorldMap || currentScreen == ScreenType.STClinic || currentScreen == ScreenType.STMarket || currentScreen == ScreenType.STEnMap1 || currentScreen == ScreenType.STEnMap2 || currentScreen == ScreenType.STEnMap3 || currentScreen == ScreenType.STCampfire)
+                    charUI.SetActive(true);
+                else
+                    charUI.SetActive(false);
+            if (iNewScreen == 9 || iNewScreen == 10 || iNewScreen == 11)
+                screens[ScreenType.STEncounter].SetActive(true);
+        }
     }
 
     public GameObject GetScreen(int iScreen) {
