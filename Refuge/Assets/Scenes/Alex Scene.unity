@@ -20607,7 +20607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &833452430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34063,7 +34063,7 @@ Prefab:
     - target: {fileID: 114597538141332798, guid: d613f9245475f62489871bf87ede5e93,
         type: 2}
       propertyPath: m_Text
-      value: WEEK 8 BUILD
+      value: WEEK 10 BUILD
       objectReference: {fileID: 0}
     - target: {fileID: 1995643482331982, guid: d613f9245475f62489871bf87ede5e93, type: 2}
       propertyPath: m_IsActive
