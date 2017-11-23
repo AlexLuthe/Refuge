@@ -31694,10 +31694,10 @@ MonoBehaviour:
   type: 2
   inventoryUI: {fileID: 2061244823}
   inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 199750082}
+  - {fileID: 1996890846}
+  - {fileID: 76971666}
+  - {fileID: 766372546}
   possibleItems:
   - {fileID: 1780604501738474, guid: e8371f509049a3f42aa55abbad0c6dc8, type: 2}
   - {fileID: 1972752203891548, guid: c2b3e522c1a67fd4a8629e91fb36a306, type: 2}
@@ -35301,10 +35301,10 @@ MonoBehaviour:
   type: 0
   inventoryUI: {fileID: 544447469}
   inventory:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 853693949}
+  - {fileID: 1778930609}
+  - {fileID: 452548193}
+  - {fileID: 31986361}
   possibleItems:
   - {fileID: 1480268101118192, guid: c776065b612ffcb4196fa5c8c3fd5f59, type: 2}
   - {fileID: 1764215071121986, guid: ff02c66e47a27084a9182509cfc09346, type: 2}
