@@ -23,7 +23,7 @@ public class AudioChannel {
                 Debug.Log("Shits fucked yo");
             if (s.clip == clip) {
                 sources.Remove(s);
-                Object.Destroy(s);
+                Object.Destroy(s.gameObject);
                 return;
             }
         }
@@ -31,7 +31,7 @@ public class AudioChannel {
 
     public void Stop() {
         foreach (AudioSource s in sources)
-            Object.Destroy(s);
+            Object.Destroy(s.gameObject);
         sources.Clear();
     }
 }
@@ -57,6 +57,33 @@ public class AudioManager : MonoBehaviour {
     public float masterVolume = 1;
     public AudioClip clickSound;
     public AudioClip BGM;
+
+    bool fadeClip;
+    AudioChannel fadeChannel;
+    float fadeInterval = 0;
+    float fadeDuration;
+
+    void Update() {
+        if (fadeClip && fadeChannel != null) {
+            bool done = true;
+            foreach (AudioSource s in fadeChannel.sources) {
+                s.volume = Mathf.Lerp(s.volume, 0, fadeInterval);
+                fadeInterval += Time.deltaTime * (1 / fadeDuration);
+                if (s.volume > 0) {
+                    done = false;
+                }
+                else
+                    fadeInterval = 0;
+            }
+            if (done) {
+                fadeChannel.Stop();
+                fadeClip = false;
+                fadeInterval = 0;
+                fadeChannel = null;
+            }
+        }
+
+    }
 
     public void CreateChannel(string name) {
         AudioChannel channel = new AudioChannel(name);
@@ -87,12 +114,26 @@ public class AudioManager : MonoBehaviour {
         PlayClip(clip, GetChannel(channel), volume, loop);
     }
 
-    public void StopChannel(AudioChannel channel) {
-        channel.Stop();
+    public void StopChannel(AudioChannel channel, bool fade = false, float duration = 0) {
+        if (fade) {
+            fadeChannel = channel;
+            fadeClip = true;
+            fadeDuration = duration;
+            fadeInterval = 0;
+        }
+        else
+            channel.Stop();
     }
 
-    public void StopChannel(string channel) {
-        GetChannel(channel).Stop();
+    public void StopChannel(string channel, bool fade = false, float duration = 0) {
+        if (fade) {
+            fadeChannel = GetChannel(channel);
+            fadeClip = true;
+            fadeDuration = duration;
+            fadeInterval = 0;
+        }
+        else
+            GetChannel(channel).Stop();
     }
 
     public void StopClip(AudioClip clip) {
