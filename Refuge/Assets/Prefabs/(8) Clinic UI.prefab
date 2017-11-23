@@ -607,12 +607,12 @@ MonoBehaviour:
   FungusBlockToExecute: 
   executeEncounterWithFungus: 0
   type: 0
-  inventoryUI: {fileID: 1286078906700328}
+  inventoryUI: {fileID: 0}
   inventory:
-  - {fileID: 1258476228262942}
-  - {fileID: 1117015453829372}
-  - {fileID: 1241717523263046}
-  - {fileID: 1492486392561418}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   possibleItems:
   - {fileID: 1764215071121986, guid: ff02c66e47a27084a9182509cfc09346, type: 2}
   locationNumber: 0

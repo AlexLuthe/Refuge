@@ -162,7 +162,7 @@ public class GameManager_r : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        if(transitioningScreen == true) // jacob wrote this
+        /*if(transitioningScreen == true) // jacob wrote this
         {
             //set up a wait timer for the transition to occur...
             // if the current time is less than the current Waiting time for the transition
@@ -178,7 +178,7 @@ public class GameManager_r : MonoBehaviour {
                 transitioningScreen = false;
                 Debug.Log("Finished transition, returning values to normal");
             }
-        }
+        }*/
     }
 
     public void ChangeScreen(ScreenType newScreen) {
@@ -206,7 +206,7 @@ public class GameManager_r : MonoBehaviour {
 
     public void ChangeScreen(int iNewScreen)
     {
-        if (transitioningScreen == false)
+        /*if (transitioningScreen == false)
         {
             // preserve the destination Screen's int value
             newScreenInt = iNewScreen;
@@ -220,7 +220,7 @@ public class GameManager_r : MonoBehaviour {
             return;
         }
         else if(transitioningScreen == true)
-        {
+        {*/
             Debug.Log("Final Screen change after Transition @: " + Time.timeSinceLevelLoad);
 
             if (_AudioManager && _AudioManager.GetChannel("SFX") != null && _AudioManager.clickSound)
@@ -241,7 +241,7 @@ public class GameManager_r : MonoBehaviour {
                     charUI.SetActive(false);
             if (iNewScreen == 9 || iNewScreen == 10 || iNewScreen == 11)
                 screens[ScreenType.STEncounter].SetActive(true);
-        }
+        //}
     }
 
     public GameObject GetScreen(int iScreen) {

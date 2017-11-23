@@ -11,6 +11,8 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
     GameObject confirmDropText;
     GameObject confirmDropDialogue;
 
+    public GameObject[] dialogueObjects; 
+
 	// Use this for initialization
 	void Start () {
 		_GameManager = GameObject.Find("GameManager").GetComponent<GameManager_r>();
@@ -31,14 +33,24 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
                     GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(_GameManager.carryingItem.GetComponent<Item_r>().encounterToExecute);
                 }
                 else {
-                    confirmDropDialogue.SetActive(true);
+                    //confirmDropDialogue.SetActive(true);
+                    foreach(GameObject dialogueObj in dialogueObjects)
+                    {
+                        Debug.Log("Activating: " + dialogueObj.name);
+                        dialogueObj.SetActive(true);
+                    }
                 }
             }
         }
     }
 
     public void DestroyItem() {
-        confirmDropDialogue.SetActive(false);
+        //GameObject[] dialogueObjects = GameObject.FindGameObjectsWithTag("ItemConfirmationObjects");
+        foreach(GameObject dialogueObj in dialogueObjects)
+        {
+            Debug.Log("Deactivating: " + dialogueObj.name);
+            dialogueObj.SetActive(false);
+        }
         _GameManager.carryingItem.GetComponent<Item_r>().character.GetComponent<Character_r>().AddTrust(_GameManager.carryingItem.GetComponent<Item_r>().trustDropMod);
         Destroy(_GameManager.carryingItem.GetComponent<Image>());
         Destroy(_GameManager.carryingItem.gameObject);
@@ -46,7 +58,12 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
     }
 
     public void ReturnItem() {
-        confirmDropDialogue.SetActive(false);
+        //GameObject[] dialogueObjects = GameObject.FindGameObjectsWithTag("ItemConfirmationObjects");
+        foreach(GameObject dialogueObj in dialogueObjects)
+        {
+            Debug.Log("Deactivating: " + dialogueObj.name);
+            dialogueObj.SetActive(false);
+        }
         _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<InventorySlot_r>().item = _GameManager.carryingItem;
         _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<Image>().sprite = _GameManager.carryingItem.GetComponent<Item_r>().itemSprite;
         if (_GameManager.carryingItem.GetComponent<Image>()) {
