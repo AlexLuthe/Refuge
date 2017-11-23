@@ -20,8 +20,8 @@ public class Item_r : MonoBehaviour {
         ITMetronidazole = 11,
         ITPenicilin = 12,
         ITRepairFracture = 13,
-        ITCureAll = 14,
-        ITHeal = 15,
+  //      ITCureAll = 14,
+        ITHeal = 14,
     };
 
     public ItemType itemType;
