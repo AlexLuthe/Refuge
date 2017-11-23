@@ -8,11 +8,14 @@ using Fungus;
 public class DropItem : MonoBehaviour, IPointerUpHandler {
 
     GameManager_r _GameManager;
+    GameObject confirmDropText;
     GameObject confirmDropDialogue;
 
 	// Use this for initialization
 	void Start () {
 		_GameManager = GameObject.Find("GameManager").GetComponent<GameManager_r>();
+        confirmDropDialogue = GameObject.Find("ItemConfirmationPanel");
+        confirmDropDialogue.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -27,13 +30,14 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
                     _GameManager.ChangeScreen(GameManager_r.ScreenType.STEncounter);
                     GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(_GameManager.carryingItem.GetComponent<Item_r>().encounterToExecute);
                 }
-                else
+                else {
                     confirmDropDialogue.SetActive(true);
+                }
             }
         }
     }
 
-    void DestroyItem() {
+    public void DestroyItem() {
         confirmDropDialogue.SetActive(false);
         _GameManager.carryingItem.GetComponent<Item_r>().character.GetComponent<Character_r>().AddTrust(_GameManager.carryingItem.GetComponent<Item_r>().trustDropMod);
         Destroy(_GameManager.carryingItem.GetComponent<Image>());
@@ -41,13 +45,14 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
         _GameManager.carryingItem = null;
     }
 
-    void ReturnItem() {
+    public void ReturnItem() {
         confirmDropDialogue.SetActive(false);
+        _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<InventorySlot_r>().item = _GameManager.carryingItem;
+        _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<Image>().sprite = _GameManager.carryingItem.GetComponent<Item_r>().itemSprite;
         if (_GameManager.carryingItem.GetComponent<Image>()) {
             Destroy(_GameManager.carryingItem.GetComponent<Image>());
-            Destroy(_GameManager.carryingItem.gameObject);
+            _GameManager.carryingItem.gameObject.SetActive(false);
         }
-        _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<InventorySlot_r>().item = _GameManager.carryingItem;
         _GameManager.carryingItem = null;
     }
 }

@@ -26,6 +26,8 @@ public class UIController_r : MonoBehaviour {
             _GameManager.carryingItem = Instantiate(_GameManager.carryingItem);
             _GameManager.carryingItem.transform.SetParent(GameObject.Find("GameCanvas").transform, false);
             _GameManager.carryingItem.transform.SetAsLastSibling();
+            _GameManager.carryingItem.GetComponent<Item_r>().slot = slot;
+            _GameManager.carryingItem.GetComponent<Item_r>().character = slot.transform.parent.gameObject;
             if (_GameManager.carryingItem.GetComponent<Item_r>().encounterOnTake) {
                 _GameManager.ChangeScreen(GameManager_r.ScreenType.STEncounter);
                 GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(_GameManager.carryingItem.GetComponent<Item_r>().encounterToExecute);
@@ -41,6 +43,7 @@ public class UIController_r : MonoBehaviour {
             slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().character = slot.transform.parent.gameObject;
             slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().slot = slot;
             slot.transform.parent.GetComponent<Character_r>().AddTrust(slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().trustGiveMod);
+            if (slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().price != 0) {
             bool anotherSlot = true;
             List<GameObject> maps = new List<GameObject>();
             maps.AddRange(GameObject.FindGameObjectsWithTag("ScreenWorldMap"));
@@ -53,6 +56,7 @@ public class UIController_r : MonoBehaviour {
             if (anotherSlot) {
                 _GameManager.AddMoney(-slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().price);
                 slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().price = 0;
+            }
             }
 
             slot.GetComponent<Image>().sprite = slot.GetComponent<InventorySlot_r>().item.GetComponent<Item_r>().itemSprite;

@@ -15,9 +15,12 @@ public class InventorySlot_r : MonoBehaviour, IPointerUpHandler, IPointerDownHan
 	void Start () {
 		_GameManager = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         _UIController = GameObject.Find("UIController").GetComponent<UIController_r>();
-        if (item)
-            //GetComponentInChildren<Image>().sprite = item.GetComponent<Item_r>().itemSprite;
+        if (item) {
             GetComponent<Image>().sprite = item.GetComponent<Item_r>().itemSprite;
+            item.GetComponent<Item_r>().character = transform.parent.gameObject;
+            item.GetComponent<Item_r>().slot = gameObject;
+            item.GetComponent<Item_r>().price = 0;
+        }
 	}
 
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData) {
