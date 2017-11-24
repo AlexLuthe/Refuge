@@ -32,7 +32,7 @@ public class Clinic_r : Location_r, IPointerClickHandler {
         }
         if (changeScreen) {
             GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
-            GameObject.Find("GameManager").GetComponent<GameManager_r>().conditionReportText.text = "";
+            //GameObject.Find("GameManager").GetComponent<GameManager_r>().conditionReportText.text = "";
         }
     }
 

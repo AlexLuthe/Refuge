@@ -19,7 +19,10 @@ public class InventorySlot_r : MonoBehaviour, IPointerUpHandler, IPointerDownHan
             GetComponent<Image>().sprite = item.GetComponent<Item_r>().itemSprite;
             item.GetComponent<Item_r>().character = transform.parent.gameObject;
             item.GetComponent<Item_r>().slot = gameObject;
-            item.GetComponent<Item_r>().price = 0;
+            if (item.GetComponent<Item_r>().character.GetComponent<Character_r>()) {
+                item.GetComponent<Item_r>().price = 0;
+                Debug.Log("Parent: " + transform.parent);
+            }
         }
 	}
 
