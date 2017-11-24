@@ -186,6 +186,7 @@ public class GameManager_r : MonoBehaviour {
 
         //if (_AudioManager)
            // _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
+           endGameDialogue.SetActive(false);
         Destroy(carryingItem);
 
         prevScreen = currentScreen;
@@ -224,6 +225,7 @@ public class GameManager_r : MonoBehaviour {
         {*/
             //Debug.Log("Final Screen change after Transition @: " + Time.timeSinceLevelLoad);
 
+        endGameDialogue.SetActive(false);
             if (_AudioManager && _AudioManager.GetChannel("SFX") != null && _AudioManager.clickSound)
                 _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
             Destroy(carryingItem);
