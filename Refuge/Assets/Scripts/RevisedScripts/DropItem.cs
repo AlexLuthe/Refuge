@@ -11,7 +11,7 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
     GameObject confirmDropText;
     GameObject confirmDropDialogue;
 
-    public GameObject[] dialogueObjects; 
+    //public GameObject[] dialogueObjects; 
 
 	// Use this for initialization
 	void Start () {
@@ -33,12 +33,12 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
                     GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(_GameManager.carryingItem.GetComponent<Item_r>().encounterToExecute);
                 }
                 else {
-                    //confirmDropDialogue.SetActive(true);
-                    foreach(GameObject dialogueObj in dialogueObjects)
-                    {
-                        Debug.Log("Activating: " + dialogueObj.name);
-                        dialogueObj.SetActive(true);
-                    }
+                    confirmDropDialogue.SetActive(true);
+                    //foreach(GameObject dialogueObj in dialogueObjects)
+                    //{
+                    //    Debug.Log("Activating: " + dialogueObj.name);
+                    //    dialogueObj.SetActive(true);
+                    //}
                 }
             }
         }
@@ -46,11 +46,12 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
 
     public void DestroyItem() {
         //GameObject[] dialogueObjects = GameObject.FindGameObjectsWithTag("ItemConfirmationObjects");
-        foreach(GameObject dialogueObj in dialogueObjects)
-        {
-            Debug.Log("Deactivating: " + dialogueObj.name);
-            dialogueObj.SetActive(false);
-        }
+        //foreach(GameObject dialogueObj in dialogueObjects)
+        //{
+        //    Debug.Log("Deactivating: " + dialogueObj.name);
+        //    dialogueObj.SetActive(false);
+        //}
+        confirmDropDialogue.SetActive(false);
         _GameManager.carryingItem.GetComponent<Item_r>().character.GetComponent<Character_r>().AddTrust(_GameManager.carryingItem.GetComponent<Item_r>().trustDropMod);
         Destroy(_GameManager.carryingItem.GetComponent<Image>());
         Destroy(_GameManager.carryingItem.gameObject);
@@ -59,11 +60,12 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
 
     public void ReturnItem() {
         //GameObject[] dialogueObjects = GameObject.FindGameObjectsWithTag("ItemConfirmationObjects");
-        foreach(GameObject dialogueObj in dialogueObjects)
-        {
-            Debug.Log("Deactivating: " + dialogueObj.name);
-            dialogueObj.SetActive(false);
-        }
+        //foreach(GameObject dialogueObj in dialogueObjects)
+        //{
+        //    Debug.Log("Deactivating: " + dialogueObj.name);
+        //    dialogueObj.SetActive(false);
+        //}
+        confirmDropDialogue.SetActive(false);
         _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<InventorySlot_r>().item = _GameManager.carryingItem;
         _GameManager.carryingItem.GetComponent<Item_r>().slot.GetComponent<Image>().sprite = _GameManager.carryingItem.GetComponent<Item_r>().itemSprite;
         if (_GameManager.carryingItem.GetComponent<Image>()) {

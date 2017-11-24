@@ -52,6 +52,13 @@ public class Map_r : MonoBehaviour
         }
     }
 
+    void OnEnable() {
+        if (newLocation.GetComponent<Location_r>().endGame) {
+            if (GM)
+                GM.endGameDialogue.SetActive(true);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -189,7 +196,7 @@ public class Map_r : MonoBehaviour
                 chara.GetComponent<Character_r>().AddHunger(-newLocation.GetComponent<Location_r>().distance * 0.2f);
                 chara.GetComponent<Character_r>().AddThirst(-newLocation.GetComponent<Location_r>().distance * 0.2f);
                 if (chara.GetComponent<Character_r>().GetHunger() <= 0 || chara.GetComponent<Character_r>().GetThirst() <= 0) {
-                    chara.GetComponent<Character_r>().AddHealth(-newLocation.GetComponent<Location_r>().distance * 0.5f);
+                    chara.GetComponent<Character_r>().AddHealth(-newLocation.GetComponent<Location_r>().distance * 0.4f);
                 }
                 //Debug.Log("Location Distance: " + newLocation.GetComponent<Location_r>().distance);
                 //Debug.Log("Hunger: " + chara.GetComponent<Character_r>().GetHunger());
@@ -230,23 +237,23 @@ public class Map_r : MonoBehaviour
                 }
                 
                 // Carry Character
-                if (chara.GetComponent<Character_r>().GetHealth() < 0.5f) {
-                    List<GameObject> possibleCarriers = new List<GameObject>();
-                    foreach (GameObject c in GM.characters) {
-                        Character_r character = c.GetComponent<Character_r>();
-                        if (character.GetHealth() > 0.6f && !character.typhoid && !character.dysentery && !character.injured && !character.cholera && !character.parentOne && !character.parentTwo)
-                            possibleCarriers.Add(c);
-                    }
-                    GameObject carrier = possibleCarriers[Random.Range(0, possibleCarriers.Count)];
-                    GM.charCarried = chara;
-                    GM.charCarrier = carrier;
-                    GM.carryCharGUI.SetActive(true);
-                    int invSlots = -4;
-                    foreach (GameObject slot in GM.inventory)
-                        if (slot.activeSelf)
-                            ++invSlots;
-                    GM.carryCharGUI.transform.GetComponentInChildren<Text>().text = string.Format("{0} has collapsed and likely won't survive another journey on foot. Fortunately, {1} has offered to carry them, however the party can only carry {2} items now. {0}'s health, hunger and thirst will deteriorate half as quickly, but {1}'s will double. Would you like to carry or abandon {0}", chara.GetComponent<Character_r>().charName, carrier.GetComponent<Character_r>().charName, invSlots);
-                }
+                //if (chara.GetComponent<Character_r>().GetHealth() < 0.5f) {
+                //    List<GameObject> possibleCarriers = new List<GameObject>();
+                //    foreach (GameObject c in GM.characters) {
+                //        Character_r character = c.GetComponent<Character_r>();
+                //        if (character.GetHealth() > 0.6f && !character.typhoid && !character.dysentery && !character.injured && !character.cholera && !character.parentOne && !character.parentTwo)
+                //            possibleCarriers.Add(c);
+                //    }
+                //    GameObject carrier = possibleCarriers[Random.Range(0, possibleCarriers.Count)];
+                //    GM.charCarried = chara;
+                //    GM.charCarrier = carrier;
+                //    GM.carryCharGUI.SetActive(true);
+                //    int invSlots = -4;
+                //    foreach (GameObject slot in GM.inventory)
+                //        if (slot.activeSelf)
+                //            ++invSlots;
+                //    GM.carryCharGUI.transform.GetComponentInChildren<Text>().text = string.Format("{0} has collapsed and likely won't survive another journey on foot. Fortunately, {1} has offered to carry them, however the party can only carry {2} items now. {0}'s health, hunger and thirst will deteriorate half as quickly, but {1}'s will double. Would you like to carry or abandon {0}", chara.GetComponent<Character_r>().charName, carrier.GetComponent<Character_r>().charName, invSlots);
+                //}
             }
         }
         else

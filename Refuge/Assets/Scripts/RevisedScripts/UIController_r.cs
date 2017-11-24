@@ -102,4 +102,8 @@ public class UIController_r : MonoBehaviour {
         GameObject.Find("AudioManager").GetComponent<AudioManager>().masterVolume = vol;
     }
 
+    public void ClosePanel(GameObject panel) {
+        panel.SetActive(false);
+    }
+
 }
