@@ -51528,7 +51528,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003619}
+      objectReference: {fileID: 2110003690}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -51538,7 +51538,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003684}
+      objectReference: {fileID: 0}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -51608,12 +51608,12 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[1]
       value: 
-      objectReference: {fileID: 2110003619}
+      objectReference: {fileID: 2110003496}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedBlocks.Array.data[2]
       value: 
-      objectReference: {fileID: 2110003690}
+      objectReference: {fileID: 2110003687}
     - target: {fileID: 114499515379235392, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: commandList.Array.data[1]
@@ -51658,7 +51658,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[3]
       value: 
-      objectReference: {fileID: 2110003694}
+      objectReference: {fileID: 2110003513}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedBlocks.Array.data[4]
@@ -51939,8 +51939,8 @@ Prefab:
       value: "Myself: It\u2019s silent. The humming of the bus is all there is. The
         road disappears into the horizon. It\u2019s like the world is frozen. \n\nMyself:
         Behind me, nobody says a word. Nobody looks up. The tension is palpable. \n\nMyself:
-        The small town of Heshem appears over the Horizon, the final stop. \n\nMyself:
-        I pull over by the city outskirts so as to avoid attracting unwanted attention.\n\n"
+        The small town of Heshem appears over the horizon, the final stop. \n\nMyself:
+        I pull over by the city outskirts to avoid attracting unwanted attention.\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114706828047507078, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -51975,32 +51975,32 @@ Prefab:
     - target: {fileID: 114804759088428718, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.width
-      value: 134.29599
+      value: 130.73743
       objectReference: {fileID: 0}
     - target: {fileID: 114499932211986340, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.width
-      value: 134.29599
+      value: 130.73743
       objectReference: {fileID: 0}
     - target: {fileID: 114383570164981612, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.width
-      value: 134.29599
+      value: 130.73743
       objectReference: {fileID: 0}
     - target: {fileID: 114406152113091210, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.width
-      value: 149.73447
+      value: 165.16957
       objectReference: {fileID: 0}
     - target: {fileID: 114142589481466246, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.width
-      value: 182.79507
+      value: 177.04272
       objectReference: {fileID: 0}
     - target: {fileID: 114596429564866320, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.width
-      value: 152.77184
+      value: 147.35985
       objectReference: {fileID: 0}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -52125,7 +52125,7 @@ Prefab:
         he lists our descriptions on a walkie-talkie.\r\n\nMyself: We kneel in silence.
         \n\nMyself: The young man next to me slowly lowers one of his hands from his
         neck. The soldier hasn't noticed\r.\n\nMyself: He reaches under his shirt,
-        and from his waist he pulls out a gun. \r\n\nMyself: The boy looks at me."
+        and from his waist, he pulls out a gun. \r\n\nMyself: The boy looks at me."
       objectReference: {fileID: 0}
     - target: {fileID: 114565225789815266, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -52152,17 +52152,17 @@ Prefab:
       propertyPath: conversationText.stringVal
       value: "Myself: They shoot. \r\n\n\nMyself: My ears ring. That gunshot must
         have been heard for kilometers.\n\n\r\nMyself: I look around.  \n\n\r\nMyself:
-        The soldier is dead. \r\n\n\nMyself: So is the boy. \n\nMyself: Things fall
-        silent.\r\n\n\nMyself: I look around, A man holds his daugher tightly, covering
-        her eyes.\n\n\r\nMyself: I make eye contact with another man, his face pale
-        and ghostly.\r\n\n\nMan: This place... We can't live here anymore.\n\n\r\nWoman:
+        The soldier is dead. \r\n\n\nMyself: So is the boy. \n\nMyself: Everything
+        falls silent.\r\n\n\nMyself: I look around, A man holds his daugher tightly,
+        covering her eyes.\n\n\r\nMyself: I make eye contact with another man, his
+        face is ghostly.\r\n\n\nMan: This place... We can't live here anymore.\n\n\r\nWoman:
         Just like everywhere else... The army is all over.\n\n\r\nMyself: We hear
         some distant yelling, and a car starting. They\u2019re coming. \r\n\n\nMan:
-        Quick, let's hide!\r\n\n\nMyself: We run to a nearby Alley to stay out of
+        Quick, let's hide!\r\n\n\nMyself: We run to a nearby alley to stay out of
         sight, leaving the bodies behind.\r\n\n\nMyself: The man hugging his daughter
-        and wife looks at me\n\n\r\nMan: What do we do?\r\n\n\nWoman: We have to get
-        out of here.\n\nMan: But where?\n \r\n\nWoman: We need to go back to mule.
-        It's quieter there. Sayid, what do you think? We can take the bus.\n\n\r\nMe:
+        and wife looks at me.\n\n\r\nMan: What do we do?\r\n\n\nWoman: We have to
+        get out of here.\n\nMan: But where?\n \r\n\nWoman: We need to go back to Mule.
+        It's quieter there. Driver, what do you think? We can take the bus.\n\n\r\nMe:
         \"I know the way, but we can't take the bus. They already know what it looks
         like, they'll see us from a mile away!\"\n\n\r\nMe: \"We have to go on foot\"\r\n\n\nMyself:
         They look down to think.\n\n\r\nWoman: Okay, anything is safer than here.\r\n\n\nMan:
@@ -52393,7 +52393,7 @@ Prefab:
     - target: {fileID: 114354162684209026, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
-      value: 477.64935
+      value: 475.69714
       objectReference: {fileID: 0}
     - target: {fileID: 114354162684209026, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -52433,7 +52433,7 @@ Prefab:
         He stuffs it in his shirt and disappears quietly into an alleyway.
 
 
-        Myself: The Owner turns and notices the missing fruit, and begins to fume.
+        Myself: The owner turns and notices the missing fruit, and begins to fume.
         He calls for the police officers nearby and yells at them to do something,
         but they don''t seem convinced. He notices me looking at him.
 
@@ -52445,7 +52445,7 @@ Prefab:
     - target: {fileID: 114144411383491338, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: conversationText.stringVal
-      value: 'Myself: The Shopkeep turns to the officers for approval. The officers
+      value: 'Myself: The shopkeep turns to the officers for approval. The officers
         nod to each other and hastily walk down the alley.
 
 
@@ -52683,22 +52683,22 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[3]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2110003703}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedCommands.Array.data[4]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2110003702}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedCommands.Array.data[5]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2110003701}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedCommands.Array.data[6]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2110003531}
     - target: {fileID: 114127054319180224, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: selectedCommands.Array.data[7]
@@ -52708,6 +52708,111 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[8]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819081172628126, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: text
+      value: "I\u2019m a bus driver and this is my destination. We\u2019re not looking
+        for trouble.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114667753282906272, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: conversationText.stringVal
+      value: 'Myself: I approach a suspicious looking man in the alleyway. It''s clear
+        he''s staying out of sight.
+
+
+        Stranger: You''re not from around here, are you?
+
+
+        Me: "Nope, from Heshem"
+
+
+        Stranger: Thought so. Haven''t they steamrolled that place yet?
+
+
+        Me: "That''s why I''m here."
+
+
+        Stranger: Huh. You looking for a way off this rock?
+
+
+        My: "Maybe. Why?"
+
+
+        Stranger: I might know something, if you''ve got the money. What''s it worth
+        to you?'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114545074747295420, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: character
+      value: 
+      objectReference: {fileID: 1801645524}
+    - target: {fileID: 114545074747295420, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: storyText
+      value: $20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114840948960349722, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: conversationText.stringVal
+      value: 'Stranger: Thanks. This''ll go a long way.
+
+
+        Stranger: There''s a smuggler who can take you across the ocean to one of
+        the neighboring countries. His name''s Ali.
+
+
+        Stranger: His operation is on the Eastern coast, so it will be a journey,
+        but it''s better than being stranded here.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114598944269419998, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: storyText
+      value: "Stranger: We\u2019ve been buddies since we were kids. He was a building
+        contractor who fished for a hobby, and now that boat is getting put to use
+        elsewhere.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114219932125221646, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: storyText
+      value: "Stranger: Yeah. Don\u2019t mess with him. He\u2019s not going to hunt
+        you down if you breathe the wrong way. But he\u2019s risking his neck for
+        you, and he\u2019ll be staying in this dunghole so you don\u2019t have to.
+        Make sure you respect his price and his direction, and you\u2019ll be fine.
+        \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114552612944708468, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: storyText
+      value: "I have no idea. Wherever he isn\u2019t likely to be intercepted. Folk
+        often don\u2019t take too kindly to boat people.\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199997097918690, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: conversationText.stringVal
+      value: 'Stranger: Cool. Good luck to you.
+
+
+        Me: "Where will you go?"
+
+
+        Stranger: I get a kickback the more people I send his way.
+
+
+        Me: "Huh. Wouldn''t that be dangerous?"
+
+
+        Stranger: No more dangerous than your journey, I''m sure.
+
+
+        Stranger: You''re travelling with others, yes? You need to look after those
+        people, you''ll depend on each other soon enough.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114075214099881452, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+        type: 2}
+      propertyPath: indentLevel
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114620932178397460, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
@@ -58699,7 +58804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 677
-  indentLevel: 2
+  indentLevel: 1
   text: Do you know me? I'm Sayid, a bus driver!
   description: 
   targetBlock: {fileID: 2110003496}
@@ -58721,8 +58826,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1060.9563
-    y: 1580.225
+    x: 1063.3308
+    y: 1645.5255
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -58746,7 +58851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 678
-  indentLevel: 2
+  indentLevel: 1
   text: 'I met your contact down in Mule, he wanted me to mention that to you. '
   description: 
   targetBlock: {fileID: 2110003498}
@@ -58768,8 +58873,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1062.5352
-    y: 1638.12
+    x: 1064.9097
+    y: 1703.4205
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -58808,9 +58913,15 @@ MonoBehaviour:
   - {fileID: 2110003560}
   - {fileID: 2110003564}
   - {fileID: 2110003563}
+  - {fileID: 2110003714}
   - {fileID: 2110003561}
+  - {fileID: 2110003713}
+  - {fileID: 2110003712}
   - {fileID: 2110003562}
+  - {fileID: 2110003711}
+  - {fileID: 2110003710}
   - {fileID: 2110003532}
+  - {fileID: 2110003709}
 --- !u!114 &2110003500
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -58868,8 +58979,11 @@ MonoBehaviour:
   - {fileID: 2110003566}
   - {fileID: 2110003508}
   - {fileID: 2110003506}
+  - {fileID: 2110003699}
+  - {fileID: 2110003698}
   - {fileID: 2110003505}
   - {fileID: 2110003503}
+  - {fileID: 2110003697}
   - {fileID: 2110003502}
   - {fileID: 2110003495}
   - {fileID: 2110003497}
@@ -58888,7 +59002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 676
-  indentLevel: 2
+  indentLevel: 1
   commenterName: Pleads
   commentText: 
 --- !u!114 &2110003503
@@ -58906,12 +59020,12 @@ MonoBehaviour:
   indentLevel: 2
   text: Maya, you can go. (Pay$500)
   description: 
-  targetBlock: {fileID: 0}
+  targetBlock: {fileID: 2110003687}
   hideIfVisited: 1
   interactable:
     booleanRef: {fileID: 0}
     booleanVal: 1
-  setMenuDialog: {fileID: 0}
+  setMenuDialog: {fileID: 981878319}
 --- !u!114 &2110003504
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -58990,8 +59104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1062.1038
-    y: 1518.9698
+    x: 4706.2695
+    y: 1517.1257
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -59139,8 +59253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1063.9453
-    y: 1457.601
+    x: 1063.5507
+    y: 1521.517
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -59151,7 +59265,12 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 2110003559}
+  - {fileID: 2110003708}
+  - {fileID: 2110003703}
+  - {fileID: 2110003702}
+  - {fileID: 2110003701}
   - {fileID: 2110003531}
+  - {fileID: 2110003700}
 --- !u!114 &2110003514
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -59485,7 +59604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 711
-  indentLevel: 0
+  indentLevel: 1
   targetFlowchart: {fileID: 2110003489}
   targetBlock: {fileID: 2110003538}
   startLabel:
@@ -59529,13 +59648,13 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Me: \"So, we head to Mule, get some supplies, and find out where to
-      go from there?\n\nWoman: That's the plan.\n\nWoman: By the way, I'm Zada.\n\nMan:
-      I'm Firas, this is my wife Rasha and my daughter Maya.\n\nMyself: We exchange
-      a forced smile.\n\nMyself: The other man looks up to me\n\nMan: I'm Sami. \n\nMyself:
-      we hear footsteps and murmerings from where the bodies lay\n\nMe: \"Time to
-      go!\"\n\nMyself: We run down the alley and out of the city. I take one last
-      look at the bodies. \n\nMyself: I hope that no other lives have to be lost just
-      to live in peace."
+      go from there?\"\n\nWoman: That's the plan.\n\nWoman: By the way, I'm Zada.\n\nMan:
+      I'm Firas, this is my wife Rasha and my daughter Maya.\n\nMe: \"I'm Sayid.\"\n\nMyself:
+      We exchange a forced smile.\n\nMyself: The other man looks up to me.\n\nMan:
+      I'm Sami. \n\nMyself: We hear footsteps and murmerings from where the bodies
+      lay.\n\nMe: \"Time to go!\"\n\nMyself: We run down the alley and out of the
+      city. I take one last look at the bodies. \n\nMyself: I hope that no other lives
+      have to be lost just to live in peace."
 --- !u!114 &2110003534
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -59614,11 +59733,11 @@ MonoBehaviour:
   conversationText:
     stringRef: {fileID: 0}
     stringVal: "Myself: They follow the man to the boat.\n\nMyself: There's more people
-      than the boat can possibly fit. They cram together, the smugglers push me and
-      the rest into the crowd.\n\nMyself: People lie on each other, Resting their
-      heads on each other's laps and packing shoulder to shoulder against the sides
-      of the ship.\n\nMyself: The boat leaves the shore, we watch it disappear into
-      the horizon. We can only hope they make it. \n\nMyself: What now?"
+      than the boat can possibly fit. They cram together, the smugglers push those
+      who have paid into the rest into the crowd.\n\nMyself: People lie on each other,
+      Resting their heads on each other's laps and packing shoulder to shoulder against
+      the sides of the ship.\n\nMyself: The boat leaves the shore, we watch it disappear
+      into the horizon. We can only hope they make it. \n\nMyself: What now?"
 --- !u!114 &2110003538
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -60070,10 +60189,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 749
-  indentLevel: 1
+  indentLevel: 2
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 
+    stringVal: 'Firas: Are you serious!? What about Maya? Surely she has more to lose
+      than you!
+
+
+      Zada: What''s she going to do on the boat by herself? Find new parents?
+
+
+      Firas: Sayid, you can''t seriously send her over my daughter!'
 --- !u!114 &2110003562
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -60086,7 +60212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 748
-  indentLevel: 0
+  indentLevel: 1
 --- !u!114 &2110003563
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -60100,11 +60226,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 747
   indentLevel: 0
-  compareOperator: 1
+  compareOperator: 0
   variable: {fileID: 2110003524}
   booleanData:
     booleanRef: {fileID: 0}
-    booleanVal: 1
+    booleanVal: 0
   integerData:
     integerRef: {fileID: 0}
     integerVal: 0
@@ -60167,7 +60293,7 @@ MonoBehaviour:
   itemId: 744
   indentLevel: 1
   compareOperator: 1
-  variable: {fileID: 2110003524}
+  variable: {fileID: 2110003521}
   booleanData:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -60365,8 +60491,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1065.0968
-    y: 1288.4686
+    x: 1066.284
+    y: 1287.2814
     width: 120
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -60389,7 +60515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 733
-  indentLevel: 2
+  indentLevel: 1
   text: 'I met your contact down in Mule, he wanted me to mention that to you. '
   description: 
   targetBlock: {fileID: 2110003498}
@@ -60410,7 +60536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 732
-  indentLevel: 2
+  indentLevel: 1
   text: Do you know me? I'm Sayid, a bus driver!
   description: 
   targetBlock: {fileID: 2110003496}
@@ -60431,7 +60557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemId: 731
-  indentLevel: 1
+  indentLevel: 0
 --- !u!114 &2110003579
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -60499,7 +60625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 777
   indentLevel: 2
-  storyText: No! Not me. send my daughter!
+  storyText: No! Not me. Send my wife!
   description: 
   character: {fileID: 1358299314}
   portrait: {fileID: 0}
@@ -60555,13 +60681,13 @@ MonoBehaviour:
     stringVal: 'Zada: What the hell!? What does he have to lose that we dont!?
 
 
-      Me: He''s been through enough, he deserves this.
+      Me: "He''s been through enough, he deserves this."
 
 
       Zada: You''re kidding me!
 
 
-      Firas: When your whole family does then maybe you''ll fucking understand.
+      Firas: When your whole family dies then maybe you''ll fucking understand.
 
 
       Myself: Zada turns away, she can''t argue with that.'
@@ -60696,7 +60822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 767
   indentLevel: 1
-  storyText: No! Not me. send my daughter!
+  storyText: No! Not me. Send my daughter!
   description: 
   character: {fileID: 1358299314}
   portrait: {fileID: 0}
@@ -61774,7 +61900,7 @@ MonoBehaviour:
       the soldier
 
 
-      Myself: The soldier sees; he scuffles for his pistol.'
+      Myself: The soldier sees, he scuffles for his pistol.'
 --- !u!114 &2110003632
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -61817,7 +61943,7 @@ MonoBehaviour:
 
 
       Myself: With the support of the rest of the world, these journeys don''t have
-      to end badly.
+      to end tragically.
 
 
       Myself: We can build a better world for everybody.'
@@ -63078,7 +63204,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003684
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -63103,9 +63229,29 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &2110003685
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 901
+  indentLevel: 0
+  targetFlowchart: {fileID: 2110003489}
+  targetBlock: {fileID: 2110003538}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
 --- !u!114 &2110003686
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -63116,12 +63262,104 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 870
   indentLevel: 0
---- !u!114 &2110003690 stripped
+--- !u!114 &2110003687
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114388766170420098, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1061.3871
+    y: 1584.6406
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 902
+  blockName: 6-1-6
+  description: Player chooses Maya
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2110003719}
+  - {fileID: 2110003718}
+  - {fileID: 2110003717}
+  - {fileID: 2110003716}
+  - {fileID: 2110003715}
+  - {fileID: 2110003696}
+  - {fileID: 2110003695}
+  - {fileID: 2110003693}
+  - {fileID: 2110003689}
+  - {fileID: 2110003688}
+  - {fileID: 2110003685}
+--- !u!114 &2110003688
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 896
+  indentLevel: 0
+--- !u!114 &2110003689
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050fb9e6e72f442b3b883da8a965bdeb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 895
+  indentLevel: 1
+  targetFlowchart: {fileID: 2110003489}
+  targetBlock: {fileID: 2110003538}
+  startLabel:
+    stringRef: {fileID: 0}
+    stringVal: 
+  startIndex: 0
+  callMode: 0
+--- !u!114 &2110003690
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 1060.016
+    y: 1467.0978
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 902
+  blockName: 6-1-10
+  description: Player chooses Rasha
+  eventHandler: {fileID: 0}
+  commandList:
+  - {fileID: 2110003724}
+  - {fileID: 2110003723}
+  - {fileID: 2110003722}
+  - {fileID: 2110003721}
+  - {fileID: 2110003720}
+  - {fileID: 2110003694}
 --- !u!114 &2110003691 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114462503081063134, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -63134,12 +63372,202 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
---- !u!114 &2110003694 stripped
+--- !u!114 &2110003693
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114565225789815266, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 894
+  indentLevel: 1
+  text: I stand by you, Sami
+  description: 
+  targetBlock: {fileID: 2110003538}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003694
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 910
+  indentLevel: 0
+--- !u!114 &2110003695
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 899
+  indentLevel: 1
+--- !u!114 &2110003696
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 893
+  indentLevel: 2
+  text: I change my mind
+  description: 
+  targetBlock: {fileID: 2110003501}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003697
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 877
+  indentLevel: 1
+--- !u!114 &2110003698
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 875
+  indentLevel: 1
+  compareOperator: 1
+  variable: {fileID: 2110003500}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003699
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 876
+  indentLevel: 1
+--- !u!114 &2110003700
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 888
+  indentLevel: 0
+--- !u!114 &2110003701
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 889
+  indentLevel: 1
+  text: I stand by you, Sami
+  description: 
+  targetBlock: {fileID: 2110003538}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003702
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 887
+  indentLevel: 1
+  text: I change my mind
+  description: 
+  targetBlock: {fileID: 2110003501}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003703
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 886
+  indentLevel: 1
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Firas: Are you serious!? What about Maya? Surely she has more to lose
+      than you!
+
+
+      Sami: You''re right... Sayid, What do you think?'
 --- !u!114 &2110003704 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114784431170603916, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -63164,6 +63592,369 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+--- !u!114 &2110003708
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 885
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 2110003524}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003709
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 884
+  indentLevel: 0
+--- !u!114 &2110003710
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 881
+  indentLevel: 0
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Myself: Firas rolls his eyes and walks away'
+--- !u!114 &2110003711
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cb9773f2ca04e2bbf7a68ccfc23267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 883
+  indentLevel: 0
+--- !u!114 &2110003712
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 880
+  indentLevel: 2
+  text: I'm sending Zada.
+  description: 
+  targetBlock: {fileID: 2110003538}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003713
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 879
+  indentLevel: 2
+  text: I change my mind
+  description: 
+  targetBlock: {fileID: 2110003501}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003714
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 878
+  indentLevel: 1
+  compareOperator: 0
+  variable: {fileID: 2110003500}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003715
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 898
+  indentLevel: 2
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: No! She has every right to be on that boat!
+--- !u!114 &2110003716
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 897
+  indentLevel: 1
+  compareOperator: 0
+  variable: {fileID: 2110003524}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003717
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 892
+  indentLevel: 1
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Zada: She''s just a kid! Sayid, you can''t be serious'
+--- !u!114 &2110003718
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 891
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 2110003539}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003719
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 890
+  indentLevel: 0
+  variable: {fileID: 2110003490}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 916
+  indentLevel: 1
+  text: I stand by you, Rasha
+  description: 
+  targetBlock: {fileID: 2110003538}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841589fc622bc494aa5405f416fa1301, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 915
+  indentLevel: 1
+  text: I change my mind
+  description: 
+  targetBlock: {fileID: 2110003501}
+  hideIfVisited: 0
+  interactable:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  setMenuDialog: {fileID: 0}
+--- !u!114 &2110003722
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 906
+  indentLevel: 1
+  conversationText:
+    stringRef: {fileID: 0}
+    stringVal: 'Rasha: Please send Maya! She deserves this more than we do!'
+--- !u!114 &2110003723
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c5622b8a80845c980954170295f292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 905
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 2110003500}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
+--- !u!114 &2110003724
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb77d0ce495044f6e9feb91b31798e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 904
+  indentLevel: 0
+  variable: {fileID: 2110003491}
+  setOperator: 0
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!114 &2110003789
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -63316,11 +64107,11 @@ MonoBehaviour:
     stringVal: "Myself: We approach a man wearing a shemagh. There are people everywhere,
       all seemingly taking the same way out of here. \n\nMyself: The coast isn't far
       away and the sound of crashing waves underscores the quiet mumbling of people
-      around us. \n\nMan: You here for the boat?\n\nMe: Yeah.\n\nMan: All of you?\n\nMe:
-      Yeah.\n\nMan: Sure. \n\nMyself: The man turns around and walks into one of the
-      buildings. \n\nFiras: What's happening?\n\nMe: I don't know...\n\nMyself: The
-      man returns.\n\nMan: Okay, there's room for all of you.\n\nFiras: Good. For
-      how much?\n\nMan: Per person, $500.\n\nFiras: What the hell!? We don't have
+      around us. \n\nMan: You here for the boat?\n\nMe: \"Yeah.\"\n\nMan: All of you?\n\nMe:
+      \"Yeah.\"\n\nMan: Sure. \n\nMyself: The man turns around and walks into one
+      of the buildings. \n\nFiras: What's happening?\n\nMe: \"I don't know...\"\n\nMyself:
+      The man returns.\n\nMan: \"Okay, there's room for all of you.\"\n\nFiras: Good.
+      For how much?\n\nMan: $500. Per person.\n\nFiras: What the hell!? We don't have
       that much!\n\nMan: That's the price.\n\nZada: Seriously? No compassion for us?
       We've travelled from Heshem!\n\nMan: See that man over there? The one sitting
       on his own?\n\nMyself: He points to a man sitting alone in the fetal position
@@ -63335,9 +64126,8 @@ MonoBehaviour:
       its owner? \n\nMan: Simple. You pay me to stay here so you don't have to. We
       pay soldiers to stay quiet and hope that we can outlive this war with enough
       food to spare.\n\nMan: So don't tell me that I'm incompassionate and morally
-      objectionable because I'm doing what I can to survive. You would do the same,
-      no?\n\nMan: The price is the price. Who is going to stays here and who goes
-      on the boat?"
+      objectionable because I'm doing what I can to survive.\n\nMan: The price is
+      the price. Who is going to stay here and who goes on the boat?"
 --- !u!4 &2110004011 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4045095015970748, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
