@@ -48,15 +48,14 @@ public class GameManager_r : MonoBehaviour {
     public AudioManager _AudioManager;
     bool musicStarted = false;
 
-    public GameObject endGameCanvas;
     public GameObject gameCanvas;
 
     //Player can only eat when this is true
     public bool canEat = false;
 
-    public bool transitioningScreen = false;
-    public float currentWaitTime = int.MaxValue;
-    public int newScreenInt;
+    //public bool transitioningScreen = false;
+    //public float currentWaitTime = int.MaxValue;
+    //public int newScreenInt;
 
     // Singleton
     private static GameManager_r _Instance;
@@ -159,7 +158,7 @@ public class GameManager_r : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.BackQuote))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            RestartScene();
         }
 
         /*if(transitioningScreen == true) // jacob wrote this
@@ -221,7 +220,7 @@ public class GameManager_r : MonoBehaviour {
         }
         else if(transitioningScreen == true)
         {*/
-            Debug.Log("Final Screen change after Transition @: " + Time.timeSinceLevelLoad);
+            //Debug.Log("Final Screen change after Transition @: " + Time.timeSinceLevelLoad);
 
             if (_AudioManager && _AudioManager.GetChannel("SFX") != null && _AudioManager.clickSound)
                 _AudioManager.PlayClip(_AudioManager.clickSound, _AudioManager.GetChannel("SFX"));
@@ -341,5 +340,15 @@ public class GameManager_r : MonoBehaviour {
                 charas.Add(c);
         }
         return charas[Random.Range(0, charas.Count)].GetComponent<Character_r>().name;
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void BackButtonCredits()
+    {
+
     }
 }

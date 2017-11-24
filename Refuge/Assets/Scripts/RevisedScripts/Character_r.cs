@@ -197,17 +197,24 @@ public class Character_r : MonoBehaviour
 
     public void OnDeath()
     {
-        GM.conditionReportText.text = charName + " Has Died!";
-        StartCoroutine(GM.HasGottenHealthCondition());
-        Debug.Log(charName + " has died");
-        Destroy(gameObject);
-
-        if (charName == "Sayid")
+        if (GM.conditionReportText != null)
         {
-            GM.gameCanvas.SetActive(false);
-            GM.endGameCanvas.SetActive(true);
+            GM.conditionReportText.text = charName + " Has Died!";
+            StartCoroutine(GM.HasGottenHealthCondition());
+            Debug.Log(charName + " has died");
+            
+            GameObject.Find("LevelScripting").GetComponent<Flowchart>().SetStringVariable("DeadName", charName);
         }
-        GameObject.Find("LevelScripting").GetComponent<Flowchart>().SetStringVariable("DeadName", charName);
+        else
+        {
+            // Start the encounter and switch to the scene
+            //GameManager_r.Instance.ChangeScreen(2);
+            Destroy(gameObject);
+            Flowchart thisFlowchart = GameObject.Find("LevelScripting").GetComponent<Flowchart>();
+            thisFlowchart.SetStringVariable("DeadName", charName);
+            thisFlowchart.ExecuteBlock("Death");
+            Debug.Log("Changing to second screen");
+        }
     }
 
     public void OnNoTrust()
