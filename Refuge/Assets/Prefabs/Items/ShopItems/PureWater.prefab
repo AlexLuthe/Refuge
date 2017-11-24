@@ -84,9 +84,9 @@ MonoBehaviour:
   encounterOnTake: 0
   encounterOnDrop: 0
   encounterToExecute: 
-  price: 10
+  price: 20
   spawnChance: 0.25
-  shopHoverTip: 'Price: $10'
+  shopHoverTip: 'Price: $20'
   invHoverTip: Clean Water
   character: {fileID: 0}
   slot: {fileID: 0}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4df50e8ac7888b48a105fc99de7e6cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverTip: 'Cost: $10'
+  hoverTip: 'Cost: $20'
   xOffset: 150
   yOffset: -100
 --- !u!222 &222143047446487726

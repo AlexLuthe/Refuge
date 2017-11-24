@@ -84,9 +84,9 @@ MonoBehaviour:
   encounterOnTake: 0
   encounterOnDrop: 0
   encounterToExecute: 
-  price: 10
+  price: 5
   spawnChance: 0.25
-  shopHoverTip: 'Price: $10'
+  shopHoverTip: 'Price: $5'
   invHoverTip: Dirty Water
   character: {fileID: 0}
   slot: {fileID: 0}
