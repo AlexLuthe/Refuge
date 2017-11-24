@@ -9,6 +9,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
 
     public bool changeScreen = false;
     public int destinationScreen;
+    public bool endGame = false;
 
     public string FungusBlockToExecute;
     public bool executeEncounterWithFungus;
@@ -125,7 +126,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
             {
                 //GameObject.Find("GameManager").GetComponent<GameManager_r>().SwitchToHub(hubArea);
                 //GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
-                GameObject.Find("GameManager").GetComponent<GameManager_r>().conditionReportText.text = "";
+                //GameObject.Find("GameManager").GetComponent<GameManager_r>().conditionReportText.text = "";
             }
         }
     }

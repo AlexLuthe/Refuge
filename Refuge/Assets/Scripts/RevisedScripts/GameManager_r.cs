@@ -50,6 +50,8 @@ public class GameManager_r : MonoBehaviour {
 
     public GameObject gameCanvas;
 
+    public GameObject endGameDialogue;
+
     //Player can only eat when this is true
     public bool canEat = false;
 
@@ -345,6 +347,7 @@ public class GameManager_r : MonoBehaviour {
     public void RestartScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        endGameDialogue.SetActive(false);
     }
 
     public void BackButtonCredits()
