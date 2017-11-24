@@ -57,7 +57,7 @@ MonoBehaviour:
   encounterOnTake: 0
   encounterOnDrop: 0
   encounterToExecute: 
-  price: 0
+  price: 5
   spawnChance: 0.25
   shopHoverTip: 'Price: $5'
   invHoverTip: Replenish a small portion of hunger

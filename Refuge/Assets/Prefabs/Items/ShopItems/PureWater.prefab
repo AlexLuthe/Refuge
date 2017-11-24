@@ -73,15 +73,23 @@ MonoBehaviour:
   healthMod: 0.1
   hungerMod: 0
   thirstMod: 0.5
+  trustGiveMod: 0
+  trustDropMod: 0
   injuryChance: 0
   choleraChance: 0
   dysenteryChance: 0
   typhoidChance: 0
   cureDiseases: 0
+  encounterOnGive: 0
+  encounterOnTake: 0
+  encounterOnDrop: 0
+  encounterToExecute: 
   price: 10
   spawnChance: 0.25
   shopHoverTip: 'Price: $10'
   invHoverTip: Clean Water
+  character: {fileID: 0}
+  slot: {fileID: 0}
 --- !u!114 &114099275010509008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,7 +117,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1972752203891548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 129, y: 347, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 0.3861111, y: 0.3861111, z: 0.3861111}
   m_Children: []
   m_Father: {fileID: 0}
