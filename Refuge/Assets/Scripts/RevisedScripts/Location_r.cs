@@ -88,7 +88,7 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
 
     public virtual void GenerateInventory() {
         if (inventory.Length > 0) {
-        if (!generated) {
+            if (!generated) {
                 Debug.Log(inventory.Length);
             generated = true;
             foreach (GameObject slot in inventory) {
@@ -109,8 +109,8 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
                 inventory[inventory.Length - 1].GetComponent<InventorySlot_r>().item = null;
                 inventory[inventory.Length - 1].GetComponent<Image>().sprite = GameObject.Find("UIController").GetComponent<UIController_r>().emtpyInv;
             }
-        }
-        GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
+            }
+            GameObject.Find("GameManager").GetComponent<GameManager_r>().ChangeScreen(destinationScreen);
         }
 
         if(changeScreen)

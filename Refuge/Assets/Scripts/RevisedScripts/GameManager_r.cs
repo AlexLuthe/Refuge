@@ -29,7 +29,7 @@ public class GameManager_r : MonoBehaviour {
     public GameObject[] characters;
     public GameObject mouseHoverTip;
     public GameObject carryingItem;
-    public GameObject moneyGUI, moneyNotification;
+    public GameObject moneyGUI, moneyNotification, confirmTravelPanel;
     float moneyNotTimer = 0.8f;
     Vector3 moneyPos;
     public Text conditionReportText;
@@ -221,6 +221,9 @@ public class GameManager_r : MonoBehaviour {
         if (newScreen == ScreenType.STEnMap1 || newScreen == ScreenType.STEnMap2 || newScreen == ScreenType.STEnMap3)
             screens[ScreenType.STEncounter].SetActive(true);
 
+        //if (confirmTravelPanel)
+            //confirmTravelPanel.SetActive(false);
+
     }
 
     public void ChangeScreen(int iNewScreen)
@@ -261,6 +264,9 @@ public class GameManager_r : MonoBehaviour {
                     charUI.SetActive(false);
             if (iNewScreen == 9 || iNewScreen == 10 || iNewScreen == 11)
                 screens[ScreenType.STEncounter].SetActive(true);
+
+            //if (confirmTravelPanel)
+                //confirmTravelPanel.SetActive(false);
         //}
     }
 

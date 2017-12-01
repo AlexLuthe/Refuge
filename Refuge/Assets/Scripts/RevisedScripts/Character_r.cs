@@ -136,6 +136,7 @@ public class Character_r : MonoBehaviour
             Destroy(item.gameObject);
             GM.carryingItem = null;
 
+            if (GM.conditionReportText) {
             if (Random.Range(0f, 1f) < item.injuryChance)
             {
                 injured = true;
@@ -166,6 +167,7 @@ public class Character_r : MonoBehaviour
                 GM.conditionReportText.text = charName + " has gotten typhoid! ";
                 StartCoroutine(GM.HasGottenHealthCondition());
                 typhoidSprite.SetActive(true);
+            }
             }
 
                                                                         ///Deactivated cause diseases arent a thing

@@ -10965,6 +10965,7 @@ MonoBehaviour:
   chanceOfTyphoid: 0
   confirmTravelPanel: {fileID: 120993234}
   costOfTravelText: {fileID: 405839153}
+  LocationsToRegenerate: []
 --- !u!114 &438291044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18568,6 +18569,7 @@ MonoBehaviour:
   chanceOfTyphoid: 0
   confirmTravelPanel: {fileID: 0}
   costOfTravelText: {fileID: 405839153}
+  LocationsToRegenerate: []
 --- !u!114 &731441880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22577,6 +22579,7 @@ MonoBehaviour:
   carryingItem: {fileID: 0}
   moneyGUI: {fileID: 1703330092}
   moneyNotification: {fileID: 407028114}
+  confirmTravelPanel: {fileID: 120993234}
   conditionReportText: {fileID: 0}
   reportActiveTime: 3
   carryCharGUI: {fileID: 725032193}
@@ -25981,6 +25984,7 @@ MonoBehaviour:
   chanceOfTyphoid: 95
   confirmTravelPanel: {fileID: 0}
   costOfTravelText: {fileID: 0}
+  LocationsToRegenerate: []
 --- !u!1 &989234235
 GameObject:
   m_ObjectHideFlags: 0
@@ -30649,7 +30653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1204527779
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36063,6 +36067,7 @@ MonoBehaviour:
   chanceOfTyphoid: 95
   confirmTravelPanel: {fileID: 0}
   costOfTravelText: {fileID: 0}
+  LocationsToRegenerate: []
 --- !u!114 &1411002005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37437,6 +37442,7 @@ MonoBehaviour:
   possibleLocations:
   - {fileID: 1196734974}
   - {fileID: 1625620285}
+  - {fileID: 1485777068}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 0
@@ -38299,6 +38305,8 @@ MonoBehaviour:
   generated: 0
   possibleLocations:
   - {fileID: 1055492494}
+  - {fileID: 1196734974}
+  - {fileID: 1456434351}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 0
@@ -38524,6 +38532,7 @@ MonoBehaviour:
   chanceOfTyphoid: 0
   confirmTravelPanel: {fileID: 120993234}
   costOfTravelText: {fileID: 405839153}
+  LocationsToRegenerate: []
 --- !u!114 &1493943344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43822,6 +43831,11 @@ MonoBehaviour:
   chanceOfTyphoid: 10
   confirmTravelPanel: {fileID: 120993234}
   costOfTravelText: {fileID: 405839153}
+  LocationsToRegenerate:
+  - {fileID: 2136705763}
+  - {fileID: 1468238482}
+  - {fileID: 2133839908}
+  - {fileID: 668001760}
 --- !u!1 &1703330092
 GameObject:
   m_ObjectHideFlags: 0
@@ -47834,6 +47848,8 @@ MonoBehaviour:
   possibleLocations:
   - {fileID: 1767372275}
   - {fileID: 2115290851}
+  - {fileID: 1485777068}
+  - {fileID: 1482995732}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 0
@@ -53682,6 +53698,7 @@ MonoBehaviour:
   chanceOfTyphoid: 0
   confirmTravelPanel: {fileID: 120993234}
   costOfTravelText: {fileID: 405839153}
+  LocationsToRegenerate: []
 --- !u!114 &2009042614
 MonoBehaviour:
   m_ObjectHideFlags: 0

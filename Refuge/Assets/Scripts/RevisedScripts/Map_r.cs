@@ -37,6 +37,8 @@ public class Map_r : MonoBehaviour
     List<float> hunger = new List<float>();
     List<float> thirst = new List<float>();
 
+    public List<Location_r> LocationsToRegenerate = new List<Location_r>();
+
 
     // Use this for initialization
     void Start() {
@@ -75,6 +77,7 @@ public class Map_r : MonoBehaviour
                         int index = 0;
                         foreach (GameObject chara in GM.characters)
                         {
+                            if (chara) {
                             float charHunger = chara.GetComponent<Character_r>().GetHunger();
                             float charThirst = chara.GetComponent<Character_r>().GetThirst();
                             charHunger = Mathf.Lerp(charHunger, hunger[index] - newLocation.GetComponent<Location_r>().distance * 0.25f, Time.deltaTime * 2.5f);
@@ -113,13 +116,16 @@ public class Map_r : MonoBehaviour
                             ++index;
                         }
                     }
+                    }
                 }
                 else
                 {
                     Debug.Log("We Made It! (woo)");
                     for (int i = 0; i < hunger.Count; ++i) {
-                        hunger[i] = GM.characters[i].GetComponent<Character_r>().GetHunger();
-                        thirst[i] = GM.characters[i].GetComponent<Character_r>().GetThirst();
+                        if (GM.characters[i]) {
+                            hunger[i] = GM.characters[i].GetComponent<Character_r>().GetHunger();
+                            thirst[i] = GM.characters[i].GetComponent<Character_r>().GetThirst();
+                        }
                     }
                     logged = false;
                     refugeeObj.transform.position = Vector3.MoveTowards(refugeeObj.transform.position, new Vector3(newLocation.transform.position.x + movementXOffset, newLocation.transform.position.y + movementYOffset, -5), 1.0f);
@@ -174,6 +180,8 @@ public class Map_r : MonoBehaviour
 
     public void YesTravel()
     {
+        if (confirmTravelPanel)
+            confirmTravelPanel.SetActive(false);
         currentLocationNumber = newLocation.GetComponent<Location_r>().locationNumber;
 
         if (!GM)
@@ -183,16 +191,19 @@ public class Map_r : MonoBehaviour
         {
 
             // Regenerate Market
-            GM.GetScreen(GameManager_r.ScreenType.STMarket).GetComponent<Location_r>().generated = false;
-            if (GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>())
-                GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>().generated = false;
-            foreach (Location_r market in FindObjectsOfType<Location_r>())
-                market.generated = false;
-            foreach (Clinic_r clinic in FindObjectsOfType<Clinic_r>())
-                clinic.generated = false;
+            foreach (Location_r loc in LocationsToRegenerate)
+                loc.generated = false;
+            //GM.GetScreen(GameManager_r.ScreenType.STMarket).GetComponent<Location_r>().generated = false;
+            //if (GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>())
+            //    GM.GetScreen(GameManager_r.ScreenType.STClinic).GetComponent<Clinic_r>().generated = false;
+            //foreach (Location_r market in FindObjectsOfType<Location_r>())
+            //    market.generated = false;
+            //foreach (Clinic_r clinic in FindObjectsOfType<Clinic_r>())
+            //    clinic.generated = false;
             
             foreach (GameObject chara in GM.characters)
             {
+                if (chara) {
                 chara.GetComponent<Character_r>().AddHunger(-newLocation.GetComponent<Location_r>().distance * 0.2f);
                 chara.GetComponent<Character_r>().AddThirst(-newLocation.GetComponent<Location_r>().distance * 0.2f);
                 if (chara.GetComponent<Character_r>().GetHunger() <= 0 || chara.GetComponent<Character_r>().GetThirst() <= 0) {
@@ -235,7 +246,7 @@ public class Map_r : MonoBehaviour
                     StartCoroutine(GM.HasGottenHealthCondition());
                     chara.GetComponent<Character_r>().typhoidSprite.SetActive(true);
                 }
-                
+
                 // Carry Character
                 //if (chara.GetComponent<Character_r>().GetHealth() < 0.5f) {
                 //    List<GameObject> possibleCarriers = new List<GameObject>();
@@ -254,6 +265,7 @@ public class Map_r : MonoBehaviour
                 //            ++invSlots;
                 //    GM.carryCharGUI.transform.GetComponentInChildren<Text>().text = string.Format("{0} has collapsed and likely won't survive another journey on foot. Fortunately, {1} has offered to carry them, however the party can only carry {2} items now. {0}'s health, hunger and thirst will deteriorate half as quickly, but {1}'s will double. Would you like to carry or abandon {0}", chara.GetComponent<Character_r>().charName, carrier.GetComponent<Character_r>().charName, invSlots);
                 //}
+                }
             }
         }
         else
@@ -272,8 +284,7 @@ public class Map_r : MonoBehaviour
         }
 
         confirmTravel = true;
-        if (confirmTravelPanel)
-            confirmTravelPanel.SetActive(false);
+
         refugeeObj.transform.position = newLocation.transform.position;
         GM.ChangeScreen(14);
     }

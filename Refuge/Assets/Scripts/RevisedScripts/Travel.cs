@@ -75,8 +75,9 @@ public class Travel : MonoBehaviour {
         if (!GM)
             GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         for (int i = 0; i < GM.characters.Length; ++i) {
-            if (GM.characters[i].GetComponent<Character_r>().isDead)
-                characters[i].SetActive(false);
+            if (GM.characters[i])
+                if (GM.characters[i].GetComponent<Character_r>().isDead)
+                    characters[i].SetActive(false);
         }
         if (timer <= 0)
             timer = 3;
