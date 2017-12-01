@@ -2211,12 +2211,19 @@ MonoBehaviour:
   backGroundObjs: []
   foreGroundObjs: []
   characters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1516134129}
+  - {fileID: 40542662}
+  - {fileID: 47481299}
+  - {fileID: 958188529}
+  - {fileID: 1186192361}
+  - {fileID: 1611400769}
+  campfireCharacters:
+  - {fileID: 2033192012}
+  - {fileID: 453964353}
+  - {fileID: 654009974}
+  - {fileID: 679754501}
+  - {fileID: 1947388365}
+  - {fileID: 1930020896}
   partySpeed: 1
   timer: 3
   screenToSwitch: 0

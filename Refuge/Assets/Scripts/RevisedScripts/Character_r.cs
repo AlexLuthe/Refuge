@@ -199,6 +199,7 @@ public class Character_r : MonoBehaviour
 
     public void OnDeath()
     {
+        isDead = true;
         if (GM.conditionReportText != null)
         {
             GM.conditionReportText.text = charName + " Has Died!";
@@ -211,12 +212,14 @@ public class Character_r : MonoBehaviour
         {
             // Start the encounter and switch to the scene
             //GameManager_r.Instance.ChangeScreen(2);
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            Debug.Log("No Report Text, but " + charName + "is dead");
             Flowchart thisFlowchart = GameObject.Find("LevelScripting").GetComponent<Flowchart>();
             thisFlowchart.SetStringVariable("DeadName", charName);
             thisFlowchart.ExecuteBlock("Death");
             Debug.Log("Changing to second screen");
         }
+        gameObject.SetActive(false);
     }
 
     public void OnNoTrust()

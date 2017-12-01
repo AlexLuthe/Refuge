@@ -8,7 +8,7 @@ public class Travel : MonoBehaviour {
     public GameObject backGround;
     public GameObject[] backGroundObjs;
     public GameObject[] foreGroundObjs;
-    public GameObject[] characters;
+    public GameObject[] characters, campfireCharacters;
     public float partySpeed = 1;
     public float timer = 3;
     public int screenToSwitch;
@@ -76,8 +76,10 @@ public class Travel : MonoBehaviour {
             GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
         for (int i = 0; i < GM.characters.Length; ++i) {
             if (GM.characters[i])
-                if (GM.characters[i].GetComponent<Character_r>().isDead)
+                if (GM.characters[i].GetComponent<Character_r>().isDead) {
                     characters[i].SetActive(false);
+                    campfireCharacters[i].SetActive(false);
+                }
         }
         if (timer <= 0)
             timer = 3;
