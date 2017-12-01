@@ -57,6 +57,9 @@ public class GameManager_r : MonoBehaviour {
     //Player can only eat when this is true
     public bool canEat = false;
 
+    // Inventory is inactive and transparent when this is false
+    public bool inventoryActive = true;
+
     //public bool transitioningScreen = false;
     //public float currentWaitTime = int.MaxValue;
     //public int newScreenInt;

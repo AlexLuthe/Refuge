@@ -26,12 +26,28 @@ public class InventorySlot_r : MonoBehaviour, IPointerUpHandler, IPointerDownHan
         }
 	}
 
+    void Update() {
+        if (_GameManager.inventoryActive) {
+            Color colour = GetComponent<Image>().color;
+            colour.a = 1f;
+            GetComponent<Image>().color = colour;
+        }
+        else {
+            Color colour = GetComponent<Image>().color;
+            colour.a = 0.5f;
+            GetComponent<Image>().color = colour;
+        }
+    }
+
     void IPointerDownHandler.OnPointerDown(PointerEventData eventData) {
-        _UIController.OnClickInventory(gameObject);
-        lastClick = Time.time;
+        if (_GameManager.inventoryActive) {
+            _UIController.OnClickInventory(gameObject);
+            lastClick = Time.time;
+        }
     }
 
     void IPointerUpHandler.OnPointerUp(PointerEventData eventData) {
+        if (_GameManager.inventoryActive)
         if (Time.time - lastClick > 0.2f) {
             _UIController.OnClickInventory(gameObject);
             lastClick = Time.time;
@@ -39,16 +55,20 @@ public class InventorySlot_r : MonoBehaviour, IPointerUpHandler, IPointerDownHan
     }
 
     void IDragHandler.OnDrag(PointerEventData eventData) {
+        if (_GameManager.inventoryActive) {
         if (Time.time - lastClick > 0.2f) {
             _UIController.OnClickInventory(gameObject);
         }
         lastClick = Time.time;
+        }
     }
 
     void IDropHandler.OnDrop(PointerEventData eventData) {
+        if (_GameManager.inventoryActive) {
         if (Time.time - lastClick > 0.2f) {
             _UIController.OnClickInventory(gameObject);
             lastClick = Time.time;
+        }
         }
     }
 
