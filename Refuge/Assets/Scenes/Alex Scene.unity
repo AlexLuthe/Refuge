@@ -30370,7 +30370,7 @@ MonoBehaviour:
   - {fileID: 1456434351}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
-  hubArea: 0
+  hubArea: 1
   screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1196734978
@@ -41934,7 +41934,7 @@ MonoBehaviour:
   - {fileID: 1767372275}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
-  hubArea: 0
+  hubArea: 1
   screenTravel: {fileID: 82189442}
   travelReady: 0
 --- !u!114 &1625620289
