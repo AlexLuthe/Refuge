@@ -50,7 +50,7 @@ public class Travel : MonoBehaviour {
             if (foreGround.transform.position.x > Screen.width + foreGround.GetComponent<RectTransform>().rect.width / 4)
                 foreGround.transform.position = new Vector3(0 - foreGround.GetComponent<RectTransform>().rect.width / 4, foreGround.transform.position.y);
         }
-        if (timer <= 0) {
+        if (timer <= 0 || camped) {
             //Debug.Log(screenToSwitch); // 0
             if (camped) {
                 camped = false;
