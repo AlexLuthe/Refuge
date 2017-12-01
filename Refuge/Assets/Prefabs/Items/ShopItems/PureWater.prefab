@@ -85,7 +85,7 @@ MonoBehaviour:
   encounterOnDrop: 0
   consumable: 1
   encounterToExecute: 
-  price: 0
+  price: 20
   spawnChance: 0.25
   shopHoverTip: 'Price: $20'
   invHoverTip: Clean Water

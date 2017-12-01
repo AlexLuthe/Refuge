@@ -56,7 +56,7 @@ MonoBehaviour:
   encounterOnDrop: 0
   consumable: 1
   encounterToExecute: 
-  price: 0
+  price: 5
   spawnChance: 0.25
   shopHoverTip: 'Cost: 5 (reduces hunger)'
   invHoverTip: Replenish a small portion of hunger
