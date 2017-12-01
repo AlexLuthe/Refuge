@@ -70,7 +70,7 @@ MonoBehaviour:
   encounterOnDrop: 0
   consumable: 1
   encounterToExecute: 
-  price: 100
+  price: 0
   spawnChance: 1
   shopHoverTip: 'Price: $100,  Adds health'
   invHoverTip: Adds health

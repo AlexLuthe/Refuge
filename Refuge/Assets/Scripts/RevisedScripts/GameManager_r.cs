@@ -29,7 +29,9 @@ public class GameManager_r : MonoBehaviour {
     public GameObject[] characters;
     public GameObject mouseHoverTip;
     public GameObject carryingItem;
-    public GameObject moneyGUI;
+    public GameObject moneyGUI, moneyNotification;
+    float moneyNotTimer = 0.8f;
+    Vector3 moneyPos;
     public Text conditionReportText;
     public float reportActiveTime = 1f;
     public GameObject carryCharGUI, charCarried, charCarrier;
@@ -120,10 +122,22 @@ public class GameManager_r : MonoBehaviour {
         }
 
         _AudioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+        if (moneyNotification)
+            moneyPos = moneyNotification.transform.position;
     }
 
     void Update()
     {
+
+        if (moneyNotification.activeSelf) {
+            moneyNotTimer -= Time.deltaTime;
+            moneyNotification.transform.Translate(Vector3.up * Time.deltaTime * 10);
+            if (moneyNotTimer <= 0) {
+                moneyNotTimer = 0.8f;
+                moneyNotification.SetActive(false);
+            }
+        }
+
         if (carryingItem)
         {
             if (!carryingItem.GetComponent<Image>())
@@ -286,7 +300,19 @@ public class GameManager_r : MonoBehaviour {
         return chara;
     }
 
-    public void AddMoney(int modifier) { partyMoney += modifier; if (moneyGUI) moneyGUI.GetComponent<Text>().text = "Money: " + partyMoney; }
+    public void AddMoney(int modifier) {
+        partyMoney += modifier;
+        if (moneyGUI)
+            moneyGUI.GetComponent<Text>().text = "Money: " + partyMoney;
+        if (moneyNotification) {
+            moneyNotification.transform.position = moneyPos;
+            if (modifier < 0)
+                moneyNotification.GetComponent<Text>().text = string.Format("{0}", modifier);
+            else
+                moneyNotification.GetComponent<Text>().text = string.Format("+{0}", modifier);
+            moneyNotification.SetActive(true);
+        }
+    }
     public int GetMoney() { return partyMoney; }
 
     public void LeaveChar() {
