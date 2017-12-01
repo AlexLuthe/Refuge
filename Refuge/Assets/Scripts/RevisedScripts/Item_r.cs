@@ -30,7 +30,7 @@ public class Item_r : MonoBehaviour {
     public float trustGiveMod, trustDropMod;
     public float injuryChance, choleraChance, dysenteryChance, typhoidChance;
     public bool cureDiseases;
-    public bool encounterOnGive, encounterOnTake, encounterOnDrop;
+    public bool encounterOnGive, encounterOnTake, encounterOnDrop, consumable;
     public string encounterToExecute;
     public int price;
     public float spawnChance;

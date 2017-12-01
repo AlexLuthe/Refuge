@@ -127,7 +127,7 @@ public class Character_r : MonoBehaviour
     public void UseItem()
     {
         //Consume item and maybe get sick
-        if (GM.canEat == true)
+        if (GM.canEat == true && GM.carryingItem.GetComponent<Item_r>().consumable)
         {
             Item_r item = GM.carryingItem.GetComponent<Item_r>();
             AddHealth(item.healthMod);
