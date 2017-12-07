@@ -2464,7 +2464,7 @@ RectTransform:
   - {fileID: 674618543}
   - {fileID: 751813801}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12449,8 +12449,10 @@ RectTransform:
   - {fileID: 793838839}
   - {fileID: 1481457714}
   - {fileID: 253585759}
+  - {fileID: 1044357876}
+  - {fileID: 1989585282}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -15070,7 +15072,7 @@ RectTransform:
   m_Children:
   - {fileID: 929717432}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -20599,7 +20601,7 @@ RectTransform:
   - {fileID: 1411002003}
   - {fileID: 987086357}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -29471,8 +29473,8 @@ RectTransform:
   - {fileID: 1958182642}
   - {fileID: 2030577552}
   - {fileID: 523149427}
-  m_Father: {fileID: 1468065623}
-  m_RootOrder: 1
+  m_Father: {fileID: 424243453}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31153,7 +31155,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33572,7 +33574,7 @@ RectTransform:
   - {fileID: 438291042}
   - {fileID: 1493943342}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -33931,7 +33933,7 @@ RectTransform:
   - {fileID: 1300988630}
   - {fileID: 544447470}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -35276,7 +35278,7 @@ RectTransform:
   - {fileID: 1634811894}
   - {fileID: 833452430}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -40526,7 +40528,7 @@ RectTransform:
   m_Children:
   - {fileID: 1403024731}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -41248,7 +41250,7 @@ RectTransform:
   - {fileID: 571957866}
   - {fileID: 125873259}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -41341,8 +41343,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1171739352}
-  - {fileID: 1044357876}
-  - {fileID: 1989585282}
   - {fileID: 1204527779}
   - {fileID: 1561607722}
   - {fileID: 1112848445}
@@ -41516,7 +41516,7 @@ RectTransform:
   - {fileID: 702205340}
   - {fileID: 1726683704}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -44229,7 +44229,7 @@ RectTransform:
   - {fileID: 1350280550}
   - {fileID: 481331688}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -47804,7 +47804,7 @@ RectTransform:
   - {fileID: 164332625}
   - {fileID: 1921232070}
   m_Father: {fileID: 1468065623}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -54400,7 +54400,7 @@ Prefab:
         type: 2}
       propertyPath: selectedBlocks.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003899}
+      objectReference: {fileID: 2110003746}
     - target: {fileID: 114178552623391918, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: targetObject
@@ -54410,7 +54410,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003627}
+      objectReference: {fileID: 2110003747}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -54689,7 +54689,7 @@ Prefab:
     - target: {fileID: 114706828047507078, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 764.656
+      value: 762.81177
       objectReference: {fileID: 0}
     - target: {fileID: 1674815164364518, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
       propertyPath: m_IsActive
@@ -55119,7 +55119,7 @@ Prefab:
     - target: {fileID: 114291467362672248, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
-      value: 616.97345
+      value: 618.16077
       objectReference: {fileID: 0}
     - target: {fileID: 114584649893843052, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -55195,12 +55195,12 @@ Prefab:
     - target: {fileID: 114804759088428718, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
-      value: 311.30087
+      value: 315.2054
       objectReference: {fileID: 0}
     - target: {fileID: 114804759088428718, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.y
-      value: 748.0331
+      value: 742.17633
       objectReference: {fileID: 0}
     - target: {fileID: 114531531939760930, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
@@ -55836,16 +55836,6 @@ Prefab:
       propertyPath: selectedCommands.Array.data[28]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 114298628929664306, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-        type: 2}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 402367169}
-    - target: {fileID: 114514948046484556, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-        type: 2}
-      propertyPath: character
-      value: 
-      objectReference: {fileID: 402367169}
     m_RemovedComponents:
     - {fileID: 114620932178397460, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
     - {fileID: 114732260562620168, guid: 72f3c8fa92b565a4198d6155d0c74ed8, type: 2}
@@ -57649,7 +57639,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989585281}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -57659,8 +57649,8 @@ RectTransform:
   - {fileID: 164830876}
   - {fileID: 1766241855}
   - {fileID: 1818690}
-  m_Father: {fileID: 1468065623}
-  m_RootOrder: 2
+  m_Father: {fileID: 424243453}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -67873,7 +67863,7 @@ MonoBehaviour:
   - {fileID: 2110003794}
 --- !u!114 &2110003733
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -67919,23 +67909,6 @@ MonoBehaviour:
   - {fileID: 2110003802}
   - {fileID: 2110003800}
   - {fileID: 2110003801}
---- !u!114 &2110003735
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2110003488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f608b8c9fb3044200aac956492d8d586, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 929
-  indentLevel: 0
-  conversationText:
-    stringRef: {fileID: 0}
-    stringVal: "firas: I'm worried about you.\r\n\r\nrasha: Every day just gets harder.\r\n\r\nfiras:
-      A shower would be nice.\r\n\r\nrasha: I wouldn't mind a massage, maybe a foot-rub."
 --- !u!114 &2110003736
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -67960,7 +67933,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 2110003735}
   - {fileID: 2110003751}
   - {fileID: 2110003738}
   - {fileID: 2110003737}
@@ -68270,7 +68242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 948
   indentLevel: 0
-  storyText: "Okay, I guess.\r {w=3}\n\n"
+  storyText: "I'm hungry.\r {w=3}\n\n"
   description: 
   character: {fileID: 523149428}
   portrait: {fileID: 0}
@@ -68370,7 +68342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 944
   indentLevel: 0
-  storyText: "firas: Not much longer, okay?\r {w=3}"
+  storyText: "\nNot much longer, okay?\r {w=3}"
   description: 
   character: {fileID: 1958182643}
   portrait: {fileID: 0}
@@ -68547,7 +68519,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 953
   indentLevel: 0
-  storyText: "She's doing okay. A little hungry and thirsty.\r {w=3}"
+  storyText: "She's doing okay. She doesn't really understand what's happening.\r
+    {w=3}"
   description: 
   character: {fileID: 2030577553}
   portrait: {fileID: 0}
@@ -68599,7 +68572,7 @@ MonoBehaviour:
   indentLevel: 1
 --- !u!114 &2110003763
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -68686,7 +68659,7 @@ MonoBehaviour:
   indentLevel: 1
 --- !u!114 &2110003767
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -68706,7 +68679,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003768
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69431,7 +69404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 961
   indentLevel: 0
-  storyText: "Eat a burger or a pizza. Something spoaked in carbs.\r {w=3}"
+  storyText: "Eat a burger or a pizza. Something soaked in grease.\r {w=3}"
   description: 
   character: {fileID: 595292426}
   portrait: {fileID: 0}
@@ -69495,7 +69468,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &2110003804
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69508,7 +69481,7 @@ MonoBehaviour:
   indentLevel: 2
 --- !u!114 &2110003805
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69528,7 +69501,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003806
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69541,7 +69514,7 @@ MonoBehaviour:
   indentLevel: 2
 --- !u!114 &2110003807
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69561,7 +69534,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &2110003808
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69588,7 +69561,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &2110003809
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -69615,7 +69588,7 @@ MonoBehaviour:
     stringVal: 
 --- !u!114 &2110003810
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2110003488}
@@ -70295,12 +70268,6 @@ MonoBehaviour:
     stringVal: 
   startIndex: 0
   callMode: 0
---- !u!114 &2110003899 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114565225789815266, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1931879588}
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
 --- !u!114 &2110004004
 MonoBehaviour:
   m_ObjectHideFlags: 2
