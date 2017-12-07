@@ -1433,7 +1433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &35470794
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8416,7 +8416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &294066251
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23195,7 +23195,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &820812980
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30018,7 +30018,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 833.09937, y: -354.40002}
+  m_AnchoredPosition: {x: 849.5, y: -324}
   m_SizeDelta: {x: 11.7, y: 11.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055492496
@@ -30068,9 +30068,7 @@ MonoBehaviour:
   mMap: {fileID: 0}
   generated: 0
   possibleLocations:
-  - {fileID: 1482995732}
-  - {fileID: 1485777068}
-  - {fileID: 1889616904}
+  - {fileID: 1196734974}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 1
@@ -30127,7 +30125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1063412355
 RectTransform:
   m_ObjectHideFlags: 0
@@ -33225,7 +33223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 897.1, y: -152.4}
+  m_AnchoredPosition: {x: 928.1, y: -193.5}
   m_SizeDelta: {x: 11.7, y: 11.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196734976
@@ -33275,8 +33273,7 @@ MonoBehaviour:
   mMap: {fileID: 0}
   generated: 0
   possibleLocations:
-  - {fileID: 1485777068}
-  - {fileID: 1456434351}
+  - {fileID: 1625620285}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 1
@@ -35842,9 +35839,7 @@ MonoBehaviour:
   mMap: {fileID: 0}
   generated: 0
   possibleLocations:
-  - {fileID: 1063412354}
-  - {fileID: 35470793}
-  - {fileID: 820812979}
+  - {fileID: 1767372275}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 0
@@ -40837,7 +40832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1456434352
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41675,7 +41670,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1482995733
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41800,7 +41795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1485777069
 RectTransform:
   m_ObjectHideFlags: 0
@@ -47792,7 +47787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1700608245
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50361,7 +50356,7 @@ MonoBehaviour:
   mMap: {fileID: 0}
   generated: 0
   possibleLocations:
-  - {fileID: 1889616904}
+  - {fileID: 1055492494}
   previousLocation: {fileID: 2115290851}
   _AudioManager: {fileID: 0}
   hubArea: 1
@@ -52429,7 +52424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1889616905
 RectTransform:
   m_ObjectHideFlags: 0
@@ -59000,7 +58995,7 @@ MonoBehaviour:
   mMap: {fileID: 0}
   generated: 0
   possibleLocations:
-  - {fileID: 294066250}
+  - {fileID: 1295329561}
   previousLocation: {fileID: 0}
   _AudioManager: {fileID: 0}
   hubArea: 0
@@ -70641,7 +70636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2115290852
 RectTransform:
   m_ObjectHideFlags: 0
