@@ -54419,7 +54419,7 @@ Prefab:
         type: 2}
       propertyPath: selectedCommands.Array.data[0]
       value: 
-      objectReference: {fileID: 2110003815}
+      objectReference: {fileID: 2110003885}
     - target: {fileID: 114102372614118386, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
         type: 2}
       propertyPath: nodeRect.x
@@ -67747,7 +67747,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 193.25504
     y: 1862.5171
-    width: 125
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -67864,7 +67864,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.21115
     y: 1674.5002
-    width: 120
+    width: 122.727264
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -67906,7 +67906,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.66605
     y: 1928.7255
-    width: 120
+    width: 120.90908
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -67956,7 +67956,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.02905
     y: 1878.4271
-    width: 120
+    width: 122.727264
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -68062,7 +68062,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 463.54465
     y: 1831.8353
-    width: 129.6875
+    width: 133.63635
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -68140,7 +68140,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 469.39832
     y: 1777.3903
-    width: 123.4375
+    width: 126.363625
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -68167,7 +68167,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 468.17032
     y: 1725.7987
-    width: 125
+    width: 130
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -69812,7 +69812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -3.552246
+    x: 5.822754
     y: 902.22437
     width: 120
     height: 40
@@ -69826,6 +69826,8 @@ MonoBehaviour:
   - {fileID: 2110003813}
   - {fileID: 2110003815}
   - {fileID: 2110003812}
+  - {fileID: 2110004068}
+  - {fileID: 2110004067}
 --- !u!114 &2110003815
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -70527,6 +70529,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1931879588}
   m_Script: {fileID: 11500000, guid: 5c6dd8d3a780f4d1ea772e3daf10c372, type: 3}
+--- !u!114 &2110003885 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114992763476364184, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1931879588}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
 --- !u!114 &2110003912 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114667753282906272, guid: 72f3c8fa92b565a4198d6155d0c74ed8,
@@ -70967,6 +70975,77 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &2110004067
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1090
+  indentLevel: 1
+  description: 
+  targetObject: {fileID: 856529015}
+  targetComponentAssemblyName: GameManager_r, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameManager_r
+  targetMethod: ChangeScreen
+  targetMethodText: 'ChangeScreen (Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 1
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &2110004068
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2110003488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c5e8d46183346b59f64b820e71f97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1089
+  indentLevel: 0
+  compareOperator: 0
+  variable: {fileID: 2110003811}
+  booleanData:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  integerData:
+    integerRef: {fileID: 0}
+    integerVal: 0
+  floatData:
+    floatRef: {fileID: 0}
+    floatVal: 0
+  stringData:
+    stringRef: {fileID: 0}
+    stringVal: 
 --- !u!1 &2112734940
 GameObject:
   m_ObjectHideFlags: 0
