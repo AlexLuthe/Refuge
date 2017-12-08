@@ -37,6 +37,8 @@ public class Map_r : MonoBehaviour
     List<float> hunger = new List<float>();
     List<float> thirst = new List<float>();
 
+    public List<GameObject> destination_marker = new List<GameObject>();
+
     public List<Location_r> LocationsToRegenerate = new List<Location_r>();
 
 

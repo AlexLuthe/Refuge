@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class Travel : MonoBehaviour {
 
@@ -23,6 +24,9 @@ public class Travel : MonoBehaviour {
 
     public float completionPercent;
     public float completionRate;
+
+    public bool ExecuteEncounter;
+    public string EncounterToExectute;
 	// Use this for initialization
 	void Start () {
         GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
@@ -59,6 +63,10 @@ public class Travel : MonoBehaviour {
                 if (screenToSwitch == 1) {
                     //Debug.Log("Switching to hub because screenToSwitch == " + screenToSwitch);
                     GM.SwitchToHub(hubToSwitch); // This line is exectuted...
+                }
+                else if (screenToSwitch == 2 || ExecuteEncounter) {
+                    GameObject.Find("LevelScripting").GetComponent<Flowchart>().ExecuteBlock(EncounterToExectute);
+                    GM.ChangeScreen(2);
                 }
                 else
                     GM.ChangeScreen(screenToSwitch);
