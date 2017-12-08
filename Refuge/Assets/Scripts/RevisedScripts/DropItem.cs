@@ -9,14 +9,15 @@ public class DropItem : MonoBehaviour, IPointerUpHandler {
 
     GameManager_r _GameManager;
     GameObject confirmDropText;
-    GameObject confirmDropDialogue;
+    public GameObject confirmDropDialogue;
 
     //public GameObject[] dialogueObjects; 
 
 	// Use this for initialization
 	void Start () {
 		_GameManager = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-        confirmDropDialogue = GameObject.Find("ItemConfirmationPanel");
+        if (!confirmDropDialogue)
+            confirmDropDialogue = GameObject.Find("ItemConfirmationPanel");
         confirmDropDialogue.SetActive(false);
 	}
 	

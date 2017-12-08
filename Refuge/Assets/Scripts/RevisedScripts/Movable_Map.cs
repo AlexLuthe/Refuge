@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class Movable_Map : MonoBehaviour, IPointerClickHandler {
 
     public GameObject refugeeObj;
+    public Vector2 originalLocation;
     public Vector2 newLocation;
     public GameManager_r GM;
     public Location_r location;
@@ -17,7 +18,8 @@ public class Movable_Map : MonoBehaviour, IPointerClickHandler {
 	// Use this for initialization
 	void Start () {
 		GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
-        newLocation = refugeeObj.transform.position;
+        originalLocation = refugeeObj.transform.position;
+        //newLocation = refugeeObj.transform.position;
         if (clip) {
             GM._AudioManager.PlayClip(clip, GM._AudioManager.GetChannel(channel), loop: true);
         }
@@ -31,7 +33,7 @@ public class Movable_Map : MonoBehaviour, IPointerClickHandler {
         Debug.DrawLine(refugeeObj.transform.position, newLocation, Color.red);
 		if (Vector2.Distance(refugeeObj.transform.position, newLocation) < 1 && location) {
             location.Scavenge();
-                arrived = true;
+            arrived = true;
         }
         }
 	}
@@ -43,5 +45,10 @@ public class Movable_Map : MonoBehaviour, IPointerClickHandler {
         Debug.Log(refugeeObj.transform.position);
     }
 
+    void OnEnable() {
+        //refugeeObj.transform.position = originalLocation;
+        //newLocation = originalLocation;
+        arrived = true;
+    }
 
 }

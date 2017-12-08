@@ -55,8 +55,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 14
   itemSprite: {fileID: 21300000, guid: c7eb02363752e4bfa82979007d9fba37, type: 3}
-  healthMod: 1
-  hungerMod: 1
+  healthMod: 0.5
+  hungerMod: 0.25
   thirstMod: 0.5
   trustGiveMod: 0
   trustDropMod: 0
