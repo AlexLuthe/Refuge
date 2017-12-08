@@ -20,8 +20,8 @@ public class HoverTip_r : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     void Update() {
         if (isOver) {
-            Vector3 newPos = new Vector3(Input.mousePosition.x + xOffset, Input.mousePosition.y + yOffset, 1);
-            GM.mouseHoverTip.transform.position = newPos;
+            //Vector3 newPos = new Vector3(Input.mousePosition.x + xOffset, Input.mousePosition.y + yOffset, 1);
+            //GM.mouseHoverTip.transform.position = newPos;
         }
     }
 

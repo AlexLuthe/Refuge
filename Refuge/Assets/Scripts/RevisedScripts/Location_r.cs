@@ -70,6 +70,8 @@ public class Location_r : MonoBehaviour, IPointerClickHandler {
             if (changeScreen) {
                 screenTravel.GetComponent<Travel>().screenToSwitch = destinationScreen;
                 screenTravel.GetComponent<Travel>().hubToSwitch = hubArea;
+                screenTravel.GetComponent<Travel>().ExecuteEncounter = executeEncounterWithFungus;
+                screenTravel.GetComponent<Travel>().EncounterToExectute = FungusBlockToExecute;
             }
             else {
                 //Debug.Log("Not switching the bloody screen");
