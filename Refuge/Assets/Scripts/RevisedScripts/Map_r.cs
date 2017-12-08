@@ -185,6 +185,14 @@ public class Map_r : MonoBehaviour
         if (confirmTravelPanel)
             confirmTravelPanel.SetActive(false);
         currentLocationNumber = newLocation.GetComponent<Location_r>().locationNumber;
+        
+        // Grey out unavailable locations
+        foreach (GameObject loc in locations) {
+            if (loc == newLocation || newLocation.GetComponent<Location_r>().possibleLocations.Contains(loc))
+                loc.GetComponent<Image>().color = new Color(1, 1, 1, 1);
+            else
+                loc.GetComponent<Image>().color = new Color(0.5f, 0.5f, 0.5f, 1);
+        }
 
         if (!GM)
             GM = GameObject.Find("GameManager").GetComponent<GameManager_r>();
